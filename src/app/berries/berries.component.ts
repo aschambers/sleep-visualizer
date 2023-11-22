@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Sprites, Icons } from '@pkmn/img';
+import { Icons } from '@pkmn/img';
 
 @Component({
   selector: 'app-berries',
@@ -7,26 +7,15 @@ import { Sprites, Icons } from '@pkmn/img';
   styleUrls: ['./berries.component.scss']
 })
 export class BerriesComponent implements OnInit {
+  allBerries: Array<string> = ['Belue', 'Bluk', 'Cheri', 'Chesto', 'Durin', 'Figy',
+                              'Grepa', 'Leppa', 'Lum', 'Mago', 'Oran', 'Pamtre',
+                              'Pecha', 'Persim', 'Rawst', 'Sitrus', 'Wiki', 'Yache'];
+  berryList: Array<any> = [];
 
   ngOnInit(): void {
-    this.getSprite('belue');
-    this.getSprite('bluk');
-    this.getSprite('cheri');
-    this.getSprite('chesto');
-    this.getSprite('durin');
-    this.getSprite('figy');
-    this.getSprite('grepa');
-    this.getSprite('leppa');
-    this.getSprite('lum');
-    this.getSprite('mago');
-    this.getSprite('oran');
-    this.getSprite('pamtre');
-    this.getSprite('pecha');
-    this.getSprite('persim');
-    this.getSprite('rawst');
-    this.getSprite('sitrus');
-    this.getSprite('wiki');
-    this.getSprite('yache');
+    for (let i = 0; i < this.allBerries.length; i++) {
+      this.getSprite(this.allBerries[i]);
+    }
   }
   /**
    * retrieves a sprite for a given item
@@ -34,11 +23,8 @@ export class BerriesComponent implements OnInit {
    * @returns string
    */
   getSprite = (item: string) => {
-    const icon = document.getElementById(`${item}berry`);
     const style = Icons.getItem(`${item} berry`).style;
-    if (icon) {
-      icon.setAttribute('style', style);
-    }
-    return icon;
+    
+    return style;
   }
 }
