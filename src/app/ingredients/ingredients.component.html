@@ -1,15 +1,21 @@
-<img width="25px" height="25px" src="../../assets/icons/beansausage.png">
-<img width="25px" height="25px" src="../../assets/icons/fancyapple.png">
-<img width="25px" height="25px" src="../../assets/icons/fancyegg.png">
-<img width="25px" height="25px" src="../../assets/icons/fieryherb.png">
-<img width="25px" height="25px" src="../../assets/icons/greengrasssoybeans.png">
-<img width="25px" height="25px" src="../../assets/icons/honey.png">
-<img width="25px" height="25px" src="../../assets/icons/largeleek.png">
-<img width="25px" height="25px" src="../../assets/icons/moomoomilk.png">
-<img width="25px" height="25px" src="../../assets/icons/pureoil.png">
-<img width="25px" height="25px" src="../../assets/icons/slowpoketail.png">
-<img width="25px" height="25px" src="../../assets/icons/snoozytomato.png">
-<img width="25px" height="25px" src="../../assets/icons/softpotato.png">
-<img width="25px" height="25px" src="../../assets/icons/soothingcacao.png">
-<img width="25px" height="25px" src="../../assets/icons/tastymushroom.png">
-<img width="25px" height="25px" src="../../assets/icons/warmingginger.png">
+<ul class="ingredientlist" *ngFor="let ingredient of allIngredients; index as i">
+  <li class="ingredient">
+    <div class="accordion-header" (click)="toggle(i)">
+      <div class="ingredient-img">
+        <img class="ingredient-img-sprite" [src]="getSprite(ingredient)" alt="ingredient name" />
+      </div>
+      <span class="ingredient-name">{{ getIngredientName(ingredient) }}</span>
+    </div>
+    <div class="accordion-content" [ngClass]="{'open': isOpen && expandedIndex === i}">
+      <div *ngFor="let pokemon of pokemonList" [ngClass]="{'open': isOpen}">
+        <div *ngIf="checkPokemonHasIngredient(ingredient, pokemon)">
+          <img
+            class="pokemonSprite"
+            [src]="getPokemonByIngredient(ingredient, pokemon)"
+            alt="pokemon sprite"
+          >
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>

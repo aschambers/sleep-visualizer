@@ -10,11 +10,13 @@ import { Sprites } from '@pkmn/img';
   styleUrls: ['./berries.component.scss']
 })
 export class BerriesComponent implements OnInit {
-  constructor(private pokemonService: PokemonService) {}
-
   allBerries: Array<string> = [];
   pokemonList: Array<Pokemon> = [];
   belueBerry: Array<Pokemon> = [];
+  isOpen = false;
+  expandedIndex = 0;
+
+  constructor(private pokemonService: PokemonService) {}
 
   async ngOnInit(): Promise<void> {
     this.pokemonList = await this.pokemonService.retrievePokemonList() || [];
@@ -36,8 +38,8 @@ export class BerriesComponent implements OnInit {
   }
 
   checkPokemonHasBerry = (berry: string, pokemon: Pokemon) => {
-    if (!berry || !pokemon || !pokemon.ingredient) return true;
-    if (pokemon.ingredient.toLowerCase() === berry.toLowerCase()) {
+    if (!berry || !pokemon || !pokemon.berry) return true;
+    if (pokemon.berry.toLowerCase() === berry.toLowerCase()) {
       return true;
     }
 
@@ -50,12 +52,24 @@ export class BerriesComponent implements OnInit {
    * @returns array
    */
   getPokemonByBerry = (berry: string, pokemon: Pokemon) => {
-    if (!berry || !pokemon || !pokemon.ingredient) return '';
-    if (pokemon.ingredient.toLowerCase() === berry.toLowerCase()) {
+    if (!berry || !pokemon || !pokemon.berry) return '';
+    if (pokemon.berry.toLowerCase() === berry.toLowerCase()) {
       const { url } = Sprites.getPokemon(pokemon.name, { gen: 'gen5' });
       return url;
     }
 
     return '';
+  }
+
+  /**
+   * toggles the accordian for the menu item clicked
+   * @param i number
+   */
+  toggle = (i: number) => {
+    if (this.expandedIndex !== i && this.isOpen) {
+      this.isOpen = false;
+    }
+    this.expandedIndex = i;
+    this.isOpen = !this.isOpen;
   }
 }

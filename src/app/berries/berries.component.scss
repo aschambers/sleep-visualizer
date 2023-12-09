@@ -11,7 +11,6 @@ ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  border: 1px solid white;
   border-radius: 2px;
   width: 32rem;
   padding: 0.4rem 1rem 0.4rem 1rem;
@@ -20,10 +19,11 @@ ul {
     min-width: 4.5rem;
     font-size: 12px;
     height: 1rem;
-    margin-top: 0.35rem;
+    margin-top: 0.6rem;
+    align-items: center;
+    margin-left: 0.5rem;
   }
   &-img {
-    border: 1px solid white;
     border-radius: 50%;
     height: 30px;
     width: 30px;
@@ -36,4 +36,24 @@ ul {
 .pokemonSprite {
   width: 40px;
   height: 40px;
+  position: relative;
+  top: 0.2rem;
+}
+
+.accordion-header {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion-content {
+  display: none;
+}
+.accordion-content.open {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-width: 25rem;
 }

@@ -1,16 +1,20 @@
-<ul class="berrylist" *ngFor="let berry of allBerries">
+<ul class="berrylist" *ngFor="let berry of allBerries; index as i">
   <li class="berry">
-    <!-- <span class="berry-name">{{ berry }} Berry</span> -->
-    <div class="berry-img">
-      <span class="berry-img-sprite" [style]="getSprite(berry)"></span>
+    <div class="accordion-header" (click)="toggle(i)">
+      <div class="berry-img">
+        <span class="berry-img-sprite" [style]="getSprite(berry)"></span>
+      </div>
+      <span class="berry-name">{{ berry }} Berry</span>
     </div>
-    <div *ngFor="let pokemon of pokemonList">
-      <div *ngIf="checkPokemonHasBerry(berry, pokemon)">
-        <img
-          class="pokemonSprite"
-          [src]="getPokemonByBerry(berry, pokemon)"
-          alt="pokemon sprite"
-        >
+    <div class="accordion-content" [ngClass]="{'open': isOpen && expandedIndex === i}">
+      <div *ngFor="let pokemon of pokemonList" [ngClass]="{'open': isOpen}">
+        <div *ngIf="checkPokemonHasBerry(berry, pokemon)">
+          <img
+            class="pokemonSprite"
+            [src]="getPokemonByBerry(berry, pokemon)"
+            alt="pokemon sprite"
+          >
+        </div>
       </div>
     </div>
   </li>
