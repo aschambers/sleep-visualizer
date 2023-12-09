@@ -10,8 +10,10 @@ ul {
 .berry {
   display: flex;
   flex-direction: row;
+  align-items: center;
   border: 1px solid white;
-  width: 20rem;
+  border-radius: 2px;
+  width: 32rem;
   padding: 0.4rem 1rem 0.4rem 1rem;
   &-name {
     color: white;
@@ -20,4 +22,18 @@ ul {
     height: 1rem;
     margin-top: 0.35rem;
   }
+  &-img {
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.pokemonSprite {
+  width: 40px;
+  height: 40px;
 }

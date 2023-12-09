@@ -1,6 +1,17 @@
 <ul class="berrylist" *ngFor="let berry of allBerries">
   <li class="berry">
-    <span class="berry-name">{{ berry }} Berry</span>
-    <span class="berry-img" [style]="getSprite(berry)"></span>
+    <!-- <span class="berry-name">{{ berry }} Berry</span> -->
+    <div class="berry-img">
+      <span class="berry-img-sprite" [style]="getSprite(berry)"></span>
+    </div>
+    <div *ngFor="let pokemon of pokemonList">
+      <div *ngIf="checkPokemonHasBerry(berry, pokemon)">
+        <img
+          class="pokemonSprite"
+          [src]="getPokemonByBerry(berry, pokemon)"
+          alt="pokemon sprite"
+        >
+      </div>
+    </div>
   </li>
 </ul>

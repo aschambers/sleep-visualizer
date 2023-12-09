@@ -27,7 +27,7 @@ export class PokemonService {
   'Mime Jr.', 'Mr. Mime', 'Pinsir', 'Ditto', 'Eevee', 'Vaporeon', 'Jolteon', 'Flareon',
   'Espeon', 'Umbreon', 'Leafeon', 'Glaceon', 'Sylveon', 'Chikorita', 'Bayleef',
   'Meganium', 'Cyndaquil', 'Quilava', 'Typhlosion', 'Totodile', 'Croconaw', 'Feraligatr',
-  'Togepi', 'Togetic', 'Togekiss', 'Mareep', 'Flaffy', 'Ampharos', 'Bonsley', 'Sudowoodo',
+  'Togepi', 'Togetic', 'Togekiss', 'Mareep', 'Flaaffy', 'Ampharos', 'Bonsley', 'Sudowoodo',
   'Wynaut', 'Wobbuffet', 'Heracross', 'Houndour', 'Houndoom', 'Larvitar', 'Pupitar',
   'Tyranitar', 'Slakoth', 'Vigoroth', 'Slaking', 'Sableye', 'Gulpin', 'Swalot', 'Swablu',
   'Altaria', 'Shuppet', 'Banette', 'Absol', 'Spheal', 'Sealeo', 'Walrein', 'Riolu',
@@ -530,7 +530,7 @@ export class PokemonService {
       specialty: 'Skills'
     },
     {
-      name: 'Flaafy',
+      name: 'Flaaffy',
       ingredient: 'Grepa',
       mainSkill: 'Charge Strength M',
       specialty: 'Skills'

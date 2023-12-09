@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Icons } from '@pkmn/img';
 import { PokemonService } from '../pokemon.service';
 import { Pokemon } from '../pokemon.model';
+import { Sprites } from '@pkmn/img';
 
 @Component({
   selector: 'app-berries',
@@ -12,9 +13,11 @@ export class BerriesComponent implements OnInit {
   constructor(private pokemonService: PokemonService) {}
 
   allBerries: Array<string> = [];
+  pokemonList: Array<Pokemon> = [];
   belueBerry: Array<Pokemon> = [];
 
-  ngOnInit(): void {
+  async ngOnInit(): Promise<void> {
+    this.pokemonList = await this.pokemonService.retrievePokemonList() || [];
     const allBerries = this.pokemonService.retrieveBerryList();
     this.allBerries = allBerries;
     for (let i = 0; i < allBerries.length; i++) {
@@ -29,8 +32,16 @@ export class BerriesComponent implements OnInit {
    */
   getSprite = (item: string) => {
     const style = Icons.getItem(`${item} berry`).style;
-    
     return style;
+  }
+
+  checkPokemonHasBerry = (berry: string, pokemon: Pokemon) => {
+    if (!berry || !pokemon || !pokemon.ingredient) return true;
+    if (pokemon.ingredient.toLowerCase() === berry.toLowerCase()) {
+      return true;
+    }
+
+    return false;
   }
 
   /**
@@ -38,9 +49,13 @@ export class BerriesComponent implements OnInit {
    * @param berry string
    * @returns array
    */
-  sortPokemonByBerry = (berry: string) => {
-    const pokemonList = this.pokemonService.retrievePokemonList() || [];
-    const pokemonWithBerry = pokemonList.filter(pokemon => pokemon.ingredient.toLowerCase() === berry);
-    return pokemonWithBerry;
+  getPokemonByBerry = (berry: string, pokemon: Pokemon) => {
+    if (!berry || !pokemon || !pokemon.ingredient) return '';
+    if (pokemon.ingredient.toLowerCase() === berry.toLowerCase()) {
+      const { url } = Sprites.getPokemon(pokemon.name, { gen: 'gen5' });
+      return url;
+    }
+
+    return '';
   }
 }
