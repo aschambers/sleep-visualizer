@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Icons } from '@pkmn/img';
 import { PokemonService } from '../pokemon.service';
 import { Pokemon } from '../pokemon.model';
 import { Sprites } from '@pkmn/img';
@@ -22,11 +21,6 @@ export class IngredientsComponent implements OnInit {
     this.pokemonList = await this.pokemonService.retrievePokemonList() || [];
     const allIngredients = this.pokemonService.retrieveIngredientsList();
     this.allIngredients = allIngredients;
-    for (let i = 0; i < allIngredients.length; i++) {
-      this.getSprite(allIngredients[i]);
-    }
-
-    console.log(allIngredients);
   }
 
   /**
@@ -38,6 +32,12 @@ export class IngredientsComponent implements OnInit {
     return item ? `../../assets/icons/${item}.png` : '';
   }
 
+  /**
+   * check if pokemon has specified ingredient
+   * @param ingredient string
+   * @param pokemon Pokemon
+   * @returns boolean
+   */
   checkPokemonHasIngredient = (ingredient: string, pokemon: Pokemon) => {
     if (!ingredient || !pokemon || !pokemon.ingredients || (pokemon.ingredients && pokemon.ingredients.length === 0)) return false;
     if (pokemon.ingredients.indexOf(ingredient) > -1) {
@@ -74,6 +74,11 @@ export class IngredientsComponent implements OnInit {
     this.isOpen = !this.isOpen;
   }
 
+  /**
+   * gets the name of the ingredient for display purposes
+   * @param ingredient string
+   * @returns string
+   */
   getIngredientName = (ingredient: string) => {
     if (!ingredient) return '';
 

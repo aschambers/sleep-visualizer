@@ -1,0 +1,74 @@
+ul {
+  list-style-type: none;
+}
+
+.ingredientlist {
+  display: flex;
+  flex-direction: row;
+}
+
+.ingredient {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 2px;
+  width: 32rem;
+  padding: 0.4rem 1rem 0.4rem 1rem;
+  &-name {
+    color: white;
+    min-width: 4.5rem;
+    font-size: 12px;
+    height: 1rem;
+    margin-top: 0.6rem;
+    align-items: center;
+    margin-left: 0.5rem;
+    min-width: 9rem;
+  }
+  &-img {
+    &-sprite {
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.pokemonSpriteContainer {
+  max-width: 30rem;
+  white-space: initial;
+  background-color: red;
+}
+
+.pokemonSprite {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 0.2rem;
+  display: block
+}
+
+.accordion-header {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion-content {
+  display: none;
+}
+
+.accordion-content.open {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-width: 25rem;
+}
+
+.break {
+  background-color: blue;
+}

@@ -22,9 +22,6 @@ export class BerriesComponent implements OnInit {
     this.pokemonList = await this.pokemonService.retrievePokemonList() || [];
     const allBerries = this.pokemonService.retrieveBerryList();
     this.allBerries = allBerries;
-    for (let i = 0; i < allBerries.length; i++) {
-      this.getSprite(allBerries[i]);
-    }
   }
 
   /**
@@ -37,6 +34,12 @@ export class BerriesComponent implements OnInit {
     return style;
   }
 
+  /**
+   * check if pokemon has specified berry
+   * @param berry string
+   * @param pokemon Pokemon
+   * @returns boolean
+   */
   checkPokemonHasBerry = (berry: string, pokemon: Pokemon) => {
     if (!berry || !pokemon || !pokemon.berry) return true;
     if (pokemon.berry.toLowerCase() === berry.toLowerCase()) {

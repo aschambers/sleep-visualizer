@@ -15,6 +15,10 @@ export class PokemonService {
                                   'largeleek', 'moomoomilk', 'pureoil', 'slowpoketail',
                                   'snoozytomato', 'softpotato', 'soothingcacao',
                                   'tastymushroom', 'warmingginger'];
+  allSkills: Array<string> = ['Ingredient Magnet S', 'Charge Energy S', 'Charge Strength S',
+                              'Metronome', 'Energy for Everyone S', 'Dream Shard Magnet S',
+                              'Charge Strength S - Var', 'Extra Helpful S', 'Energizing Cheer S',
+                              'Cooking Power-Up S', 'Charge Strength M', 'Dream Shard Magnet S - Var'];
   belueBerry: Array<string> = ['Magnemite', 'Magneton', 'Magnezone', 'Steelix'];
   blukBerry: Array<string> = ['Gastly', 'Haunter', 'Gengar', 'Shuppet', 'Banette'];
   cheriBerry: Array<string> = ['Mankey', 'Primeape', 'Riolu', 'Lucario'];
@@ -725,21 +729,21 @@ export class PokemonService {
       name: 'Sableye',
       berry: 'Wiki',
       ingredients: ['pureoil', 'tastymushrooms'],
-      mainSkill: 'Dream Shard Magnet S - Var	',
+      mainSkill: 'Dream Shard Magnet S - Var',
       specialty: 'Skills'
     },
     {
       name: 'Gulpin',
       berry: 'Chesto',
       ingredients: ['greengrasssoybeans', 'tastymushrooms'],
-      mainSkill: 'Dream Shard Magnet S - Var	',
+      mainSkill: 'Dream Shard Magnet S - Var',
       specialty: 'Skills'
     },
     {
       name: 'Swalot',
       berry: 'Chesto',
       ingredients: ['greengrasssoybeans', 'tastymushrooms'],
-      mainSkill: 'Dream Shard Magnet S - Var	',
+      mainSkill: 'Dream Shard Magnet S - Var',
       specialty: 'Skills'
     },
     {
@@ -836,11 +840,27 @@ export class PokemonService {
     return this.pokemonList;
   }
 
+  /**
+   * retrieve the list of berries
+   * @returns list of berries
+   */
   retrieveBerryList = () => {
     return this.allBerries;
   }
 
+  /**
+   * retrieve the list of ingredients
+   * @returns list of ingredients
+   */
   retrieveIngredientsList = () => {
     return this.allIngredients;
+  }
+
+  /**
+   * retrieve the list of skills
+   * @returns list of skills
+   */
+  retrieveSkillsList = () => {
+    return this.allSkills;
   }
 }

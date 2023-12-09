@@ -1,1 +1,18 @@
-<p>skills works!</p>
+<ul class="ingredientlist" *ngFor="let skill of allSkills; index as i">
+  <li class="ingredient">
+    <div class="accordion-header" (click)="toggle(i)">
+      <span class="ingredient-name">{{ skill }}</span>
+    </div>
+    <div class="accordion-content" [ngClass]="{'open': isOpen && expandedIndex === i}">
+      <div *ngFor="let pokemon of pokemonList" [ngClass]="{'open': isOpen}">
+        <div *ngIf="checkPokemonHasSkill(skill, pokemon)">
+          <img
+            class="pokemonSprite"
+            [src]="getPokemonBySkill(skill, pokemon)"
+            alt="pokemon sprite"
+          >
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
