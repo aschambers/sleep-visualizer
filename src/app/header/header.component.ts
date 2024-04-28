@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Sprites, Icons } from '@pkmn/img';
+import { Icons } from '@pkmn/img';
 
 @Component({
   selector: 'app-header',
@@ -12,6 +12,7 @@ export class HeaderComponent implements OnInit {
     this.getSprite('Grepa Berry', 'berries');
     this.getSprite('Leek', 'ingredients');
     this.getSprite('tr08', 'skills');
+    this.getSprite('twistedspoon', 'recipes');
   }
 
   /**

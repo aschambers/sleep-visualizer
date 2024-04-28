@@ -1,0 +1,28 @@
+.recipes {
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+  width: 100rem;
+  padding: 0.4rem 1rem 0.4rem 1rem;
+  &-title, &-category {
+    color: white;
+    font-size: 14px;
+    height: 1.6rem;
+    margin-top: 0.6rem;
+    align-items: center;
+    margin-left: 0.5rem;
+  }
+  &-category {
+    display: flex;
+    & > span {
+      display: flex;
+      width: 10rem;
+      margin-top: 0.25rem;
+    }
+    & > input {
+      border: none;
+      outline: none;
+      padding: 0.25rem;
+    }
+  }
+}
