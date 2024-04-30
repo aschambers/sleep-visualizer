@@ -1,24 +1,131 @@
 <div class="recipes">
   <p class="recipes-title">Recipe Strength Calculator</p>
   <div class="recipes-category">
-    <span>Dish Level:</span> <input />
+    <span>Recipe:</span>
+    <select (change)="changeSelectedRecipe($event)">
+      <option *ngFor="let recipe of recipesList; index as i" value="{{ i }}">
+        {{ recipe.name }}
+      </option>
+    </select>
+  </div>
+  <div class="recipes-base">
+    <div class="recipes-base-details">
+      <img src="{{ selectedRecipe.image }}" />
+      <span class="recipes-base-details">Base Power: {{ selectedRecipe.basePower }}</span>
+    </div>
+    <div class="recipes-base-ingredients">
+      <div *ngIf="selectedRecipe.ingredients.fancyApple">
+        <img src="/assets/icons/fancyapple.png" />
+        <span>{{ selectedRecipe.ingredients.fancyApple }}</span>
+      </div>
+      <div *ngIf="selectedRecipe.ingredients.moomooMilk">
+        <img src="/assets/icons/moomoomilk.png" />
+        <span>{{ selectedRecipe.ingredients.moomooMilk }}</span>
+      </div>
+      <div *ngIf="selectedRecipe.ingredients.greengrassSoybeans">
+        <img src="/assets/icons/greengrasssoybeans.png" />
+        <span>{{ selectedRecipe.ingredients.greengrassSoybeans }}</span>
+      </div>
+      <div *ngIf="selectedRecipe.ingredients.honey">
+        <img src="/assets/icons/honey.png" />
+        <span>{{ selectedRecipe.ingredients.honey }}</span>
+      </div>
+      <div *ngIf="selectedRecipe.ingredients.beanSausage">
+        <img src="/assets/icons/beansausage.png" />
+        <span>{{ selectedRecipe.ingredients.beanSausage }}</span>
+      </div>
+      <div *ngIf="selectedRecipe.ingredients.warmingGinger">
+        <img src="/assets/icons/warmingginger.png" />
+        <span>{{ selectedRecipe.ingredients.warmingGinger }}</span>
+      </div>
+      <div *ngIf="selectedRecipe.ingredients.snoozyTomato">
+        <img src="/assets/icons/snoozytomato.png" />
+        <span>{{ selectedRecipe.ingredients.snoozyTomato }}</span>
+      </div>
+      <div *ngIf="selectedRecipe.ingredients.fancyEgg">
+        <img src="/assets/icons/fancyegg.png" />
+        <span>{{ selectedRecipe.ingredients.fancyEgg }}</span>
+      </div>
+      <div *ngIf="selectedRecipe.ingredients.pureOil">
+        <img src="/assets/icons/pureoil.png" />
+        <span>{{ selectedRecipe.ingredients.pureOil }}</span>
+      </div>
+      <div *ngIf="selectedRecipe.ingredients.softPotato">
+        <img src="/assets/icons/softpotato.png" />
+        <span>{{ selectedRecipe.ingredients.softPotato }}</span>
+      </div>
+      <div *ngIf="selectedRecipe.ingredients.fieryHerb">
+        <img src="/assets/icons/fieryherb.png" />
+        <span>{{ selectedRecipe.ingredients.fieryHerb }}</span>
+      </div>
+      <div *ngIf="selectedRecipe.ingredients.greengrassCorn">
+        <img src="/assets/icons/greengrasscorn.png" />
+        <span>{{ selectedRecipe.ingredients.greengrassCorn }}</span>
+      </div>
+      <div *ngIf="selectedRecipe.ingredients.soothingCacao">
+        <img src="/assets/icons/soothingcacao.png" />
+        <span>{{ selectedRecipe.ingredients.soothingCacao }}</span>
+      </div>
+      <div *ngIf="selectedRecipe.ingredients.tastyMushroom">
+        <img src="/assets/icons/tastymushroom.png" />
+        <span>{{ selectedRecipe.ingredients.tastyMushroom }}</span>
+      </div>
+      <div *ngIf="selectedRecipe.ingredients.largeLeek">
+        <img src="/assets/icons/largeleek.png" />
+        <span>{{ selectedRecipe.ingredients.largeLeek }}</span>
+      </div>
+      <div *ngIf="selectedRecipe.ingredients.slowpokeTail">
+        <img src="/assets/icons/slowpoketail.png" />
+        <span>{{ selectedRecipe.ingredients.slowpokeTail }}</span>
+      </div>
+    </div>
   </div>
   <div class="recipes-category">
-    <span>Multiplier:</span> <input />
+    <span >Additional Ingredients:</span>
+  </div>
+  <div class="recipes-ingredients">
+    <div class="ingredient" *ngFor="let ingredient of ingredientsList; index as i">
+      <img class="ingredient-img" src="{{ ingredient.image }}" />
+      <span class="ingredient-name">{{ ingredient.name }}</span>
+      <span class="ingredient-bp">({{ ingredient.basePower }})</span>
+      <div class="number-input tw-mb-5">
+        <button (click)="this.updateIngredientCount(i, false)"></button>
+        <input
+          class="updateIngredientsCount"
+          type="number"
+          tabindex="-1"
+          value="{{ ingredient.count }}"
+          (keypress)="(false)"
+          (paste)="(false)"
+        />
+        <button (click)="this.updateIngredientCount(i, true)" class="plus"></button>
+      </div>
+    </div>
   </div>
   <div class="recipes-category">
-    <span>Island Bonus:</span> <input />
+    <span>Dish Level:</span> <input id="dish-level" type="number" [min]="1" [max]="55" [value]="dishLevel" (change)="updateDishLevel($event)" />
   </div>
   <div class="recipes-category">
-    <span>Multiplier:</span> <input />
+    <span>Multiplier:</span> <input type="number" [min]="1" [max]="2.71" [value]="dishLevelMultiplier" readonly="true" />
   </div>
   <div class="recipes-category">
-    <span>Estimated Total Strength:</span> <input />
+    <span>Island Bonus:</span>
+    <select (change)="updateIslandBonus($event)">
+      <option *ngFor="let islandBonus of islandBonusLookup">
+        {{ islandBonus }}
+      </option>
+    </select>
   </div>
   <div class="recipes-category">
-    <span>Extra Tasty:</span> <input />
+    <span>Multiplier:</span> <input [value]="islandBonusMultiplier" readonly="true" />
   </div>
   <div class="recipes-category">
-    <span>Sunday Extra Tasty:</span> <input />
+    <span>Estimated Total Strength:</span> <input [value]="estimatedTotalStrength" />
+  </div>
+  <div class="recipes-category">
+    <span>Extra Tasty:</span> <input [value]="estimatedTotalStrength * 2" />
+  </div>
+  <div class="recipes-category">
+    <span>Sunday Extra Tasty:</span> <input [value]="estimatedTotalStrength * 3" />
   </div>
 </div>
