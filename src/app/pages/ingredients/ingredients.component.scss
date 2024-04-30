@@ -13,7 +13,7 @@ ul {
   align-items: center;
   border-radius: 2px;
   width: 32rem;
-  padding: 0.4rem 1rem 0.4rem 1rem;
+  padding: 0.4rem 1rem 0.4rem 0rem;
   &-name {
     color: white;
     min-width: 4.5rem;
@@ -71,4 +71,15 @@ ul {
 
 .break {
   background-color: blue;
+}
+
+@media (max-width: 768px) {
+  .ingredient {
+    width: 32rem;
+    max-width: 80vw;
+  }
+  .accordion-content.open {
+    max-width: 8rem;
+    min-width: 8rem;
+  }
 }

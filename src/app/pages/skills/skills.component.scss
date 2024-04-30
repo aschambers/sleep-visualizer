@@ -2,12 +2,12 @@ ul {
   list-style-type: none;
 }
 
-.ingredientlist {
+.skillslist {
   display: flex;
   flex-direction: row;
 }
 
-.ingredient {
+.skills {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -71,4 +71,15 @@ ul {
 
 .break {
   background-color: blue;
+}
+
+@media (max-width: 768px) {
+  .skills {
+    width: 32rem;
+    max-width: 80vw;
+  }
+  .accordion-content.open {
+    max-width: 8rem;
+    min-width: 8rem;
+  }
 }

@@ -84,17 +84,11 @@ export class IngredientsComponent implements OnInit {
 
     let name = '';
     switch (ingredient) {
-      case 'beansausage':
-        name = 'Bean Sausage';
-        break;
       case 'fancyapple':
         name = 'Fancy Apple';
         break;
-      case 'fancyegg':
-        name = 'Fancy Egg';
-        break;
-      case 'fieryherb':
-        name = 'Fiery Herb';
+      case 'moomoomilk':
+        name = 'Moomoo Milk';
         break;
       case 'greengrasssoybeans':
         name = 'Greengrass\nSoybeans';
@@ -102,23 +96,29 @@ export class IngredientsComponent implements OnInit {
       case 'honey':
         name = 'Honey';
         break;
-      case 'largeleek':
-        name = 'Large Leek';
+      case 'beansausage':
+        name = 'Bean Sausage';
         break;
-      case 'moomoomilk':
-        name = 'Moomoo Milk';
-        break;
-      case 'pureoil':
-        name = 'Pure Oil';
-        break;
-      case 'slowpoketail':
-        name = 'Slowpoke Tail';
+      case 'warmingginger':
+        name = 'Warming Ginger';
         break;
       case 'snoozytomato':
         name = 'Snoozy Tomato';
         break;
+      case 'fancyegg':
+        name = 'Fancy Egg';
+        break;
+      case 'pureoil':
+        name = 'Pure Oil';
+        break;
       case 'softpotato':
         name = 'Soft Potato';
+        break;
+      case 'fieryherb':
+        name = 'Fiery Herb';
+        break;
+      case 'greengrasscorn':
+        name = 'Greengrass Corn';
         break;
       case 'soothingcacao':
         name = 'Soothing Cacao';
@@ -126,13 +126,76 @@ export class IngredientsComponent implements OnInit {
       case 'tastymushroom':
         name = 'Tasty Mushroom';
         break;
-      case 'warmingginger':
-        name = 'Warming Ginger';
+      case 'largeleek':
+        name = 'Large Leek';
+        break;
+      case 'slowpoketail':
+        name = 'Slowpoke Tail';
         break;
       default:
         name = '';
     }
 
     return name;
+  }
+
+  getIngredientBasePower = (ingredient: string) => {
+    if (!ingredient) return '';
+
+    let basePower = 0;
+    switch (ingredient) {
+      case 'fancyapple':
+        basePower = 90;
+        break;
+      case 'moomoomilk':
+        basePower = 98;
+        break;
+      case 'greengrasssoybeans':
+        basePower = 100;
+        break;
+      case 'honey':
+        basePower = 101;
+        break;
+      case 'beansausage':
+        basePower = 103;
+        break;
+      case 'warmingginger':
+        basePower = 109;
+        break;
+      case 'snoozytomato':
+        basePower = 110;
+        break;
+      case 'fancyegg':
+        basePower = 115;
+        break;
+      case 'pureoil':
+        basePower = 121;
+        break;
+      case 'softpotato':
+        basePower = 124;
+        break;
+      case 'fieryherb':
+        basePower = 130;
+        break;
+      case 'greengrasscorn':
+        basePower = 140;
+        break;
+      case 'soothingcacao':
+        basePower = 151;
+        break;
+      case 'tastymushroom':
+        basePower = 167;
+        break;
+      case 'largeleek':
+        basePower = 185;
+        break;
+      case 'slowpoketail':
+        basePower = 342;
+        break;
+      default:
+        basePower = 0;
+    }
+
+    return basePower;
   }
 }

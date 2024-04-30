@@ -13,7 +13,8 @@ ul {
   align-items: center;
   border-radius: 2px;
   width: 32rem;
-  padding: 0.4rem 1rem 0.4rem 1rem;
+  max-width: 32rem;
+  padding: 0.4rem 1rem 0.4rem 0rem;
   &-name {
     color: white;
     min-width: 4.5rem;
@@ -56,4 +57,16 @@ ul {
   flex-direction: row;
   flex-wrap: wrap;
   min-width: 25rem;
+}
+
+@media (max-width: 768px) {
+  .berry {
+    width: 32rem;
+    max-width: 80vw;
+  }
+
+  .accordion-content.open {
+    max-width: 20rem;
+    min-width: 10rem;
+  }
 }
