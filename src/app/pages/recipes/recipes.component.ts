@@ -33,14 +33,14 @@ export class RecipesComponent {
       id: 1,
       name: 'Mixed Curry',
       basePower: 0,
-      image: '/assets/icons/MixedCurry.png',
+      image: '/assets/images/MixedCurry.png',
       ingredients: {}
     },
     {
       id: 2,
       name: 'Fancy Apple Curry',
       basePower: 668,
-      image: '/assets/icons/FancyAppleCurry.png',
+      image: '/assets/images/FancyAppleCurry.png',
       ingredients: {
         fancyApple: 7
       }
@@ -49,7 +49,7 @@ export class RecipesComponent {
       id: 3,
       name: 'Grilled Tail Curry',
       basePower: 7483,
-      image: '/assets/icons/GrilledTailCurry.png',
+      image: '/assets/images/GrilledTailCurry.png',
       ingredients: {
         slowpokeTail: 8,
         fieryHerb: 25
@@ -59,7 +59,7 @@ export class RecipesComponent {
       id: 4,
       name: '"Solar Power" Tomato Curry',
       basePower: 1943,
-      image: '/assets/icons/SolarPowerTomatoCurry.png',
+      image: '/assets/images/SolarPowerTomatoCurry.png',
       ingredients: {
         snoozyTomato: 10,
         fieryHerb: 5
@@ -69,7 +69,7 @@ export class RecipesComponent {
       id: 5,
       name: '"Dream Eater" Butter Curry',
       basePower: 9010,
-      image: '/assets/icons/DreamEaterButterCurry.png',
+      image: '/assets/images/DreamEaterButterCurry.png',
       ingredients: {
         softPotato: 18,
         snoozyTomato: 15,
@@ -81,7 +81,7 @@ export class RecipesComponent {
       id: 6,
       name: 'Spicy Leek Curry',
       basePower: 5900,
-      image: '/assets/icons/SpicyLeekCurry.png',
+      image: '/assets/images/SpicyLeekCurry.png',
       ingredients: {
         largeLeek: 14,
         warmingGinger: 10,
@@ -92,7 +92,7 @@ export class RecipesComponent {
       id: 7,
       name: '"Spore" Mushroom Curry',
       basePower: 4041,
-      image: '/assets/icons/SporeMushroomCurry.png',
+      image: '/assets/images/SporeMushroomCurry.png',
       ingredients: {
         tastyMushroom: 14,
         softPotato: 9
@@ -102,7 +102,7 @@ export class RecipesComponent {
       id: 8,
       name: '"Egg Bomb" Curry',
       basePower: 4523,
-      image: '/assets/icons/EggBombCurry.png',
+      image: '/assets/images/EggBombCurry.png',
       ingredients: {
         honey: 12,
         fancyApple: 11,
@@ -114,7 +114,7 @@ export class RecipesComponent {
       id: 9,
       name: 'Hearty Cheeseburger Curry',
       basePower: 1785,
-      image: '/assets/icons/HeartyCheeseburgerCurry.png',
+      image: '/assets/images/HeartyCheeseburgerCurry.png',
       ingredients: {
         moomooMilk: 8,
         beanSausage: 8
@@ -124,7 +124,7 @@ export class RecipesComponent {
       id: 10,
       name: 'Soft Potato Chowder',
       basePower: 3089,
-      image: '/assets/icons/SoftPotatoChowder.png',
+      image: '/assets/images/SoftPotatoChowder.png',
       ingredients: {
         moomooMilk: 10,
         softPotato: 8,
@@ -135,7 +135,7 @@ export class RecipesComponent {
       id: 11,
       name: 'Simple Chowder',
       basePower: 727,
-      image: '/assets/icons/SimpleChowder.png',
+      image: '/assets/images/SimpleChowder.png',
       ingredients: {
         moomooMilk: 7
       }
@@ -144,7 +144,7 @@ export class RecipesComponent {
       id: 12,
       name: 'Beanburger Curry',
       basePower: 764,
-      image: '/assets/icons/BeanburgerCurry.png',
+      image: '/assets/images/BeanburgerCurry.png',
       ingredients: {
         beanSausage: 7
       }
@@ -153,7 +153,7 @@ export class RecipesComponent {
       id: 13,
       name: 'Mild Honey Curry',
       basePower: 749,
-      image: '/assets/icons/MildHoneyCurry.png',
+      image: '/assets/images/MildHoneyCurry.png',
       ingredients: {
         honey: 7
       }
@@ -162,7 +162,7 @@ export class RecipesComponent {
       id: 14,
       name: 'Ninja Curry',
       basePower: 6159,
-      image: '/assets/icons/NinjaCurry.png',
+      image: '/assets/images/NinjaCurry.png',
       ingredients: {
         greengrassSoybeans: 15,
         beanSausage: 9,
@@ -174,7 +174,7 @@ export class RecipesComponent {
       id: 15,
       name: '"Drought" Katsu Curry',
       basePower: 1815,
-      image: '/assets/icons/DroughtKatsuCurry.png',
+      image: '/assets/images/DroughtKatsuCurry.png',
       ingredients: {
         beanSausage: 10,
         pureOil: 5
@@ -184,7 +184,7 @@ export class RecipesComponent {
       id: 16,
       name: 'Melty Omelette Curry',
       basePower: 2009,
-      image: '/assets/icons/MeltyOmeletteCurry.png',
+      image: '/assets/images/MeltyOmeletteCurry.png',
       ingredients: {
         fancyEgg: 10,
         snoozyTomato: 6
@@ -194,7 +194,7 @@ export class RecipesComponent {
       id: 17,
       name: '"Bulk Up" Bean Curry',
       basePower: 3274,
-      image: '/assets/icons/BulkUpBeanCurry.png',
+      image: '/assets/images/BulkUpBeanCurry.png',
       ingredients: {
         greengrassSoybeans: 12,
         beanSausage: 6,
@@ -206,7 +206,7 @@ export class RecipesComponent {
       id: 18,
       name: '"Limber" Corn Stew',
       basePower: 4670,
-      image: '/assets/icons/LimberCornStew.png',
+      image: '/assets/images/LimberCornStew.png',
       ingredients: {
         greengrassCorn: 14,
         moomooMilk: 8,
@@ -217,7 +217,7 @@ export class RecipesComponent {
       id: 19,
       name: '"Inferno" Corn Keema Curry',
       basePower: 13690,
-      image: '/assets/icons/InfernoCornKeemaCurry.png',
+      image: '/assets/images/InfernoCornKeemaCurry.png',
       ingredients: {
         fieryHerb: 27,
         beanSausage: 24,
@@ -229,14 +229,14 @@ export class RecipesComponent {
       id: 20,
       name: 'Mixed Salad',
       basePower: 0,
-      image: '/assets/icons/MixedSalad.png',
+      image: '/assets/images/MixedSalad.png',
       ingredients: {}
     },
     {
       id: 21,
       name: 'Slowpoke Tail Pepper Salad',
       basePower: 8169,
-      image: '/assets/icons/SlowpokeTailPepperSalad.png',
+      image: '/assets/images/SlowpokeTailPepperSalad.png',
       ingredients: {
         slowpokeTail: 10,
         fieryHerb: 10,
@@ -247,7 +247,7 @@ export class RecipesComponent {
       id: 22,
       name: '"Spore" Mushroom Salad',
       basePower: 5859,
-      image: '/assets/icons/SporeMushroomSalad.png',
+      image: '/assets/images/SporeMushroomSalad.png',
       ingredients: {
         tastyMushroom: 17,
         snoozyTomato: 8,
@@ -258,7 +258,7 @@ export class RecipesComponent {
       id: 23,
       name: '"Snow Cloak" Caesar Salad',
       basePower: 1774,
-      image: '/assets/icons/SnowCloakCaesarSalad.png',
+      image: '/assets/images/SnowCloakCaesarSalad.png',
       ingredients: {
         moomooMilk: 10,
         beanSausage: 6
@@ -268,7 +268,7 @@ export class RecipesComponent {
       id: 24,
       name: '"Gluttony" Potato Salad',
       basePower: 5040,
-      image: '/assets/icons/GluttonyPotatoSalad.png',
+      image: '/assets/images/GluttonyPotatoSalad.png',
       ingredients: {
         softPotato: 14,
         fancyEgg: 9,
@@ -280,7 +280,7 @@ export class RecipesComponent {
       id: 25,
       name: '"Water Veil" Tofu Salad',
       basePower: 1843,
-      image: '/assets/icons/WaterVeilTofuSalad.png',
+      image: '/assets/images/WaterVeilTofuSalad.png',
       ingredients: {
         greengrassSoybeans: 10,
         snoozyTomato: 6
@@ -290,7 +290,7 @@ export class RecipesComponent {
       id: 26,
       name: '"Superpower" Extreme Salad',
       basePower: 2958,
-      image: '/assets/icons/SuperpowerExtremeSalad.png',
+      image: '/assets/images/SuperpowerExtremeSalad.png',
       ingredients: {
         beanSausage: 9,
         warmingGinger: 6,
@@ -302,7 +302,7 @@ export class RecipesComponent {
       id: 27,
       name: 'Bean Ham Salad',
       basePower: 873,
-      image: '/assets/icons/BeanHamSalad.png',
+      image: '/assets/images/BeanHamSalad.png',
       ingredients: {
         beanSausage: 8
       }
@@ -311,7 +311,7 @@ export class RecipesComponent {
       id: 28,
       name: 'Snoozy Tomato Salad',
       basePower: 933,
-      image: '/assets/icons/SnoozyTomatoSalad.png',
+      image: '/assets/images/SnoozyTomatoSalad.png',
       ingredients: {
         snoozyTomato: 8
       }
@@ -320,7 +320,7 @@ export class RecipesComponent {
       id: 29,
       name: 'Moomoo Caprese Salad',
       basePower: 2856,
-      image: '/assets/icons/MoomooCapreseSalad.png',
+      image: '/assets/images/MoomooCapreseSalad.png',
       ingredients: {
         moomooMilk: 12,
         snoozyTomato: 6,
@@ -331,7 +331,7 @@ export class RecipesComponent {
       id: 30,
       name: '"Contrary" Chocolate Meat Salad',
       basePower: 3558,
-      image: '/assets/icons/ContraryChocolateMeatSalad.png',
+      image: '/assets/images/ContraryChocolateMeatSalad.png',
       ingredients: {
         soothingCacao: 14,
         beanSausage: 9
@@ -341,7 +341,7 @@ export class RecipesComponent {
       id: 31,
       name: '"Overheat" Ginger Salad',
       basePower: 5225,
-      image: '/assets/icons/OverheatGingerSalad.png',
+      image: '/assets/images/OverheatGingerSalad.png',
       ingredients: {
         fieryHerb: 17,
         warmingGinger: 10,
@@ -352,7 +352,7 @@ export class RecipesComponent {
       id: 32,
       name: 'Fancy Apple Salad',
       basePower: 763,
-      image: '/assets/icons/FancyAppleSalad.png',
+      image: '/assets/images/FancyAppleSalad.png',
       ingredients: {
         fancyApple: 8
       }
@@ -361,7 +361,7 @@ export class RecipesComponent {
       id: 33,
       name: '"Immunity" Leek Salad',
       basePower: 2658,
-      image: '/assets/icons/ImmunityLeekSalad.png',
+      image: '/assets/images/ImmunityLeekSalad.png',
       ingredients: {
         largeLeek: 10,
         warmingGinger: 5
@@ -371,7 +371,7 @@ export class RecipesComponent {
       id: 34,
       name: '"Dazzling" Apple Cheese Salad',
       basePower: 2578,
-      image: '/assets/icons/DazzlingAppleCheeseSalad.png',
+      image: '/assets/images/DazzlingAppleCheeseSalad.png',
       ingredients: {
         fancyApple: 15,
         moomooMilk: 5,
@@ -382,7 +382,7 @@ export class RecipesComponent {
       id: 35,
       name: 'Ninja Salad',
       basePower: 10095,
-      image: '/assets/icons/NinjaSalad.png',
+      image: '/assets/images/NinjaSalad.png',
       ingredients: {
         largeLeek: 15,
         greengrassSoybeans: 15,
@@ -394,7 +394,7 @@ export class RecipesComponent {
       id: 36,
       name: '"Heat Wave" Tofu Salad',
       basePower: 1976,
-      image: '/assets/icons/HeatWaveTofuSalad.png',
+      image: '/assets/images/HeatWaveTofuSalad.png',
       ingredients: {
         greengrassSoybeans: 10,
         fieryHerb: 6
@@ -404,7 +404,7 @@ export class RecipesComponent {
       id: 37,
       name: 'Greengrass Salad',
       basePower: 11393,
-      image: '/assets/icons/GreengrassSalad.png',
+      image: '/assets/images/GreengrassSalad.png',
       ingredients: {
         pureOil: 22,
         greengrassCorn: 17,
@@ -416,7 +416,7 @@ export class RecipesComponent {
       id: 38,
       name: '"Calm Mind" Fruit Salad',
       basePower: 7675,
-      image: '/assets/icons/CalmMindFruitSalad.png',
+      image: '/assets/images/CalmMindFruitSalad.png',
       ingredients: {
         fancyApple: 21,
         honey: 16,
@@ -427,7 +427,7 @@ export class RecipesComponent {
       id: 39,
       name: '"Fury Attack" Corn Salad Salad',
       basePower: 2785,
-      image: '/assets/icons/FuryAttackCornSalad.png',
+      image: '/assets/images/FuryAttackCornSalad.png',
       ingredients: {
         greengrasscorn: 9,
         pureOil: 3
@@ -437,14 +437,14 @@ export class RecipesComponent {
       id: 40,
       name: 'Mixed Juice',
       basePower: 0,
-      image: '/assets/icons/MixedJuice.png',
+      image: '/assets/images/MixedJuice.png',
       ingredients: {}
     },
     {
       id: 41,
       name: '"Fluffy" Sweet Potatoes',
       basePower: 1783,
-      image: '/assets/icons/FluffySweetPotatoes.png',
+      image: '/assets/images/FluffySweetPotatoes.png',
       ingredients: {
         softPotato: 9,
         moomooMilk: 5
@@ -454,7 +454,7 @@ export class RecipesComponent {
       id: 42,
       name: '"Steadfast" Ginger Cookies',
       basePower: 4921,
-      image: '/assets/icons/SteadfastGingerCookies.png',
+      image: '/assets/images/SteadfastGingerCookies.png',
       ingredients: {
         honey: 14,
         warmingGinger: 12,
@@ -466,7 +466,7 @@ export class RecipesComponent {
       id: 43,
       name: 'Fancy Apple Juice',
       basePower: 763,
-      image: '/assets/icons/FancyAppleJuice.png',
+      image: '/assets/images/FancyAppleJuice.png',
       ingredients: {
         fancyApple: 8
       }
@@ -475,7 +475,7 @@ export class RecipesComponent {
       id: 44,
       name: 'Craft Soda Pop',
       basePower: 964,
-      image: '/assets/icons/CraftSodaPop.png',
+      image: '/assets/images/CraftSodaPop.png',
       ingredients: {
         honey: 9
       }
@@ -484,7 +484,7 @@ export class RecipesComponent {
       id: 45,
       name: '"Ember" Ginger Tea',
       basePower: 1788,
-      image: '/assets/icons/EmberGingerTea.png',
+      image: '/assets/images/EmberGingerTea.png',
       ingredients: {
         warmingGinger: 9,
         fancyApple: 7
@@ -494,7 +494,7 @@ export class RecipesComponent {
       id: 46,
       name: 'Jigglypuff\'s Fruity Flan',
       basePower: 7594,
-      image: '/assets/icons/JigglypuffsFruityFlan.png',
+      image: '/assets/images/JigglypuffsFruityFlan.png',
       ingredients: {
         honey: 20,
         fancyEgg: 15,
@@ -506,7 +506,7 @@ export class RecipesComponent {
       id: 47,
       name: '"Lovely Kiss" Smoothie',
       basePower: 4734,
-      image: '/assets/icons/LovelyKissSmoothie.png',
+      image: '/assets/images/LovelyKissSmoothie.png',
       ingredients: {
         fancyApple: 11,
         moomooMilk: 9,
@@ -518,7 +518,7 @@ export class RecipesComponent {
       id: 48,
       name: '"Lucky Chant" Apple Pie',
       basePower: 1634,
-      image: '/assets/icons/LuckyChantApplePie.png',
+      image: '/assets/images/LuckyChantApplePie.png',
       ingredients: {
         fancyApple: 12,
         moomooMilk: 4
@@ -528,7 +528,7 @@ export class RecipesComponent {
       id: 49,
       name: 'Neroli\'sRestorativeTea',
       basePower: 5065,
-      image: '/assets/icons/NerolisRestorativeTea.png',
+      image: '/assets/images/NerolisRestorativeTea.png',
       ingredients: {
         warmingGinger: 11,
         fancyApple: 15,
@@ -539,7 +539,7 @@ export class RecipesComponent {
       id: 50,
       name: '"Sweet Scent" Chocolate Cake',
       basePower: 3280,
-      image: '/assets/icons/SweetScentChocolateCake.png',
+      image: '/assets/images/SweetScentChocolateCake.png',
       ingredients: {
         honey: 9,
         soothingCacao: 8,
@@ -550,7 +550,7 @@ export class RecipesComponent {
       id: 51,
       name: 'Warm Moomoo Milk',
       basePower: 727,
-      image: '/assets/icons/WarmMoomooMilk.png',
+      image: '/assets/images/WarmMoomooMilk.png',
       ingredients: {
         moomooMilk: 7
       }
@@ -559,7 +559,7 @@ export class RecipesComponent {
       id: 52,
       name: '"Cloud Nine" Soy Cake',
       basePower: 1798,
-      image: '/assets/icons/CloudNineSoyCake.png',
+      image: '/assets/images/CloudNineSoyCake.png',
       ingredients: {
         fancyEgg: 8,
         greengrassSoybeans: 7
@@ -569,7 +569,7 @@ export class RecipesComponent {
       id: 53,
       name: '"Hustle" Protein Smoothie',
       basePower: 3168,
-      image: '/assets/icons/HustleProteinSmoothie.png',
+      image: '/assets/images/HustleProteinSmoothie.png',
       ingredients: {
         greengrassSoybeans: 15,
         soothingCacao: 8
@@ -579,7 +579,7 @@ export class RecipesComponent {
       id: 54,
       name: '"Stalwart" Vegetable Juice',
       basePower: 1798,
-      image: '/assets/icons/StalwartVegetableJuice.png',
+      image: '/assets/images/StalwartVegetableJuice.png',
       ingredients: {
         snoozyTomato: 9,
         fancyApple: 7
@@ -589,7 +589,7 @@ export class RecipesComponent {
       id: 55,
       name: 'Big Malasada',
       basePower: 2927,
-      image: '/assets/icons/BigMalasada.png',
+      image: '/assets/images/BigMalasada.png',
       ingredients: {
         pureOil: 10,
         moomooMilk: 7,
@@ -600,7 +600,7 @@ export class RecipesComponent {
       id: 56,
       name: '"Huge Power" Soy Donuts',
       basePower: 3213,
-      image: '/assets/icons/HugePowerSoyDonuts.png',
+      image: '/assets/images/HugePowerSoyDonuts.png',
       ingredients: {
         pureOil: 9,
         greengrassSoybeans: 6,
@@ -611,7 +611,7 @@ export class RecipesComponent {
       id: 57,
       name: '"Explosion" Popcorn',
       basePower: 6048,
-      image: '/assets/icons/ExplosionPopcorn.png',
+      image: '/assets/images/ExplosionPopcorn.png',
       ingredients: {
         greengrassCorn: 15,
         pureOil: 14,
@@ -622,7 +622,7 @@ export class RecipesComponent {
       id: 58,
       name: '"Teatime" Corn Scones',
       basePower: 10925,
-      image: '/assets/icons/TeatimeCornScones.png',
+      image: '/assets/images/TeatimeCornScones.png',
       ingredients: {
         fancyApple: 20,
         warmingGinger: 20,
@@ -634,7 +634,7 @@ export class RecipesComponent {
       id: 59,
       name: '"Petal Dance" Chocolate Tarts',
       basePower: 3314,
-      image: '/assets/icons/PetalDanceChocolateTarts.png',
+      image: '/assets/images/PetalDanceChocolateTarts.png',
       ingredients: {
         fancyApple: 11,
         soothingCacao: 11
@@ -644,7 +644,7 @@ export class RecipesComponent {
       id: 60,
       name: '"Flower Gift" Macarons',
       basePower: 13834,
-      image: '/assets/icons/FlowerGiftMacarons.png',
+      image: '/assets/images/FlowerGiftMacarons.png',
       ingredients: {
         soothingCacao: 25,
         fancyEgg: 25,
@@ -658,119 +658,118 @@ export class RecipesComponent {
       id: 1,
       name: 'Fancy Apple',
       basePower: 90,
-      image: '/assets/icons/fancyapple.png',
+      image: '/assets/images/fancyapple.png',
       count: 0
     },
     {
       id: 2,
       name: 'Moomoo Milk',
       basePower: 98,
-      image: '/assets/icons/moomoomilk.png',
+      image: '/assets/images/moomoomilk.png',
       count: 0
     },
     {
       id: 3,
       name: 'Greengrass Soybeans',
       basePower: 100,
-      image: '/assets/icons/greengrasssoybeans.png',
+      image: '/assets/images/greengrasssoybeans.png',
       count: 0
     },
     {
       id: 4,
       name: 'Honey',
       basePower: 101,
-      image: '/assets/icons/honey.png',
+      image: '/assets/images/honey.png',
       count: 0
     },
     {
       id: 5,
       name: 'Bean Sausage',
       basePower: 103,
-      image: '/assets/icons/beansausage.png',
+      image: '/assets/images/beansausage.png',
       count: 0
     },
     {
       id: 6,
       name: 'Warming Ginger',
       basePower: 109,
-      image: '/assets/icons/warmingginger.png',
+      image: '/assets/images/warmingginger.png',
       count: 0
     },
     {
       id: 7,
       name: 'Snoozy Tomato',
       basePower: 110,
-      image: '/assets/icons/snoozytomato.png',
+      image: '/assets/images/snoozytomato.png',
       count: 0
     },
     {
       id: 8,
       name: 'Fancy Egg',
       basePower: 115,
-      image: '/assets/icons/fancyegg.png',
+      image: '/assets/images/fancyegg.png',
       count: 0
     },
     {
       id: 9,
       name: 'Pure Oil',
       basePower: 121,
-      image: '/assets/icons/pureoil.png',
+      image: '/assets/images/pureoil.png',
       count: 0
     },
     {
       id: 10,
       name: 'Soft Potato',
       basePower: 124,
-      image: '/assets/icons/softpotato.png',
+      image: '/assets/images/softpotato.png',
       count: 0
     },
     {
       id: 11,
       name: 'Fiery Herb',
       basePower: 130,
-      image: '/assets/icons/fieryherb.png',
+      image: '/assets/images/fieryherb.png',
       count: 0
     },
     {
       id: 12,
       name: 'Greengrass Corn',
       basePower: 140,
-      image: '/assets/icons/greengrasscorn.png',
+      image: '/assets/images/greengrasscorn.png',
       count: 0
     },
     {
       id: 13,
       name: 'Soothing Cacao',
       basePower: 151,
-      image: '/assets/icons/soothingcacao.png',
+      image: '/assets/images/soothingcacao.png',
       count: 0
     },
     {
       id: 14,
       name: 'Tasty Mushroom',
       basePower: 167,
-      image: '/assets/icons/tastymushroom.png',
+      image: '/assets/images/tastymushroom.png',
       count: 0
     },
     {
       id: 15,
       name: 'Large Leek',
       basePower: 185,
-      image: '/assets/icons/largeleek.png',
+      image: '/assets/images/largeleek.png',
       count: 0
     },
     {
       id: 16,
       name: 'Slowpoke Tail',
       basePower: 342,
-      image: '/assets/icons/slowpoketail.png',
+      image: '/assets/images/slowpoketail.png',
       count: 0
     }
   ];
   selectedRecipe = this.recipesList[0];
   extraIngredientsBasePower = 0;
   estimatedTotalStrength = this.getEstimatedTotalStrength() || 0;
-  // formula = islandBonus * recipeBonus * recipeBasePower + extraIngredientsTotalBasePower * islandBonus
 
   updateDishLevel(event: Event) {
     const value = (event.target as HTMLInputElement).valueAsNumber;
@@ -801,7 +800,6 @@ export class RecipesComponent {
     const recipeIndex = Number((event.target as HTMLInputElement).value);
     if (recipeIndex > -1 && typeof this.recipesList[recipeIndex] === 'object') {
       this.selectedRecipe = this.recipesList[recipeIndex];
-      console.log(this.selectedRecipe);
     }
     this.estimatedTotalStrength = this.getEstimatedTotalStrength();
   }
@@ -809,11 +807,15 @@ export class RecipesComponent {
   updateIngredientCount(ingredient: number, isIncrement: boolean) {
     if (this.ingredientsList[ingredient].count <= 0 && !isIncrement) return;
     
+    const basePower = this.ingredientsList.length > 0 ? (this.ingredientsList[ingredient].basePower || 0) : 0;
     if (isIncrement) {
       this.ingredientsList[ingredient].count += 1;
+      this.extraIngredientsBasePower += basePower;
     } else {
       this.ingredientsList[ingredient].count -= 1;
+      this.extraIngredientsBasePower -= basePower;
     }
+    this.estimatedTotalStrength = this.getEstimatedTotalStrength();
   }
 
   getEstimatedTotalStrength() {

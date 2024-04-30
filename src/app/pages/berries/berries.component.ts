@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Icons } from '@pkmn/img';
-import { PokemonService } from '../pokemon.service';
-import { Pokemon } from '../pokemon.model';
+import { PokemonService } from '../../services/pokemon.service';
+import { Pokemon } from '../../models/pokemon.model';
 import { Sprites } from '@pkmn/img';
 
 @Component({

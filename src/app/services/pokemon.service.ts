@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Pokemon } from './pokemon.model';
+import { Pokemon } from '../models/pokemon.model';
 
 @Injectable({
   providedIn: 'root'
@@ -836,7 +836,7 @@ export class PokemonService {
    * retrieve the list of pokemon
    * @returns list of pokemon
    */
-  retrievePokemonList = () => {
+  retrievePokemonList() {
     return this.pokemonList;
   }
 
@@ -844,7 +844,7 @@ export class PokemonService {
    * retrieve the list of berries
    * @returns list of berries
    */
-  retrieveBerryList = () => {
+  retrieveBerryList() {
     return this.allBerries;
   }
 
@@ -852,7 +852,7 @@ export class PokemonService {
    * retrieve the list of ingredients
    * @returns list of ingredients
    */
-  retrieveIngredientsList = () => {
+  retrieveIngredientsList() {
     return this.allIngredients;
   }
 
@@ -860,7 +860,7 @@ export class PokemonService {
    * retrieve the list of skills
    * @returns list of skills
    */
-  retrieveSkillsList = () => {
+  retrieveSkillsList() {
     return this.allSkills;
   }
 }
