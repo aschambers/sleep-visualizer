@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,10 +12,6 @@ import { SkillsComponent } from './pages/skills/skills.component';
 import { HeaderComponent } from './components/header/header.component';
 import { RecipesComponent } from './pages/recipes/recipes.component';
 import { LanguageSwitcherComponent } from './components/language-switcher/language-switcher.component';
-
-import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
