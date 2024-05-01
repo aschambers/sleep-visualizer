@@ -21,6 +21,7 @@ export class SkillsComponent implements OnInit {
     this.pokemonList = await this.pokemonService.retrievePokemonList() || [];
     const allSkills = this.pokemonService.retrieveSkillsList();
     this.allSkills = allSkills;
+    this.toggle(0);
   }
 
   /**

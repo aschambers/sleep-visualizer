@@ -21,6 +21,7 @@ export class IngredientsComponent implements OnInit {
     this.pokemonList = await this.pokemonService.retrievePokemonList() || [];
     const allIngredients = this.pokemonService.retrieveIngredientsList();
     this.allIngredients = allIngredients;
+    this.toggle(0);
   }
 
   /**

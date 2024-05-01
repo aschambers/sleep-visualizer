@@ -26,6 +26,7 @@ export class BerriesComponent implements OnInit {
     this.pokemonList = await this.pokemonService.retrievePokemonList() || [];
     const allBerries = this.pokemonService.retrieveBerryList();
     this.allBerries = allBerries;
+    this.toggle(0);
   }
 
   /**
