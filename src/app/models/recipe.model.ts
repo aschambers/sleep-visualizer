@@ -4,13 +4,15 @@ export class Recipe {
   public basePower: number;
   public image: string;
   public ingredients: Ingredients;
+  public totalIngredients: number;
 
-  constructor(id: number, name: string, basePower: number, image: string, ingredients: Ingredients) {
+  constructor(id: number, name: string, basePower: number, image: string, ingredients: Ingredients, totalIngredients: number) {
     this.id = id;
     this.name = name;
     this.basePower = basePower;
     this.image = image;
     this.ingredients = ingredients;
+    this.totalIngredients = totalIngredients;
   }
 }
 
