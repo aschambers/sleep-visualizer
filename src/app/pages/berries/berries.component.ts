@@ -34,7 +34,7 @@ export class BerriesComponent implements OnInit {
    * @returns string
    */
   getSprite = (item: string) => {
-    const style = Icons.getItem(`${item} berry`).style;
+    const style = Icons.getItem(`${item.replace('Berries.','')} berry`).style;
     return style;
   }
 
