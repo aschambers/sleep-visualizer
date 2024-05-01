@@ -3,6 +3,7 @@ import { Icons } from '@pkmn/img';
 import { PokemonService } from '../../services/pokemon.service';
 import { Pokemon } from '../../models/pokemon.model';
 import { Sprites } from '@pkmn/img';
+import { LanguageSwitcherService } from 'src/app/services/language-switcher.service';
 
 @Component({
   selector: 'app-berries',
@@ -16,7 +17,10 @@ export class BerriesComponent implements OnInit {
   isOpen = false;
   expandedIndex = 0;
 
-  constructor(private pokemonService: PokemonService) {}
+  constructor(
+    private pokemonService: PokemonService,
+    private languageSwitcherService: LanguageSwitcherService
+  ) {}
 
   async ngOnInit(): Promise<void> {
     this.pokemonList = await this.pokemonService.retrievePokemonList() || [];

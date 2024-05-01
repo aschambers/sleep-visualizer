@@ -1,9 +1,10 @@
 <div class="header">
   <ul class="nav">
-    <li><a routerLink="/berries"><img class="pokemonsleep" src="/assets/images/PokemonSleep.png" /></a></li>
+    <li><a routerLink="/berries"><img class="pokemonsleep" src="/assets/images/PokemonSleep.png" alt="logo" /></a></li>
+    <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/cooking"><span>Cooking</span></a></li>
     <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/berries"><span>Berries</span></a></li>
     <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/ingredients"><span>Ingredients</span></a></li>
     <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/skills"><span>Skills</span></a></li>
-    <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/recipes"><span>Recipes</span></a></li>
+    <app-language-switcher class="language-switcher"></app-language-switcher>
   </ul>
 </div>

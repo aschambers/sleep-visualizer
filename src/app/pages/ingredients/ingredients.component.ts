@@ -85,52 +85,52 @@ export class IngredientsComponent implements OnInit {
     let name = '';
     switch (ingredient) {
       case 'fancyapple':
-        name = 'Fancy Apple';
+        name = 'Ingredients.FancyApple';
         break;
       case 'moomoomilk':
-        name = 'Moomoo Milk';
+        name = 'Ingredients.MoomooMilk';
         break;
       case 'greengrasssoybeans':
-        name = 'Greengrass\nSoybeans';
+        name = 'Ingredients.GreengrassSoybeans';
         break;
       case 'honey':
-        name = 'Honey';
+        name = 'Ingredients.Honey';
         break;
       case 'beansausage':
-        name = 'Bean Sausage';
+        name = 'Ingredients.BeanSausage';
         break;
       case 'warmingginger':
-        name = 'Warming Ginger';
+        name = 'Ingredients.WarmingGinger';
         break;
       case 'snoozytomato':
-        name = 'Snoozy Tomato';
+        name = 'Ingredients.SnoozyTomato';
         break;
       case 'fancyegg':
-        name = 'Fancy Egg';
+        name = 'Ingredients.FancyEgg';
         break;
       case 'pureoil':
-        name = 'Pure Oil';
+        name = 'Ingredients.PureOil';
         break;
       case 'softpotato':
-        name = 'Soft Potato';
+        name = 'Ingredients.SoftPotato';
         break;
       case 'fieryherb':
-        name = 'Fiery Herb';
+        name = 'Ingredients.FieryHerb';
         break;
       case 'greengrasscorn':
-        name = 'Greengrass Corn';
+        name = 'Ingredients.GreengrassCorn';
         break;
       case 'soothingcacao':
-        name = 'Soothing Cacao';
+        name = 'Ingredients.SoothingCacao';
         break;
       case 'tastymushroom':
-        name = 'Tasty Mushroom';
+        name = 'Ingredients.TastyMushroom';
         break;
       case 'largeleek':
-        name = 'Large Leek';
+        name = 'Ingredients.LargeLeek';
         break;
       case 'slowpoketail':
-        name = 'Slowpoke Tail';
+        name = 'Ingredients.SlowpokeTail';
         break;
       default:
         name = '';

@@ -69,15 +69,22 @@
     &-details {
       display: flex;
       font-family: sans-serif;
+      justify-content: space-between;
       & > img {
         height: 4rem;
         width: 4rem;
         margin-left: 0.25rem;
       }
       & > span {
-        margin-left: 0.4rem;
+        padding-right: 0.5rem;
+        padding-top: 0.5rem;
+        border-bottom-left-radius: 2rem 2rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+        background-color: #E49B0F;
+        border: 1px solid white;
+        height: 1.5rem;
         font-size: 1.2rem;
-        margin-top: 1.4rem;
       }
     }
 

@@ -1,7 +1,6 @@
 .header {
   display: flex;
   flex-direction: row;
-  min-width: 100vw;
 }
 
 .nav {
@@ -44,11 +43,19 @@
   font-size: 1.2rem;
 }
 
-@media (max-width: 768px) {
+.language-switcher {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  display: none;
+}
+
+@media (max-width: 800px) {
   .header {
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid white;
+    min-width: 100vw;
   }
   
   .nav {

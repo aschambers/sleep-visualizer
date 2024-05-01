@@ -4,7 +4,7 @@
       <div class="ingredient-img">
         <img class="ingredient-img-sprite" [src]="getSprite(ingredient)" alt="ingredient name" />
       </div>
-      <span class="ingredient-name">{{ getIngredientName(ingredient) }} ({{ getIngredientBasePower(ingredient) }})</span>
+      <span class="ingredient-name">{{ getIngredientName(ingredient) | translate }} ({{ getIngredientBasePower(ingredient) }})</span>
     </div>
     <div class="accordion-content" [ngClass]="{'open': isOpen && expandedIndex === i}">
       <div *ngFor="let pokemon of pokemonList" [ngClass]="{'open': isOpen}">
