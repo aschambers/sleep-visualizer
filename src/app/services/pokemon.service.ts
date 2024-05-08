@@ -177,20 +177,20 @@ export class PokemonService {
       mainSkill: 'Skills.Metronome',
       specialty: 'Berries'
     },
-    // {
-    //   name: 'Vulpix',
-    //   berry: 'Berries.Leppa',
-    //   ingredients: [],
-    //   mainSkill: 'Skills.EnergizingCheerS',
-    //   specialty: 'Berries'
-    // },
-    // {
-    //   name: 'Ninetales',
-    //   berry: 'Berries.Leppa',
-    //   ingredients: [],
-    //   mainSkill: 'Skills.EnergizingCheerS',
-    //   specialty: 'Berries'
-    // },
+    {
+      name: 'Vulpix',
+      berry: 'Berries.Leppa',
+      ingredients: ['greengrasssoybeans', 'greengrasscorn', 'softpotato'],
+      mainSkill: 'Skills.EnergizingCheerS',
+      specialty: 'Berries'
+    },
+    {
+      name: 'Ninetales',
+      berry: 'Berries.Leppa',
+      ingredients: ['greengrasssoybeans', 'greengrasscorn', 'softpotato'],
+      mainSkill: 'Skills.EnergizingCheerS',
+      specialty: 'Berries'
+    },
     {
       name: 'Jigglypuff',
       berry: 'Berries.Pecha',
