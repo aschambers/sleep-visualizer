@@ -177,20 +177,20 @@ export class PokemonService {
       mainSkill: 'Skills.Metronome',
       specialty: 'Berries'
     },
-    // {
-    //   name: 'Vulpix',
-    //   berry: 'Berries.Leppa',
-    //   ingredients: [],
-    //   mainSkill: 'Skills.EnergizingCheerS',
-    //   specialty: 'Berries'
-    // },
-    // {
-    //   name: 'Ninetales',
-    //   berry: 'Berries.Leppa',
-    //   ingredients: [],
-    //   mainSkill: 'Skills.EnergizingCheerS',
-    //   specialty: 'Berries'
-    // },
+    {
+      name: 'Vulpix',
+      berry: 'Berries.Leppa',
+      ingredients: ['greengrasssoybeans', 'greengrasscorn', 'softpotato'],
+      mainSkill: 'Skills.EnergizingCheerS',
+      specialty: 'Berries'
+    },
+    {
+      name: 'Ninetales',
+      berry: 'Berries.Leppa',
+      ingredients: ['greengrasssoybeans', 'greengrasscorn', 'softpotato'],
+      mainSkill: 'Skills.EnergizingCheerS',
+      specialty: 'Berries'
+    },
     {
       name: 'Jigglypuff',
       berry: 'Berries.Pecha',
@@ -946,7 +946,8 @@ export class PokemonService {
       name: 'Recipes.MixedCurry',
       basePower: 0,
       image: '/assets/images/MixedCurry.png',
-      ingredients: {}
+      ingredients: {},
+      totalIngredients: 0
     },
     {
       id: 2,
@@ -955,7 +956,8 @@ export class PokemonService {
       image: '/assets/images/FancyAppleCurry.png',
       ingredients: {
         fancyApple: 7
-      }
+      },
+      totalIngredients: 7
     },
     {
       id: 3,
@@ -965,7 +967,8 @@ export class PokemonService {
       ingredients: {
         slowpokeTail: 8,
         fieryHerb: 25
-      }
+      },
+      totalIngredients: 33
     },
     {
       id: 4,
@@ -975,7 +978,8 @@ export class PokemonService {
       ingredients: {
         snoozyTomato: 10,
         fieryHerb: 5
-      }
+      },
+      totalIngredients: 15
     },
     {
       id: 5,
@@ -987,7 +991,8 @@ export class PokemonService {
         snoozyTomato: 15,
         soothingCacao: 12,
         moomoomilk: 10
-      }
+      },
+      totalIngredients: 55
     },
     {
       id: 6,
@@ -998,7 +1003,8 @@ export class PokemonService {
         largeLeek: 14,
         warmingGinger: 10,
         fieryHerb: 8
-      }
+      },
+      totalIngredients: 32
     },
     {
       id: 7,
@@ -1008,7 +1014,8 @@ export class PokemonService {
       ingredients: {
         tastyMushroom: 14,
         softPotato: 9
-      }
+      },
+      totalIngredients: 23
     },
     {
       id: 8,
@@ -1020,7 +1027,8 @@ export class PokemonService {
         fancyApple: 11,
         fancyEgg: 8,
         softPotato: 4
-      }
+      },
+      totalIngredients: 35
     },
     {
       id: 9,
@@ -1030,7 +1038,8 @@ export class PokemonService {
       ingredients: {
         moomooMilk: 8,
         beanSausage: 8
-      }
+      },
+      totalIngredients: 16
     },
     {
       id: 10,
@@ -1041,7 +1050,8 @@ export class PokemonService {
         moomooMilk: 10,
         softPotato: 8,
         tastyMushroom: 4
-      }
+      },
+      totalIngredients: 22
     },
     {
       id: 11,
@@ -1050,7 +1060,8 @@ export class PokemonService {
       image: '/assets/images/SimpleChowder.png',
       ingredients: {
         moomooMilk: 7
-      }
+      },
+      totalIngredients: 7
     },
     {
       id: 12,
@@ -1059,7 +1070,8 @@ export class PokemonService {
       image: '/assets/images/BeanburgerCurry.png',
       ingredients: {
         beanSausage: 7
-      }
+      },
+      totalIngredients: 7
     },
     {
       id: 13,
@@ -1068,7 +1080,8 @@ export class PokemonService {
       image: '/assets/images/MildHoneyCurry.png',
       ingredients: {
         honey: 7
-      }
+      },
+      totalIngredients: 7
     },
     {
       id: 14,
@@ -1080,7 +1093,8 @@ export class PokemonService {
         beanSausage: 9,
         largeLeek: 12,
         tastyMushroom: 5
-      }
+      },
+      totalIngredients: 38
     },
     {
       id: 15,
@@ -1090,7 +1104,8 @@ export class PokemonService {
       ingredients: {
         beanSausage: 10,
         pureOil: 5
-      }
+      },
+      totalIngredients: 15
     },
     {
       id: 16,
@@ -1100,7 +1115,8 @@ export class PokemonService {
       ingredients: {
         fancyEgg: 10,
         snoozyTomato: 6
-      }
+      },
+      totalIngredients: 16
     },
     {
       id: 17,
@@ -1112,7 +1128,8 @@ export class PokemonService {
         beanSausage: 6,
         fieryHerb: 4,
         fancyEgg: 4
-      }
+      },
+      totalIngredients: 26
     },
     {
       id: 18,
@@ -1123,7 +1140,8 @@ export class PokemonService {
         greengrassCorn: 14,
         moomooMilk: 8,
         softPotato: 8
-      }
+      },
+      totalIngredients: 30
     },
     {
       id: 19,
@@ -1135,14 +1153,16 @@ export class PokemonService {
         beanSausage: 24,
         greengrassCorn: 14,
         warmingGinger: 12
-      }
+      },
+      totalIngredients: 77
     },
     {
       id: 20,
       name: 'Recipes.MixedSalad',
       basePower: 0,
       image: '/assets/images/MixedSalad.png',
-      ingredients: {}
+      ingredients: {},
+      totalIngredients: 0
     },
     {
       id: 21,
@@ -1153,7 +1173,8 @@ export class PokemonService {
         slowpokeTail: 10,
         fieryHerb: 10,
         pureOil: 15
-      }
+      },
+      totalIngredients: 35
     },
     {
       id: 22,
@@ -1164,7 +1185,8 @@ export class PokemonService {
         tastyMushroom: 17,
         snoozyTomato: 8,
         pureOil: 8
-      }
+      },
+      totalIngredients: 33
     },
     {
       id: 23,
@@ -1174,7 +1196,8 @@ export class PokemonService {
       ingredients: {
         moomooMilk: 10,
         beanSausage: 6
-      }
+      },
+      totalIngredients: 16
     },
     {
       id: 24,
@@ -1186,7 +1209,8 @@ export class PokemonService {
         fancyEgg: 9,
         beanSausage: 7,
         fancyApple: 6
-      }
+      },
+      totalIngredients: 36
     },
     {
       id: 25,
@@ -1196,7 +1220,8 @@ export class PokemonService {
       ingredients: {
         greengrassSoybeans: 15,
         snoozyTomato: 6
-      }
+      },
+      totalIngredients: 16
     },
     {
       id: 26,
@@ -1208,7 +1233,8 @@ export class PokemonService {
         warmingGinger: 6,
         fancyEgg: 5,
         softPotato: 3
-      }
+      },
+      totalIngredients: 23
     },
     {
       id: 27,
@@ -1217,7 +1243,8 @@ export class PokemonService {
       image: '/assets/images/BeanHamSalad.png',
       ingredients: {
         beanSausage: 8
-      }
+      },
+      totalIngredients: 8
     },
     {
       id: 28,
@@ -1226,7 +1253,8 @@ export class PokemonService {
       image: '/assets/images/SnoozyTomatoSalad.png',
       ingredients: {
         snoozyTomato: 8
-      }
+      },
+      totalIngredients: 8
     },
     {
       id: 29,
@@ -1237,7 +1265,8 @@ export class PokemonService {
         moomooMilk: 12,
         snoozyTomato: 6,
         pureOil: 5
-      }
+      },
+      totalIngredients: 23
     },
     {
       id: 30,
@@ -1247,7 +1276,8 @@ export class PokemonService {
       ingredients: {
         soothingCacao: 14,
         beanSausage: 9
-      }
+      },
+      totalIngredients: 23
     },
     {
       id: 31,
@@ -1258,7 +1288,8 @@ export class PokemonService {
         fieryHerb: 17,
         warmingGinger: 10,
         snoozyTomato: 8
-      }
+      },
+      totalIngredients: 35
     },
     {
       id: 32,
@@ -1267,7 +1298,8 @@ export class PokemonService {
       image: '/assets/images/FancyAppleSalad.png',
       ingredients: {
         fancyApple: 8
-      }
+      },
+      totalIngredients: 8
     },
     {
       id: 33,
@@ -1277,7 +1309,8 @@ export class PokemonService {
       ingredients: {
         largeLeek: 10,
         warmingGinger: 5
-      }
+      },
+      totalIngredients: 15
     },
     {
       id: 34,
@@ -1288,7 +1321,8 @@ export class PokemonService {
         fancyApple: 15,
         moomooMilk: 5,
         pureOil: 3
-      }
+      },
+      totalIngredients: 23
     },
     {
       id: 35,
@@ -1300,7 +1334,8 @@ export class PokemonService {
         greengrassSoybeans: 19,
         tastyMushroom: 12,
         warmingGinger: 11
-      }
+      },
+      totalIngredients: 53
     },
     {
       id: 36,
@@ -1310,7 +1345,8 @@ export class PokemonService {
       ingredients: {
         greengrassSoybeans: 10,
         fieryHerb: 6
-      }
+      },
+      totalIngredients: 16
     },
     {
       id: 37,
@@ -1322,7 +1358,8 @@ export class PokemonService {
         greengrassCorn: 17,
         snoozyTomato: 14,
         softPotato: 9
-      }
+      },
+      totalIngredients: 62
     },
     {
       id: 38,
@@ -1333,7 +1370,8 @@ export class PokemonService {
         fancyApple: 21,
         honey: 16,
         greengrassCorn: 12
-      }
+      },
+      totalIngredients: 47
     },
     {
       id: 39,
@@ -1343,14 +1381,16 @@ export class PokemonService {
       ingredients: {
         greengrasscorn: 9,
         pureOil: 3
-      }
+      },
+      totalIngredients: 12
     },
     {
       id: 40,
       name: 'Recipes.MixedJuice',
       basePower: 0,
       image: '/assets/images/MixedJuice.png',
-      ingredients: {}
+      ingredients: {},
+      totalIngredients: 0
     },
     {
       id: 41,
@@ -1360,7 +1400,8 @@ export class PokemonService {
       ingredients: {
         softPotato: 9,
         moomooMilk: 5
-      }
+      },
+      totalIngredients: 14
     },
     {
       id: 42,
@@ -1372,7 +1413,8 @@ export class PokemonService {
         warmingGinger: 12,
         soothingCacao: 5,
         fancyEgg: 4
-      }
+      },
+      totalIngredients: 35
     },
     {
       id: 43,
@@ -1381,7 +1423,8 @@ export class PokemonService {
       image: '/assets/images/FancyAppleJuice.png',
       ingredients: {
         fancyApple: 8
-      }
+      },
+      totalIngredients: 8
     },
     {
       id: 44,
@@ -1390,7 +1433,8 @@ export class PokemonService {
       image: '/assets/images/CraftSodaPop.png',
       ingredients: {
         honey: 9
-      }
+      },
+      totalIngredients: 9
     },
     {
       id: 45,
@@ -1400,7 +1444,8 @@ export class PokemonService {
       ingredients: {
         warmingGinger: 9,
         fancyApple: 7
-      }
+      },
+      totalIngredients: 16
     },
     {
       id: 46,
@@ -1412,7 +1457,8 @@ export class PokemonService {
         fancyEgg: 15,
         moomooMilk: 10,
         fancyApple: 10
-      }
+      },
+      totalIngredients: 55
     },
     {
       id: 47,
@@ -1424,7 +1470,8 @@ export class PokemonService {
         moomooMilk: 9,
         honey: 7,
         soothingCacao: 8
-      }
+      },
+      totalIngredients: 35
     },
     {
       id: 48,
@@ -1434,7 +1481,8 @@ export class PokemonService {
       ingredients: {
         fancyApple: 12,
         moomooMilk: 4
-      }
+      },
+      totalIngredients: 16
     },
     {
       id: 49,
@@ -1445,7 +1493,8 @@ export class PokemonService {
         warmingGinger: 11,
         fancyApple: 15,
         tastyMushroom: 9
-      }
+      },
+      totalIngredients: 35
     },
     {
       id: 50,
@@ -1456,7 +1505,8 @@ export class PokemonService {
         honey: 9,
         soothingCacao: 8,
         moomooMilk: 7
-      }
+      },
+      totalIngredients: 24
     },
     {
       id: 51,
@@ -1465,7 +1515,8 @@ export class PokemonService {
       image: '/assets/images/WarmMoomooMilk.png',
       ingredients: {
         moomooMilk: 7
-      }
+      },
+      totalIngredients: 7
     },
     {
       id: 52,
@@ -1475,7 +1526,8 @@ export class PokemonService {
       ingredients: {
         fancyEgg: 8,
         greengrassSoybeans: 7
-      }
+      },
+      totalIngredients: 15
     },
     {
       id: 53,
@@ -1485,7 +1537,8 @@ export class PokemonService {
       ingredients: {
         greengrassSoybeans: 15,
         soothingCacao: 8
-      }
+      },
+      totalIngredients: 22
     },
     {
       id: 54,
@@ -1495,7 +1548,8 @@ export class PokemonService {
       ingredients: {
         snoozyTomato: 9,
         fancyApple: 7
-      }
+      },
+      totalIngredients: 16
     },
     {
       id: 55,
@@ -1506,7 +1560,8 @@ export class PokemonService {
         pureOil: 10,
         moomooMilk: 7,
         honey: 6
-      }
+      },
+      totalIngredients: 23
     },
     {
       id: 56,
@@ -1517,7 +1572,8 @@ export class PokemonService {
         pureOil: 12,
         greengrassSoybeans: 16,
         soothingCacao: 7
-      }
+      },
+      totalIngredients: 22
     },
     {
       id: 57,
@@ -1528,7 +1584,8 @@ export class PokemonService {
         greengrassCorn: 15,
         pureOil: 14,
         moomooMilk: 7
-      }
+      },
+      totalIngredients: 36
     },
     {
       id: 58,
@@ -1540,7 +1597,8 @@ export class PokemonService {
         warmingGinger: 20,
         greengrassCorn: 18,
         moomooMilk: 9
-      }
+      },
+      totalIngredients: 67
     },
     {
       id: 59,
@@ -1550,7 +1608,8 @@ export class PokemonService {
       ingredients: {
         fancyApple: 11,
         soothingCacao: 11
-      }
+      },
+      totalIngredients: 22
     },
     {
       id: 60,
@@ -1562,7 +1621,8 @@ export class PokemonService {
         fancyEgg: 25,
         honey: 17,
         moomooMilk: 10
-      }
+      },
+      totalIngredients: 77
     }
   ];
   ingredientCountsList = [

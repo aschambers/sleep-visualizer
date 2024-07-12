@@ -26,6 +26,7 @@ export class BerriesComponent implements OnInit {
     this.pokemonList = await this.pokemonService.retrievePokemonList() || [];
     const allBerries = this.pokemonService.retrieveBerryList();
     this.allBerries = allBerries;
+    this.toggle(0);
   }
 
   /**
@@ -34,7 +35,7 @@ export class BerriesComponent implements OnInit {
    * @returns string
    */
   getSprite = (item: string) => {
-    const style = Icons.getItem(`${item} berry`).style;
+    const style = Icons.getItem(`${item.replace('Berries.','')} berry`).style;
     return style;
   }
 

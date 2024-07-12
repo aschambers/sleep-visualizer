@@ -16,8 +16,10 @@ export class RecipesComponent {
   islandBonusMultiplier = 1;
   recipesList: Array<Recipe> = new Array<Recipe>;
   ingredientsList: Array<Ingredient> = new Array<Ingredient>;
-  selectedRecipe: Recipe = new Recipe(0, '', 0, '', new Ingredients());
+  selectedRecipe: Recipe = new Recipe(0, '', 0, '', new Ingredients(), 0);
   extraIngredientsBasePower = 0;
+  totalIngredients = 0;
+  totalExtraIngredients = 0;
   estimatedTotalStrength = this.getEstimatedTotalStrength() || 0;
 
   constructor(private pokemonService: PokemonService) { }
@@ -29,6 +31,7 @@ export class RecipesComponent {
     this.ingredientsList = this.pokemonService.retrieveIngredientCountsList();
     this.allDishLevelMultipliers = this.pokemonService.retrieveDishLevelMultipliers();
     this.islandBonusLookup = this.pokemonService.retrieveIslandBonuses();
+    this.totalIngredients = this.getTotalIngredients();
   }
 
   updateDishLevel(event: Event) {
@@ -42,18 +45,21 @@ export class RecipesComponent {
     }
     this.updateMultiplier();
     this.estimatedTotalStrength = this.getEstimatedTotalStrength();
+    this.totalIngredients = this.getTotalIngredients();
     (document.getElementById('dish-level') as HTMLInputElement).value = String(this.dishLevel);
   }
 
   updateMultiplier() {
     this.dishLevelMultiplier = this.allDishLevelMultipliers[this.dishLevel - 1];
     this.estimatedTotalStrength = this.getEstimatedTotalStrength();
+    this.totalIngredients = this.getTotalIngredients();
   }
 
   updateIslandBonus(event: Event) {
     const islandBonus = (event.target as HTMLInputElement).value;
     this.islandBonusMultiplier = (parseFloat(islandBonus) / 100.0) + 1;
     this.estimatedTotalStrength = this.getEstimatedTotalStrength();
+    this.totalIngredients = this.getTotalIngredients();
   }
 
   changeSelectedRecipe(event: Event) {
@@ -62,6 +68,7 @@ export class RecipesComponent {
       this.selectedRecipe = this.recipesList[recipeIndex];
     }
     this.estimatedTotalStrength = this.getEstimatedTotalStrength();
+    this.totalIngredients = this.getTotalIngredients();
   }
 
   updateIngredientCount(ingredient: number, isIncrement: boolean) {
@@ -71,11 +78,20 @@ export class RecipesComponent {
     if (isIncrement) {
       this.ingredientsList[ingredient].count += 1;
       this.extraIngredientsBasePower += basePower;
+      this.totalExtraIngredients += 1;
     } else {
       this.ingredientsList[ingredient].count -= 1;
       this.extraIngredientsBasePower -= basePower;
+      this.totalExtraIngredients -= 1;
     }
     this.estimatedTotalStrength = this.getEstimatedTotalStrength();
+    this.totalIngredients = this.getTotalIngredients();
+  }
+
+  getTotalIngredients() {
+    const recipe = this.selectedRecipe;
+    
+    return recipe.totalIngredients + this.totalExtraIngredients;
   }
 
   getEstimatedTotalStrength() {
