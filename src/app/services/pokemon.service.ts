@@ -931,6 +931,13 @@ export class PokemonService {
       ingredients: ['greengrasscorn', 'warmingginger', 'soothingcacao'],
       mainSkill: 'Skills.EnergizingCheerS',
       specialty: 'Ingredients'
+    },
+    {
+      name: 'Cramorant',
+      berry: 'Berries.Pamtre',
+      ingredients: ['pureoil', 'softpotato', 'fancyegg'],
+      mainSkill: 'Skills.TastyChanceS',
+      specialty: 'Ingredients'
     }
   ];
   recipesList = [
@@ -1066,12 +1073,12 @@ export class PokemonService {
     {
       id: 14,
       name: 'Recipes.NinjaCurry',
-      basePower: 6159,
+      basePower: 9445,
       image: '/assets/images/NinjaCurry.png',
       ingredients: {
-        greengrassSoybeans: 15,
+        greengrassSoybeans: 24,
         beanSausage: 9,
-        largeLeek: 9,
+        largeLeek: 12,
         tastyMushroom: 5
       }
     },
@@ -1184,10 +1191,10 @@ export class PokemonService {
     {
       id: 25,
       name: 'Recipes.WaterVeilTofuSalad',
-      basePower: 1843,
+      basePower: 3113,
       image: '/assets/images/WaterVeilTofuSalad.png',
       ingredients: {
-        greengrassSoybeans: 10,
+        greengrassSoybeans: 15,
         snoozyTomato: 6
       }
     },
@@ -1286,11 +1293,11 @@ export class PokemonService {
     {
       id: 35,
       name: 'Recipes.NinjaSalad',
-      basePower: 10095,
+      basePower: 11659,
       image: '/assets/images/NinjaSalad.png',
       ingredients: {
         largeLeek: 15,
-        greengrassSoybeans: 15,
+        greengrassSoybeans: 19,
         tastyMushroom: 12,
         warmingGinger: 11
       }
@@ -1504,11 +1511,11 @@ export class PokemonService {
     {
       id: 56,
       name: 'Recipes.HugePowerSoyDonuts',
-      basePower: 3213,
+      basePower: 5547,
       image: '/assets/images/HugePowerSoyDonuts.png',
       ingredients: {
-        pureOil: 9,
-        greengrassSoybeans: 6,
+        pureOil: 12,
+        greengrassSoybeans: 16,
         soothingCacao: 7
       }
     },
