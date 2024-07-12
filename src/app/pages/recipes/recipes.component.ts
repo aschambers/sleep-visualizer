@@ -96,6 +96,6 @@ export class RecipesComponent {
 
   getEstimatedTotalStrength() {
     const totalStrength = (this.islandBonusMultiplier * this.selectedRecipe.basePower * this.dishLevelMultiplier + (this.islandBonusMultiplier * this.extraIngredientsBasePower)) || 0;
-    return Math.round(totalStrength);
+    return Math.floor(totalStrength);
   }
 }

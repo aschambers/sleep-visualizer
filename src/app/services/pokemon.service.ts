@@ -1094,7 +1094,7 @@ export class PokemonService {
         largeLeek: 12,
         tastyMushroom: 5
       },
-      totalIngredients: 38
+      totalIngredients: 50
     },
     {
       id: 15,
@@ -1221,7 +1221,7 @@ export class PokemonService {
         greengrassSoybeans: 15,
         snoozyTomato: 6
       },
-      totalIngredients: 16
+      totalIngredients: 21
     },
     {
       id: 26,
@@ -1335,7 +1335,7 @@ export class PokemonService {
         tastyMushroom: 12,
         warmingGinger: 11
       },
-      totalIngredients: 53
+      totalIngredients: 57
     },
     {
       id: 36,
@@ -1573,7 +1573,7 @@ export class PokemonService {
         greengrassSoybeans: 16,
         soothingCacao: 7
       },
-      totalIngredients: 22
+      totalIngredients: 35
     },
     {
       id: 57,
