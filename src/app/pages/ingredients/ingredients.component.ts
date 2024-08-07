@@ -30,7 +30,7 @@ export class IngredientsComponent implements OnInit {
    * @returns string
    */
   getSprite = (item: string) => {
-    return item ? `../../assets/images/${item}.png` : '';
+    return item ? `../../sleep-visualizer/assets/images/${item}.png` : '';
   }
 
   /**
@@ -86,52 +86,52 @@ export class IngredientsComponent implements OnInit {
     let name = '';
     switch (ingredient) {
       case 'fancyapple':
-        name = 'Ingredients.FancyApple';
+        name = 'Fancy Apple';
         break;
       case 'moomoomilk':
-        name = 'Ingredients.MoomooMilk';
+        name = 'Moomoo Milk';
         break;
       case 'greengrasssoybeans':
-        name = 'Ingredients.GreengrassSoybeans';
+        name = 'Greengrass Soybeans';
         break;
       case 'honey':
-        name = 'Ingredients.Honey';
+        name = 'Honey';
         break;
       case 'beansausage':
-        name = 'Ingredients.BeanSausage';
+        name = 'Bean Sausage';
         break;
       case 'warmingginger':
-        name = 'Ingredients.WarmingGinger';
+        name = 'Warming Ginger';
         break;
       case 'snoozytomato':
-        name = 'Ingredients.SnoozyTomato';
+        name = 'Snoozy Tomato';
         break;
       case 'fancyegg':
-        name = 'Ingredients.FancyEgg';
+        name = 'Fancy Egg';
         break;
       case 'pureoil':
-        name = 'Ingredients.PureOil';
+        name = 'Pure Oil';
         break;
       case 'softpotato':
-        name = 'Ingredients.SoftPotato';
+        name = 'Soft Potato';
         break;
       case 'fieryherb':
-        name = 'Ingredients.FieryHerb';
+        name = 'Fiery Herb';
         break;
       case 'greengrasscorn':
-        name = 'Ingredients.GreengrassCorn';
+        name = 'Greengrass Corn';
         break;
       case 'soothingcacao':
-        name = 'Ingredients.SoothingCacao';
+        name = 'Soothing Cacao';
         break;
       case 'tastymushroom':
-        name = 'Ingredients.TastyMushroom';
+        name = 'Tasty Mushroom';
         break;
       case 'largeleek':
-        name = 'Ingredients.LargeLeek';
+        name = 'Large Leek';
         break;
       case 'slowpoketail':
-        name = 'Ingredients.SlowpokeTail';
+        name = 'Slowpoke Tail';
         break;
       default:
         name = '';

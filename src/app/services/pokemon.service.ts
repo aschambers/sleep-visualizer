@@ -7,21 +7,21 @@ import { Pokemon } from '../models/pokemon.model';
 export class PokemonService {
   constructor() { }
 
-  allBerries: Array<string> = ['Berries.Belue', 'Berries.Bluk', 'Berries.Cheri', 'Berries.Chesto',
-                              'Berries.Durin', 'Berries.Figy', 'Berries.Grepa', 'Berries.Leppa',
-                              'Berries.Lum', 'Berries.Mago', 'Berries.Oran', 'Berries.Pamtre',
-                              'Berries.Pecha', 'Berries.Persim', 'Berries.Rawst', 'Berries.Sitrus',
-                              'Berries.Wiki', 'Berries.Yache'];
+  allBerries: Array<string> = ['Belue Berry', 'Bluk Berry', 'Cheri Berry', 'Chesto Berry',
+                              'Durin Berry', 'Figy Berry', 'Grepa Berry', 'Leppa Berry',
+                              'Lum Berry', 'Mago Berry', 'Oran Berry', 'Pamtre Berry',
+                              'Pecha Berry', 'Persim Berry', 'Rawst Berry', 'Sitrus Berry',
+                              'Wiki Berry', 'Yache Berry'];
   allIngredients: Array<string> = ['fancyapple', 'moomoomilk', 'greengrasssoybeans',
                                   'honey', 'beansausage', 'warmingginger', 'snoozytomato',
                                   'fancyegg', 'pureoil', 'softpotato', 'fieryherb',
                                   'greengrasscorn', 'soothingcacao', 'tastymushroom',
                                   'largeleek', 'slowpoketail'];
-  allSkills: Array<string> = ['Skills.ChargeStrengthS', 'Skills.ChargeStrengthM', 'Skills.DreamShardMagnetSVar',
-                              'Skills.EnergizingCheerS', 'Skills.ChargeStrengthSVar', 'Skills.DreamShardMagnetS',
-                              'Skills.ChargeEnergyS', 'Skills.EnergyForEveryoneS', 'Skills.ExtraHelpfulS',
-                              'Skills.IngredientMagnetS', 'Skills.CookingPowerUpS', 'Skills.Metronome',
-                              'Skills.TastyChanceS', 'Skills.HelperBoost'];
+  allSkills: Array<string> = ['Charge Strength S', 'Charge Strength M', 'Dream Shard Magnet S - Var',
+                              'Energizing Cheer S', 'Charge Strength S - Var', 'Dream Shard Magnet S',
+                              'Charge Energy S', 'Energy for Everyone S', 'Extra Helpful S',
+                              'Extra Helpful S', 'Cooking Power-Up S', 'Metronome',
+                              'Tasty Chance S', 'Helper Boost'];
   pokemonStringList: Array<string> = ['Bulbasaur', 'Ivysaur', 'Venusaur', 'Charmander', 'Charmeleon', 'Charizard',
   'Squirtle', 'Wartortle', 'Blastoise', 'Caterpie', 'Metapod', 'Butterfree', 'Rattata', 'Raticate', 'Ekans', 'Arbok',
   'Pikachu', 'Raichu', 'Clefairy', 'Clefable', 'Jigglypuff', 'Wigglytuff', 'Diglett', 'Dugtrio',
@@ -31,929 +31,999 @@ export class PokemonService {
   'Ditto', 'Eevee', 'Vaporeon', 'Jolteon', 'Flareon', 'Dratini', 'Dragonair', 'Dragonite', 'Espeon', 'Umbreon', 'Chikorita',
   'Bayleef', 'Meganium', 'Cyndaquil', 'Quilava', 'Typhlosion', 'Totodile', 'Croconaw', 'Feraligatr', 'Pichu', 'Cleffa',
   'Igglybuff',  'Togepi', 'Togetic', 'Mareep', 'Flaaffy', 'Ampharos', 'Bonsley', 'Sudowoodo', 'Wynaut', 'Wobbuffet',
-  'Steelix', 'Heracross', 'Houndour', 'Houndoom', 'Raikou', 'Larvitar', 'Pupitar', 'Tyranitar', 'Ralts', 'Kirlia',
+  'Steelix', 'Heracross', 'Houndour', 'Houndoom', 'Raikou', 'Entei', 'Larvitar', 'Pupitar', 'Tyranitar', 'Ralts', 'Kirlia',
   'Gardevoir', 'Slakoth', 'Vigoroth', 'Slaking', 'Sableye', 'Gulpin', 'Swalot', 'Swablu', 'Altaria', 'Shuppet', 'Banette',
   'Absol', 'Wynaut', 'Spheal', 'Sealeo', 'Walrein', 'Bonsly', 'Mime Jr.', 'Riolu', 'Lucario', 'Croagunk', 'Toxicroak',
   'Snover', 'Abomasnow', 'Magnezone', 'Togekiss', 'Leafeon', 'Glaceon', 'Gallade', 'Sylveon', 'Dedenne', 'Stufful', 'Bewear',
-  'Comfey'];
+  'Comfey', 'Cramorant', 'Sprigatito', 'Floragato', 'Meowscarada', 'Fuecoco', 'Crocalor', 'Skeledirge', 'Quaxly', 'Quaxwell', 'Quaqaval'];
   pokemonList: Array<Pokemon> = [
     {
       name: 'Bulbasaur',
-      berry: 'Berries.Durin',
+      berry: 'Durin Berry',
       ingredients: ['honey', 'snoozytomato', 'softpotato'],
-      mainSkill: 'Skills.IngredientMagnetS',
+      mainSkill: 'Extra Helpful S',
       specialty: 'Ingredients'
     },
     {
       name: 'Ivysaur',
-      berry: 'Berries.Durin',
+      berry: 'Durin Berry',
       ingredients: ['honey', 'snoozytomato', 'softpotato'],
-      mainSkill: 'Skills.IngredientMagnetS',
+      mainSkill: 'Extra Helpful S',
       specialty: 'Ingredients'
     },
     {
       name: 'Venusaur',
-      berry: 'Berries.Durin',
+      berry: 'Durin Berry',
       ingredients: ['honey', 'snoozytomato', 'softpotato'],
-      mainSkill: 'Skills.IngredientMagnetS',
+      mainSkill: 'Extra Helpful S',
       specialty: 'Ingredients'
     },
     {
       name: 'Charmander',
-      berry: 'Berries.Leppa',
+      berry: 'Leppa Berry',
       ingredients: ['beansausage', 'warmingginger', 'fieryherb'],
-      mainSkill: 'Skills.IngredientMagnetS',
+      mainSkill: 'Extra Helpful S',
       specialty: 'Ingredients'
     },
     {
       name: 'Charmeleon',
-      berry: 'Berries.Leppa',
+      berry: 'Leppa Berry',
       ingredients: ['beansausage', 'warmingginger', 'fieryherb'],
-      mainSkill: 'Skills.IngredientMagnetS',
+      mainSkill: 'Extra Helpful S',
       specialty: 'Ingredients'
     },
     {
       name: 'Charizard',
-      berry: 'Berries.Leppa',
+      berry: 'Leppa Berry',
       ingredients: ['beansausage', 'warmingginger', 'fieryherb'],
-      mainSkill: 'Skills.IngredientMagnetS',
+      mainSkill: 'Extra Helpful S',
       specialty: 'Ingredients'
     },
     {
       name: 'Squirtle',
-      berry: 'Berries.Oran',
+      berry: 'Oran Berry',
       ingredients: ['moomoomilk', 'soothingcacao', 'beansausage'],
-      mainSkill: 'Skills.IngredientMagnetS',
+      mainSkill: 'Extra Helpful S',
       specialty: 'Ingredients'
     },
     {
       name: 'Wartortle',
-      berry: 'Berries.Oran',
+      berry: 'Oran Berry',
       ingredients: ['moomoomilk', 'soothingcacao', 'beansausage'],
-      mainSkill: 'Skills.IngredientMagnetS',
+      mainSkill: 'Extra Helpful S',
       specialty: 'Ingredients'
     },
     {
       name: 'Blastoise',
-      berry: 'Berries.Oran',
+      berry: 'Oran Berry',
       ingredients: ['moomoomilk', 'soothingcacao', 'beansausage'],
-      mainSkill: 'Skills.IngredientMagnetS',
+      mainSkill: 'Extra Helpful S',
       specialty: 'Ingredients'
     },
     {
       name: 'Caterpie',
-      berry: 'Berries.Lum',
+      berry: 'Lum Berry',
       ingredients: ['honey', 'snoozytomato', 'greengrasssoybeans'],
-      mainSkill: 'Skills.IngredientMagnetS',
+      mainSkill: 'Extra Helpful S',
       specialty: 'Berries'
     },
     {
       name: 'Metapod',
-      berry: 'Berries.Lum',
+      berry: 'Lum Berry',
       ingredients: ['honey', 'snoozytomato', 'greengrasssoybeans'],
-      mainSkill: 'Skills.IngredientMagnetS',
+      mainSkill: 'Extra Helpful S',
       specialty: 'Berries'
     },
     {
       name: 'Butterfree',
-      berry: 'Berries.Lum',
+      berry: 'Lum Berry',
       ingredients: ['honey', 'snoozytomato', 'greengrasssoybeans'],
-      mainSkill: 'Skills.IngredientMagnetS',
+      mainSkill: 'Extra Helpful S',
       specialty: 'Berries'
     },
     {
       name: 'Rattata',
-      berry: 'Berries.Persim',
+      berry: 'Persim Berry',
       ingredients: ['fancyapple', 'snoozytomato', 'greengrasssoybeans'],
-      mainSkill: 'Skills.ChargeEnergyS',
+      mainSkill: 'Charge Energy S',
       specialty: 'Berries'
     },
     {
       name: 'Raticate',
-      berry: 'Berries.Persim',
+      berry: 'Persim Berry',
       ingredients: ['fancyapple', 'snoozytomato', 'greengrasssoybeans'],
-      mainSkill: 'Skills.ChargeEnergyS',
+      mainSkill: 'Charge Energy S',
       specialty: 'Berries'
     },
     {
       name: 'Ekans',
-      berry: 'Berries.Chesto',
+      berry: 'Chesto Berry',
       ingredients: ['beansausage', 'fancyegg', 'fieryherb'],
-      mainSkill: 'Skills.ChargeEnergyS',
+      mainSkill: 'Charge Energy S',
       specialty: 'Berries'
     },
     {
       name: 'Arbok',
-      berry: 'Berries.Chesto',
+      berry: 'Chesto Berry',
       ingredients: ['beansausage', 'fancyegg', 'fieryherb'],
-      mainSkill: 'Skills.ChargeEnergyS',
+      mainSkill: 'Charge Energy S',
       specialty: 'Berries'
     },
     {
       name: 'Pikachu',
-      berry: 'Berries.Grepa',
+      berry: 'Grepa Berry',
       ingredients: ['fancyapple', 'warmingginger', 'fancyegg'],
-      mainSkill: 'Skills.ChargeStrengthS',
+      mainSkill: 'Charge Strength S',
       specialty: 'Berries'
     },
     {
       name: 'Raichu',
-      berry: 'Berries.Grepa',
+      berry: 'Grepa Berry',
       ingredients: ['fancyapple', 'warmingginger', 'fancyegg'],
-      mainSkill: 'Skills.ChargeStrengthS',
+      mainSkill: 'Charge Strength S',
       specialty: 'Berries'
     },
     {
       name: 'Clefairy',
-      berry: 'Berries.Pecha',
+      berry: 'Pecha Berry',
       ingredients: ['fancyapple', 'honey', 'greegrasssoybeans'],
-      mainSkill: 'Skills.Metronome',
+      mainSkill: 'Metronome',
       specialty: 'Berries'
     },
     {
       name: 'Clefable',
-      berry: 'Berries.Pecha',
+      berry: 'Pecha Berry',
       ingredients: ['fancyapple', 'honey', 'greegrasssoybeans'],
-      mainSkill: 'Skills.Metronome',
+      mainSkill: 'Metronome',
       specialty: 'Berries'
     },
     {
       name: 'Vulpix',
-      berry: 'Berries.Leppa',
+      berry: 'Leppa Berry',
       ingredients: ['greengrasssoybeans', 'greengrasscorn', 'softpotato'],
-      mainSkill: 'Skills.EnergizingCheerS',
+      mainSkill: 'Energizing Cheer S',
       specialty: 'Berries'
     },
     {
       name: 'Ninetales',
-      berry: 'Berries.Leppa',
+      berry: 'Leppa Berry',
       ingredients: ['greengrasssoybeans', 'greengrasscorn', 'softpotato'],
-      mainSkill: 'Skills.EnergizingCheerS',
+      mainSkill: 'Energizing Cheer S',
       specialty: 'Berries'
     },
     {
       name: 'Jigglypuff',
-      berry: 'Berries.Pecha',
+      berry: 'Pecha Berry',
       ingredients: ['honey', 'pureoil', 'soothingcacao'],
-      mainSkill: 'Skills.EnergyForEveryoneS',
+      mainSkill: 'Energy for Everyone S',
       specialty: 'Skills'
     },{
       name: 'Wigglytuff',
-      berry: 'Berries.Pecha',
+      berry: 'Pecha Berry',
       ingredients: ['honey', 'pureoil', 'soothingcacao'],
-      mainSkill: 'Skills.EnergyForEveryoneS',
+      mainSkill: 'Energy for Everyone S',
       specialty: 'Skills'
     },
     {
       name: 'Diglett',
-      berry: 'Berries.Figy',
+      berry: 'Figy Berry',
       ingredients: ['snoozytomato', 'largeleek', 'greengrasssoybeans'],
-      mainSkill: 'Skills.ChargeStrengthS',
+      mainSkill: 'Charge Strength S',
       specialty: 'Ingredients'
     },
     {
       name: 'Dugtrio',
-      berry: 'Berries.Figy',
+      berry: 'Figy Berry',
       ingredients: ['snoozytomato', 'largeleek', 'greengrasssoybeans'],
-      mainSkill: 'Skills.ChargeStrengthS',
+      mainSkill: 'Charge Strength S',
       specialty: 'Ingredients'
     },
     {
       name: 'Meowth',
-      berry: 'Berries.Persim',
+      berry: 'Persim Berry',
       ingredients: ['moomoomilk', 'beansausage'],
-      mainSkill: 'Skills.DreamShardMagnetS',
+      mainSkill: 'Dream Shard Magnet S',
       specialty: 'Skills'
     },
     {
       name: 'Persian',
-      berry: 'Berries.Persim',
+      berry: 'Persim Berry',
       ingredients: ['moomoomilk', 'beansausage'],
-      mainSkill: 'Skills.DreamShardMagnetS',
+      mainSkill: 'Dream Shard Magnet S',
       specialty: 'Skills'
     },
     {
       name: 'Psyduck',
-      berry: 'Berries.Oran',
+      berry: 'Oran Berry',
       ingredients: ['soothingcacao', 'fancyapple', 'beansausage'],
-      mainSkill: 'Skills.ChargeStrengthSVar',
+      mainSkill: 'Charge Strength S - Var',
       specialty: 'Skills'
     },
     {
       name: 'Golduck',
-      berry: 'Berries.Oran',
+      berry: 'Oran Berry',
       ingredients: ['soothingcacao', 'fancyapple', 'beansausage'],
-      mainSkill: 'Skills.ChargeStrengthSVar',
+      mainSkill: 'Charge Strength S - Var',
       specialty: 'Skills'
     },
     {
       name: 'Mankey',
-      berry: 'Berries.Cheri',
+      berry: 'Cheri Berry',
       ingredients: ['beansausage', 'tastymushrooms', 'honey'],
-      mainSkill: 'Skills.ChargeStrengthSVar',
+      mainSkill: 'Charge Strength S - Var',
       specialty: 'Berries'
     },
     {
       name: 'Primeape',
-      berry: 'Berries.Cheri',
+      berry: 'Cheri Berry',
       ingredients: ['beansausage', 'tastymushrooms', 'honey'],
-      mainSkill: 'Skills.ChargeStrengthSVar',
+      mainSkill: 'Charge Strength S - Var',
       specialty: 'Berries'
     },
     {
       name: 'Growlithe',
-      berry: 'Berries.Leppa',
+      berry: 'Leppa Berry',
       ingredients: ['fieryherb', 'beansausage', 'moomoomilk'],
-      mainSkill: 'Skills.ExtraHelpfulS',
+      mainSkill: 'Extra Helpful S',
       specialty: 'Skills'
     },
     {
       name: 'Arcanine',
-      berry: 'Berries.Leppa',
+      berry: 'Leppa Berry',
       ingredients: ['fieryherb', 'beansausage', 'moomoomilk'],
-      mainSkill: 'Skills.ExtraHelpfulS',
+      mainSkill: 'Extra Helpful S',
       specialty: 'Skills'
     },
     {
       name: 'Bellsprout',
-      berry: 'Berries.Durin',
+      berry: 'Durin Berry',
       ingredients: ['snoozytomato', 'softpotato', 'largeleek'],
-      mainSkill: 'Skills.ChargeEnergyS',
+      mainSkill: 'Charge Energy S',
       specialty: 'Ingredients'
     },
     {
       name: 'Weepinbell',
-      berry: 'Berries.Durin',
+      berry: 'Durin Berry',
       ingredients: ['snoozytomato', 'softpotato', 'largeleek'],
-      mainSkill: 'Skills.ChargeEnergyS',
+      mainSkill: 'Charge Energy S',
       specialty: 'Ingredients'
     },
     {
       name: 'Victreebel',
-      berry: 'Berries.Durin',
+      berry: 'Durin Berry',
       ingredients: ['snoozytomato', 'softpotato', 'largeleek'],
-      mainSkill: 'Skills.ChargeEnergyS',
+      mainSkill: 'Charge Energy S',
       specialty: 'Ingredients'
     },
     {
       name: 'Geodude',
-      berry: 'Berries.Sitrus',
+      berry: 'Sitrus Berry',
       ingredients: ['greengrasssoybeans', 'softpotato', 'tastymushrooms'],
-      mainSkill: 'Skills.ChargeStrengthSVar',
+      mainSkill: 'Charge Strength S - Var',
       specialty: 'Ingredients'
     },
     {
       name: 'Graveler',
-      berry: 'Berries.Sitrus',
+      berry: 'Sitrus Berry',
       ingredients: ['greengrasssoybeans', 'softpotato', 'tastymushrooms'],
-      mainSkill: 'Skills.ChargeStrengthSVar',
+      mainSkill: 'Charge Strength S - Var',
       specialty: 'Ingredients'
     },
     {
       name: 'Golem',
-      berry: 'Berries.Sitrus',
+      berry: 'Sitrus Berry',
       ingredients: ['greengrasssoybeans', 'softpotato', 'tastymushrooms'],
-      mainSkill: 'Skills.ChargeStrengthSVar',
+      mainSkill: 'Charge Strength S - Var',
       specialty: 'Ingredients'
     },
     {
       name: 'Slowpoke',
-      berry: 'Berries.Oran',
+      berry: 'Oran Berry',
       ingredients: ['soothingcacao', 'slowpoketail', 'snoozytomato'],
-      mainSkill: 'Skills.EnergizingCheerS',
+      mainSkill: 'Energizing Cheer S',
       specialty: 'Skills'
     },
     {
       name: 'Slowbro',
-      berry: 'Berries.Oran',
+      berry: 'Oran Berry',
       ingredients: ['soothingcacao', 'slowpoketail', 'snoozytomato'],
-      mainSkill: 'Skills.EnergizingCheerS',
+      mainSkill: 'Energizing Cheer S',
       specialty: 'Skills'
     },
     {
       name: 'Slowking',
-      berry: 'Berries.Oran',
+      berry: 'Oran Berry',
       ingredients: ['soothingcacao', 'slowpoketail', 'snoozytomato'],
-      mainSkill: 'Skills.EnergizingCheerS',
+      mainSkill: 'Energizing Cheer S',
       specialty: 'Skills'
     },
     {
       name: 'Magnemite',
-      berry: 'Berries.Belue',
+      berry: 'Belue Berry',
       ingredients: ['pureoil', 'fieryherb'],
-      mainSkill: 'Skills.CookingPowerUpS',
+      mainSkill: 'Cooking Power-Up S',
       specialty: 'Skills'
     },
     {
       name: 'Magneton',
-      berry: 'Berries.Belue',
+      berry: 'Belue Berry',
       ingredients: ['pureoil', 'fieryherb'],
-      mainSkill: 'Skills.CookingPowerUpS',
+      mainSkill: 'Cooking Power-Up S',
       specialty: 'Skills'
     },
     {
       name: 'Doduo',
-      berry: 'Berries.Pamtre',
+      berry: 'Pamtre Berry',
       ingredients: ['greengrasssoybeans', 'soothingcacao', 'beansausage'],
-      mainSkill: 'Skills.IngredientMagnetS',
+      mainSkill: 'Extra Helpful S',
       specialty: 'Berries'
     },
     {
       name: 'Dodrio',
-      berry: 'Berries.Pamtre',
+      berry: 'Pamtre Berry',
       ingredients: ['greengrasssoybeans', 'soothingcacao', 'beansausage'],
-      mainSkill: 'Skills.IngredientMagnetS',
+      mainSkill: 'Extra Helpful S',
       specialty: 'Berries'
     },
     {
       name: 'Gastly',
-      berry: 'Berries.Bluk',
+      berry: 'Bluk Berry',
       ingredients: ['fieryherb', 'tastymushrooms', 'pureoil'],
-      mainSkill: 'Skills.ChargeStrengthS',
+      mainSkill: 'Charge Strength S',
       specialty: 'Ingredients'
     },
     {
       name: 'Haunter',
-      berry: 'Berries.Bluk',
+      berry: 'Bluk Berry',
       ingredients: ['fieryherb', 'tastymushrooms', 'pureoil'],
-      mainSkill: 'Skills.ChargeStrengthS',
+      mainSkill: 'Charge Strength S',
       specialty: 'Ingredients'
     },
     {
       name: 'Gengar',
-      berry: 'Berries.Bluk',
+      berry: 'Bluk Berry',
       ingredients: ['fieryherb', 'tastymushrooms', 'pureoil'],
-      mainSkill: 'Skills.ChargeStrengthS',
+      mainSkill: 'Charge Strength S',
       specialty: 'Ingredients'
     },
     {
       name: 'Onix',
-      berry: 'Berries.Sitrus',
+      berry: 'Sitrus Berry',
       ingredients: ['snoozytomato', 'beansausage', 'softpotato'],
-      mainSkill: 'Skills.IngredientMagnetS',
+      mainSkill: 'Extra Helpful S',
       specialty: 'Berries'
     },
     {
       name: 'Cubone',
-      berry: 'Berries.Figy',
+      berry: 'Figy Berry',
       ingredients: ['warmingginger', 'soothingcacao'],
-      mainSkill: 'Skills.ChargeEnergyS',
+      mainSkill: 'Charge Energy S',
       specialty: 'Berries'
     },
     {
       name: 'Marowak',
-      berry: 'Berries.Figy',
+      berry: 'Figy Berry',
       ingredients: ['warmingginger', 'soothingcacao'],
-      mainSkill: 'Skills.ChargeEnergyS',
+      mainSkill: 'Charge Energy S',
       specialty: 'Berries'
     },
     {
       name: 'Kangaskhan',
-      berry: 'Berries.Persim',
+      berry: 'Persim Berry',
       ingredients: ['warmingginger', 'softpotato', 'greengrasssoybeans'],
-      mainSkill: 'Skills.IngredientMagnetS',
+      mainSkill: 'Extra Helpful S',
       specialty: 'Ingredients'
     },
     {
       name: 'Mr. Mime',
-      berry: 'Berries.Mago',
+      berry: 'Mago Berry',
       ingredients: ['snoozytomato', 'softpotato', 'largeleek'],
-      mainSkill: 'Skills.ChargeStrengthS',
+      mainSkill: 'Charge Strength S',
       specialty: 'Ingredients'
     },
     {
       name: 'Pinsir',
-      berry: 'Berries.Lum',
+      berry: 'Lum Berry',
       ingredients: ['honey', 'fancyapple', 'beansausage'],
-      mainSkill: 'Skills.ChargeStrengthS',
+      mainSkill: 'Charge Strength S',
       specialty: 'Ingredients'
     },
     {
       name: 'Ditto',
-      berry: 'Berries.Persim',
+      berry: 'Persim Berry',
       ingredients: ['pureoil', 'largeleek', 'slowpoketail'],
-      mainSkill: 'Skills.ChargeStrengthS',
+      mainSkill: 'Charge Strength S',
       specialty: 'Ingredients'
     },
     {
       name: 'Eevee',
-      berry: 'Berries.Persim',
+      berry: 'Persim Berry',
       ingredients: ['moomoomilk', 'soothingcacao', 'beansausage'],
-      mainSkill: 'Skills.IngredientMagnetS',
+      mainSkill: 'Extra Helpful S',
       specialty: 'Skills'
     },
     {
       name: 'Vaporeon',
-      berry: 'Berries.Oran',
+      berry: 'Oran Berry',
       ingredients: ['moomoomilk', 'soothingcacao', 'beansausage'],
-      mainSkill: 'Skills.IngredientMagnetS',
+      mainSkill: 'Extra Helpful S',
       specialty: 'Skills'
     },
     {
       name: 'Jolteon',
-      berry: 'Berries.Grepa',
+      berry: 'Grepa Berry',
       ingredients: ['moomoomilk', 'soothingcacao', 'beansausage'],
-      mainSkill: 'Skills.ExtraHelpfulS',
+      mainSkill: 'Extra Helpful S',
       specialty: 'Skills'
     },
     {
       name: 'Flareon',
-      berry: 'Berries.Leppa',
+      berry: 'Leppa Berry',
       ingredients: ['moomoomilk', 'soothingcacao', 'beansausage'],
-      mainSkill: 'Skills.CookingPowerUpS',
+      mainSkill: 'Cooking Power-Up S',
       specialty: 'Skills'
     },
     {
       name: 'Dratini',
-      berry: 'Berries.Yache',
+      berry: 'Yache Berry',
       ingredients: ['fieryherb', 'greengrasscorn', 'pureoil'],
-      mainSkill: 'Skills.ChargeEnergyS',
+      mainSkill: 'Charge Energy S',
       specialty: 'Ingredients'
     },
     {
       name: 'Dragonair',
-      berry: 'Berries.Yache',
+      berry: 'Yache Berry',
       ingredients: ['fieryherb', 'greengrasscorn', 'pureoil'],
-      mainSkill: 'Skills.ChargeEnergyS',
+      mainSkill: 'Charge Energy S',
       specialty: 'Ingredients'
     },
     {
       name: 'Dragonite',
-      berry: 'Berries.Yache',
+      berry: 'Yache Berry',
       ingredients: ['fieryherb', 'greengrasscorn', 'pureoil'],
-      mainSkill: 'Skills.ChargeEnergyS',
+      mainSkill: 'Charge Energy S',
       specialty: 'Ingredients'
     },
     {
       name: 'Chikorita',
-      berry: 'Berries.Durin',
+      berry: 'Durin Berry',
       ingredients: ['soothingcacao', 'honey', 'largeleek'],
-      mainSkill: 'Skills.ChargeStrengthSVar',
+      mainSkill: 'Charge Strength S - Var',
       specialty: 'Berries'
     },
     {
       name: 'Bayleef',
-      berry: 'Berries.Durin',
+      berry: 'Durin Berry',
       ingredients: ['soothingcacao', 'honey', 'largeleek'],
-      mainSkill: 'Skills.ChargeStrengthSVar',
+      mainSkill: 'Charge Strength S - Var',
       specialty: 'Berries'
     },
     {
       name: 'Meganium',
-      berry: 'Berries.Durin',
+      berry: 'Durin Berry',
       ingredients: ['soothingcacao', 'honey', 'largeleek'],
-      mainSkill: 'Skills.ChargeStrengthSVar',
+      mainSkill: 'Charge Strength S - Var',
       specialty: 'Berries'
     },
     {
       name: 'Cyndaquil',
-      berry: 'Berries.Leppa',
+      berry: 'Leppa Berry',
       ingredients: ['warmingginger', 'fieryherb', 'pureoil'],
-      mainSkill: 'Skills.ChargeStrengthSVar',
+      mainSkill: 'Charge Strength S - Var',
       specialty: 'Berries'
     },
     {
       name: 'Quilava',
-      berry: 'Berries.Leppa',
+      berry: 'Leppa Berry',
       ingredients: ['warmingginger', 'fieryherb', 'pureoil'],
-      mainSkill: 'Skills.ChargeStrengthSVar',
+      mainSkill: 'Charge Strength S - Var',
       specialty: 'Berries'
     },
     {
       name: 'Typhlosion',
-      berry: 'Berries.Leppa',
+      berry: 'Leppa Berry',
       ingredients: ['warmingginger', 'fieryherb', 'pureoil'],
-      mainSkill: 'Skills.ChargeStrengthSVar',
+      mainSkill: 'Charge Strength S - Var',
       specialty: 'Berries'
     },
     {
       name: 'Totodile',
-      berry: 'Berries.Oran',
+      berry: 'Oran Berry',
       ingredients: ['beansausage', 'pureoil'],
-      mainSkill: 'Skills.ChargeStrengthSVar',
+      mainSkill: 'Charge Strength S - Var',
       specialty: 'Berries'
     },
     {
       name: 'Croconaw',
-      berry: 'Berries.Oran',
+      berry: 'Oran Berry',
       ingredients: ['beansausage', 'pureoil'],
-      mainSkill: 'Skills.ChargeStrengthSVar',
+      mainSkill: 'Charge Strength S - Var',
       specialty: 'Berries'
     },
     {
       name: 'Feraligatr',
-      berry: 'Berries.Oran',
+      berry: 'Oran Berry',
       ingredients: ['beansausage', 'pureoil'],
-      mainSkill: 'Skills.ChargeStrengthSVar',
+      mainSkill: 'Charge Strength S - Var',
       specialty: 'Berries'
     },
     {
       name: 'Pichu',
-      berry: 'Berries.Grepa',
+      berry: 'Grepa Berry',
       ingredients: ['fancyapple', 'warmingginger', 'fancyegg'],
-      mainSkill: 'Skills.ChargeStrengthS',
+      mainSkill: 'Charge Strength S',
       specialty: 'Berries'
     },
     {
       name: 'Cleffa',
-      berry: 'Berries.Pecha',
+      berry: 'Pecha Berry',
       ingredients: ['fancyapple', 'honey', 'greegrasssoybeans'],
-      mainSkill: 'Skills.Metronome',
+      mainSkill: 'Metronome',
       specialty: 'Berries'
     },
     {
       name: 'Igglybuff',
-      berry: 'Berries.Pecha',
+      berry: 'Pecha Berry',
       ingredients: ['honey', 'pureoil', 'soothingcacao'],
-      mainSkill: 'Skills.EnergyForEveryoneS',
+      mainSkill: 'Energy for Everyone S',
       specialty: 'Skills'
     },
     {
       name: 'Togepi',
-      berry: 'Berries.Pecha',
+      berry: 'Pecha Berry',
       ingredients: ['fancyegg', 'warmingginger', 'soothingcacao'],
-      mainSkill: 'Skills.Metronome',
+      mainSkill: 'Metronome',
       specialty: 'Skills'
     },
     {
       name: 'Togetic',
-      berry: 'Berries.Pecha',
+      berry: 'Pecha Berry',
       ingredients: ['fancyegg', 'warmingginger', 'soothingcacao'],
-      mainSkill: 'Skills.Metronome',
+      mainSkill: 'Metronome',
       specialty: 'Skills'
     },
     {
       name: 'Mareep',
-      berry: 'Berries.Grepa',
+      berry: 'Grepa Berry',
       ingredients: ['fieryherb', 'fancyegg'],
-      mainSkill: 'Skills.ChargeStrengthM',
+      mainSkill: 'Charge Strength M',
       specialty: 'Skills'
     },
     {
       name: 'Flaaffy',
-      berry: 'Berries.Grepa',
+      berry: 'Grepa Berry',
       ingredients: ['fieryherb', 'fancyegg'],
-      mainSkill: 'Skills.ChargeStrengthM',
+      mainSkill: 'Charge Strength M',
       specialty: 'Skills'
     },
     {
       name: 'Ampharos',
-      berry: 'Berries.Grepa',
+      berry: 'Grepa Berry',
       ingredients: ['fieryherb', 'fancyegg'],
-      mainSkill: 'Skills.ChargeStrengthM',
+      mainSkill: 'Charge Strength M',
       specialty: 'Skills'
     },
     {
       name: 'Sudowoodo',
-      berry: 'Berries.Sitrus',
+      berry: 'Sitrus Berry',
       ingredients: ['snoozytomato', 'greengrasssoybeans', 'tastymushrooms'],
-      mainSkill: 'Skills.ChargeStrengthM',
+      mainSkill: 'Charge Strength M',
       specialty: 'Skills'
     },
     {
       name: 'Espeon',
-      berry: 'Berries.Mago',
+      berry: 'Mago Berry',
       ingredients: ['moomoomilk', 'soothingcacao', 'beansausage'],
-      mainSkill: 'Skills.ChargeStrengthM',
+      mainSkill: 'Charge Strength M',
       specialty: 'Skills'
     },
     {
       name: 'Umbreon',
-      berry: 'Berries.Wiki',
+      berry: 'Wiki Berry',
       ingredients: ['moomoomilk', 'soothingcacao', 'beansausage'],
-      mainSkill: 'Skills.ChargeEnergyS',
+      mainSkill: 'Charge Energy S',
       specialty: 'Skills'
     },
     {
       name: 'Wobbuffet',
-      berry: 'Berries.Mago',
+      berry: 'Mago Berry',
       ingredients: ['fancyapple', 'tastymushrooms', 'pureoil'],
-      mainSkill: 'Skills.EnergizingCheerS',
+      mainSkill: 'Energizing Cheer S',
       specialty: 'Skills'
     },
     {
       name: 'Steelix',
-      berry: 'Berries.Belue',
+      berry: 'Belue Berry',
       ingredients: ['snoozytomato', 'beansausage', 'softpotato'],
-      mainSkill: 'Skills.IngredientMagnetS',
+      mainSkill: 'Extra Helpful S',
       specialty: 'Berries'
     },
     {
       name: 'Heracross',
-      berry: 'Berries.Lum',
+      berry: 'Lum Berry',
       ingredients: ['honey', 'tastymushrooms', 'beansausage'],
-      mainSkill: 'Skills.IngredientMagnetS',
+      mainSkill: 'Extra Helpful S',
       specialty: 'Skills'
     },
     {
       name: 'Delibird',
-      berry: 'Berries.Pamtre',
+      berry: 'Pamtre Berry',
       ingredients: ['fancyegg', 'fancyapple', 'soothingcacao'],
-      mainSkill: 'Skills.IngredientMagnetS',
+      mainSkill: 'Extra Helpful S',
       specialty: 'Ingredients'
     },
     {
       name: 'Houndour',
-      berry: 'Berries.Wiki',
+      berry: 'Wiki Berry',
       ingredients: ['fieryherb', 'warmingginger', 'largeleek'],
-      mainSkill: 'Skills.ChargeStrengthS',
+      mainSkill: 'Charge Strength S',
       specialty: 'Ingredients'
     },
     {
       name: 'Houndoom',
-      berry: 'Berries.Wiki',
+      berry: 'Wiki Berry',
       ingredients: ['fieryherb', 'warmingginger', 'largeleek'],
-      mainSkill: 'Skills.ChargeStrengthS',
+      mainSkill: 'Charge Strength S',
       specialty: 'Berries'
     },
     {
       name: 'Raikou',
-      berry: 'Berries.Grepa',
+      berry: 'Grepa Berry',
       ingredients: ['beansausage', 'fieryherb', 'largeleek'],
-      mainSkill: 'Skills.HelperBoost',
+      mainSkill: 'Helper Boost',
+      specialty: 'Skills'
+    },
+    {
+      name: 'Entei',
+      berry: 'Leppa Berry',
+      ingredients: ['pureoil', 'snoozytomato', 'tastymushroom'],
+      mainSkill: 'Helper Boost',
       specialty: 'Skills'
     },
     {
       name: 'Larvitar',
-      berry: 'Berries.Sitrus',
+      berry: 'Sitrus Berry',
       ingredients: ['warmingginger', 'greengrasssoybeans', 'beansausage'],
-      mainSkill: 'Skills.ChargeEnergyS',
+      mainSkill: 'Charge Energy S',
       specialty: 'Berries'
     },
     {
       name: 'Pupitar',
-      berry: 'Berries.Sitrus',
+      berry: 'Sitrus Berry',
       ingredients: ['warmingginger', 'greengrasssoybeans', 'beansausage'],
-      mainSkill: 'Skills.ChargeEnergyS',
+      mainSkill: 'Charge Energy S',
       specialty: 'Ingredients'
     },
     {
       name: 'Tyranitar',
-      berry: 'Berries.Wiki',
+      berry: 'Wiki Berry',
       ingredients: ['warmingginger', 'greengrasssoybeans', 'beansausage'],
-      mainSkill: 'Skills.ChargeEnergyS',
+      mainSkill: 'Charge Energy S',
       specialty: 'Ingredients'
     },
     {
       name: 'Ralts',
-      berry: 'Berries.Mago',
+      berry: 'Mago Berry',
       ingredients: ['fancyapple', 'greengrasscorn', 'largeleek'],
-      mainSkill: 'Skills.EnergyForEveryoneS',
+      mainSkill: 'Energy for Everyone S',
       specialty: 'Skills'
     },
     {
       name: 'Kirlia',
-      berry: 'Berries.Mago',
+      berry: 'Mago Berry',
       ingredients: ['fancyapple', 'greengrasscorn', 'largeleek'],
-      mainSkill: 'Skills.EnergyForEveryoneS',
+      mainSkill: 'Energy for Everyone S',
       specialty: 'Skills'
     },
     {
       name: 'Gardevoir',
-      berry: 'Berries.Mago',
+      berry: 'Mago Berry',
       ingredients: ['fancyapple', 'greengrasscorn', 'largeleek'],
-      mainSkill: 'Skills.EnergyForEveryoneS',
+      mainSkill: 'Energy for Everyone S',
       specialty: 'Skills'
     },
     {
       name: 'Slakoth',
-      berry: 'Berries.Persim',
+      berry: 'Persim Berry',
       ingredients: ['snoozytomato', 'honey', 'fancyapple'],
-      mainSkill: 'Skills.IngredientMagnetS',
+      mainSkill: 'Extra Helpful S',
       specialty: 'Berries'
     },
     {
       name: 'Vigoroth',
-      berry: 'Berries.Persim',
+      berry: 'Persim Berry',
       ingredients: ['snoozytomato', 'honey', 'fancyapple'],
-      mainSkill: 'Skills.IngredientMagnetS',
+      mainSkill: 'Extra Helpful S',
       specialty: 'Berries'
     },
     {
       name: 'Slaking',
-      berry: 'Berries.Persim',
+      berry: 'Persim Berry',
       ingredients: ['snoozytomato', 'honey', 'fancyapple'],
-      mainSkill: 'Skills.IngredientMagnetS',
+      mainSkill: 'Extra Helpful S',
       specialty: 'Berries'
     },
     {
       name: 'Sableye',
-      berry: 'Berries.Wiki',
+      berry: 'Wiki Berry',
       ingredients: ['pureoil', 'tastymushrooms'],
-      mainSkill: 'Skills.DreamShardMagnetSVar',
+      mainSkill: 'Dream Shard Magnet S - Var',
       specialty: 'Skills'
     },
     {
       name: 'Gulpin',
-      berry: 'Berries.Chesto',
+      berry: 'Chesto Berry',
       ingredients: ['greengrasssoybeans', 'tastymushrooms'],
-      mainSkill: 'Skills.DreamShardMagnetSVar',
+      mainSkill: 'Dream Shard Magnet S - Var',
       specialty: 'Skills'
     },
     {
       name: 'Swalot',
-      berry: 'Berries.Chesto',
+      berry: 'Chesto Berry',
       ingredients: ['greengrasssoybeans', 'tastymushrooms'],
-      mainSkill: 'Skills.DreamShardMagnetSVar',
+      mainSkill: 'Dream Shard Magnet S - Var',
       specialty: 'Skills'
     },
     {
       name: 'Swablu',
-      berry: 'Berries.Pamtre',
+      berry: 'Pamtre Berry',
       ingredients: ['fancyegg', 'greengrasssoybeans', 'fancyapple'],
-      mainSkill: 'Skills.ChargeEnergyS',
+      mainSkill: 'Charge Energy S',
       specialty: 'Berries'
     },
     {
       name: 'Altaria',
-      berry: 'Berries.Yache',
+      berry: 'Yache Berry',
       ingredients: ['fancyegg', 'greengrasssoybeans', 'fancyapple'],
-      mainSkill: 'Skills.ChargeEnergyS',
+      mainSkill: 'Charge Energy S',
       specialty: 'Berries'
     },
     {
       name: 'Shuppet',
-      berry: 'Berries.Bluk',
+      berry: 'Bluk Berry',
       ingredients: ['pureoil', 'warmingginger', 'tastymushroom'],
-      mainSkill: 'Skills.ChargeStrengthS',
+      mainSkill: 'Charge Strength S',
       specialty: 'Berries'
     },
     {
       name: 'Banette',
-      berry: 'Berries.Bluk',
+      berry: 'Bluk Berry',
       ingredients: ['pureoil', 'warmingginger', 'tastymushroom'],
-      mainSkill: 'Skills.ChargeStrengthS',
+      mainSkill: 'Charge Strength S',
       specialty: 'Berries'
     },
     {
       name: 'Absol',
-      berry: 'Berries.Wiki',
+      berry: 'Wiki Berry',
       ingredients: ['soothingcacao', 'fancyapple', 'tastymushroom'],
-      mainSkill: 'Skills.ChargeStrengthS',
+      mainSkill: 'Charge Strength S',
       specialty: 'Ingredients'
     },
     {
       name: 'Wynaut',
-      berry: 'Berries.Mago',
+      berry: 'Mago Berry',
       ingredients: ['fancyapple', 'tastymushrooms', 'pureoil'],
-      mainSkill: 'Skills.EnergizingCheerS',
+      mainSkill: 'Energizing Cheer S',
       specialty: 'Skills'
     },
     {
       name: 'Spheal',
-      berry: 'Berries.Rawst',
+      berry: 'Rawst Berry',
       ingredients: ['pureoil', 'beansausage', 'warmingginger'],
-      mainSkill: 'Skills.IngredientMagnetS',
+      mainSkill: 'Extra Helpful S',
       specialty: 'Berries'
     },
     {
       name: 'Sealeo',
-      berry: 'Berries.Rawst',
+      berry: 'Rawst Berry',
       ingredients: ['pureoil', 'beansausage', 'warmingginger'],
-      mainSkill: 'Skills.IngredientMagnetS',
+      mainSkill: 'Extra Helpful S',
       specialty: 'Berries'
     },
     {
       name: 'Walrein',
-      berry: 'Berries.Rawst',
+      berry: 'Rawst Berry',
       ingredients: ['pureoil', 'beansausage', 'warmingginger'],
-      mainSkill: 'Skills.IngredientMagnetS',
+      mainSkill: 'Extra Helpful S',
       specialty: 'Berries'
     },
     {
       name: 'Bonsly',
-      berry: 'Berries.Sitrus',
+      berry: 'Sitrus Berry',
       ingredients: ['snoozytomato', 'greengrasssoybeans', 'tastymushrooms'],
-      mainSkill: 'Skills.ChargeStrengthM',
+      mainSkill: 'Charge Strength M',
       specialty: 'Skills'
     },
     {
       name: 'Mime Jr.',
-      berry: 'Berries.Mago',
+      berry: 'Mago Berry',
       ingredients: ['snoozytomato', 'softpotato', 'largeleek'],
-      mainSkill: 'Skills.ChargeStrengthS',
+      mainSkill: 'Charge Strength S',
       specialty: 'Ingredients'
     },
     {
       name: 'Riolu',
-      berry: 'Berries.Cheri',
+      berry: 'Cheri Berry',
       ingredients: ['pureoil', 'softpotato', 'fancyegg'],
-      mainSkill: 'Skills.DreamShardMagnetS',
+      mainSkill: 'Dream Shard Magnet S',
       specialty: 'Skills'
     },
     {
       name: 'Lucario',
-      berry: 'Berries.Cheri',
+      berry: 'Cheri Berry',
       ingredients: ['pureoil', 'softpotato', 'fancyegg'],
-      mainSkill: 'Skills.DreamShardMagnetS',
+      mainSkill: 'Dream Shard Magnet S',
       specialty: 'Skills'
     },
     {
       name: 'Croagunk',
-      berry: 'Berries.Chesto',
+      berry: 'Chesto Berry',
       ingredients: ['pureoil', 'beansausage'],
-      mainSkill: 'Skills.ChargeStrengthS',
+      mainSkill: 'Charge Strength S',
       specialty: 'Ingredients'
     },
     {
       name: 'Toxicroak',
-      berry: 'Berries.Chesto',
+      berry: 'Chesto Berry',
       ingredients: ['pureoil', 'beansausage'],
-      mainSkill: 'Skills.ChargeStrengthS',
+      mainSkill: 'Charge Strength S',
       specialty: 'Ingredients'
     },
     {
       name: 'Magnezone',
-      berry: 'Berries.Belue',
+      berry: 'Belue Berry',
       ingredients: ['pureoil', 'fieryherb'],
-      mainSkill: 'Skills.CookingPowerUpS',
+      mainSkill: 'Cooking Power-Up S',
       specialty: 'Skills'
     },
     {
       name: 'Togekiss',
-      berry: 'Berries.Pecha',
+      berry: 'Pecha Berry',
       ingredients: ['fancyegg', 'warmingginger', 'soothingcacao'],
-      mainSkill: 'Skills.Metronome',
+      mainSkill: 'Metronome',
       specialty: 'Skills'
     },
     {
       name: 'Leafeon',
-      berry: 'Berries.Durin',
+      berry: 'Durin Berry',
       ingredients: ['moomoomilk', 'soothingcacao', 'beansausage'],
-      mainSkill: 'Skills.EnergizingCheerS',
+      mainSkill: 'Energizing Cheer S',
       specialty: 'Skills'
     },
     {
       name: 'Glaceon',
-      berry: 'Berries.Rawst',
+      berry: 'Rawst Berry',
       ingredients: ['moomoomilk', 'soothingcacao', 'beansausage'],
-      mainSkill: 'Skills.CookingPowerUpS',
+      mainSkill: 'Cooking Power-Up S',
       specialty: 'Skills'
     },
     {
       name: 'Gallade',
       berry: 'Berries.Cherry',
       ingredients: ['fancyapple', 'greengrasscorn', 'largeleek'],
-      mainSkill: 'Skills.ExtraHelpfulS',
+      mainSkill: 'Extra Helpful S',
       specialty: 'Skills'
     },
     {
       name: 'Sylveon',
-      berry: 'Berries.Pecha',
+      berry: 'Pecha Berry',
       ingredients: ['moomoomilk', 'soothingcacao', 'beansausage'],
-      mainSkill: 'Skills.EnergyForEveryoneS',
+      mainSkill: 'Energy for Everyone S',
       specialty: 'Skills'
     },
     {
       name: 'Dedenne',
-      berry: 'Berries.Grepa',
+      berry: 'Grepa Berry',
       ingredients: ['fancyapple', 'soothingcacao', 'greengrasscorn'],
-      mainSkill: 'Skills.TastyChanceS',
+      mainSkill: 'Tasty Chance S',
       specialty: 'Skills'
     },
     {
       name: 'Stufful',
-      berry: 'Berries.Cheri',
+      berry: 'Cheri Berry',
       ingredients: ['greengrasscorn', 'beansausage', 'fancyegg'],
-      mainSkill: 'Skills.ChargeStrengthS',
+      mainSkill: 'Charge Strength S',
       specialty: 'Ingredients'
     },
     {
       name: 'Bewear',
-      berry: 'Berries.Cheri',
+      berry: 'Cheri Berry',
       ingredients: ['greengrasscorn', 'beansausage', 'fancyegg'],
-      mainSkill: 'Skills.ChargeStrengthS',
+      mainSkill: 'Charge Strength S',
       specialty: 'Ingredients'
     },
     {
       name: 'Comfey',
-      berry: 'Berries.Pecha',
+      berry: 'Pecha Berry',
       ingredients: ['greengrasscorn', 'warmingginger', 'soothingcacao'],
-      mainSkill: 'Skills.EnergizingCheerS',
+      mainSkill: 'Energizing Cheer S',
       specialty: 'Ingredients'
     },
     {
       name: 'Cramorant',
-      berry: 'Berries.Pamtre',
+      berry: 'Pamtre Berry',
       ingredients: ['pureoil', 'softpotato', 'fancyegg'],
-      mainSkill: 'Skills.TastyChanceS',
+      mainSkill: 'Tasty Chance S',
+      specialty: 'Ingredients'
+    },
+    {
+      name: 'Sprigatito',
+      berry: 'Durin Berry',
+      ingredients: ['softpotato', 'moomoomilk', 'warmingginger'],
+      mainSkill: 'Cooking Power-Up S',
+      specialty: 'Ingredients'
+    },
+    {
+      name: 'Floragato',
+      berry: 'Durin Berry',
+      ingredients: ['softpotato', 'moomoomilk', 'warmingginger'],
+      mainSkill: 'Cooking Power-Up S',
+      specialty: 'Ingredients'
+    },
+    {
+      name: 'Meowscarada',
+      berry: 'Wiki Berry',
+      ingredients: ['softpotato', 'moomoomilk', 'warmingginger'],
+      mainSkill: 'Cooking Power-Up S',
+      specialty: 'Ingredients'
+    },
+    {
+      name: 'Fuecoco',
+      berry: 'Leppa Berry',
+      ingredients: ['fancyapple', 'beansausage', 'fieryherb'],
+      mainSkill: 'Charge Energy S',
+      specialty: 'Ingredients'
+    },
+    {
+      name: 'Crocalor',
+      berry: 'Leppa Berry',
+      ingredients: ['fancyapple', 'beansausage', 'fieryherb'],
+      mainSkill: 'Charge Energy S',
+      specialty: 'Ingredients'
+    },
+    {
+      name: 'Skeledirge',
+      berry: 'Bluk Berry',
+      ingredients: ['fancyapple', 'beansausage', 'fieryherb'],
+      mainSkill: 'Charge Energy S',
+      specialty: 'Ingredients'
+    },
+    {
+      name: 'Quaxly',
+      berry: 'Oran Berry',
+      ingredients: ['greengrasssoybeans', 'largeleek', 'pureoil'],
+      mainSkill: 'Charge Strength M',
+      specialty: 'Ingredients'
+    },
+    {
+      name: 'Quaxwell',
+      berry: 'Oran Berry',
+      ingredients: ['greengrasssoybeans', 'largeleek', 'pureoil'],
+      mainSkill: 'Charge Strength M',
+      specialty: 'Ingredients'
+    },
+    {
+      name: 'Quaquaval',
+      berry: 'Cheri Berry',
+      ingredients: ['greengrasssoybeans', 'largeleek', 'pureoil'],
+      mainSkill: 'Charge Strength M',
       specialty: 'Ingredients'
     }
   ];
   recipesList = [
     {
       id: 1,
-      name: 'Recipes.MixedCurry',
+      name: 'Mixed Curry',
       basePower: 0,
-      image: '/assets/images/MixedCurry.png',
+      image: '/sleep-visualizer/assets/images/MixedCurry.png',
       ingredients: {},
       totalIngredients: 0
     },
     {
       id: 2,
-      name: 'Recipes.FancyAppleCurry',
+      name: 'Fancy Apple Curry',
       basePower: 668,
-      image: '/assets/images/FancyAppleCurry.png',
+      image: '/sleep-visualizer/assets/images/FancyAppleCurry.png',
       ingredients: {
         fancyApple: 7
       },
@@ -961,9 +1031,9 @@ export class PokemonService {
     },
     {
       id: 3,
-      name: 'Recipes.GrilledTailCurry',
+      name: 'Grilled Tail Curry',
       basePower: 7483,
-      image: '/assets/images/GrilledTailCurry.png',
+      image: '/sleep-visualizer/assets/images/GrilledTailCurry.png',
       ingredients: {
         slowpokeTail: 8,
         fieryHerb: 25
@@ -972,9 +1042,9 @@ export class PokemonService {
     },
     {
       id: 4,
-      name: 'Recipes.SolarPowerTomatoCurry',
+      name: 'Solar Power Tomato Curry',
       basePower: 1943,
-      image: '/assets/images/SolarPowerTomatoCurry.png',
+      image: '/sleep-visualizer/assets/images/SolarPowerTomatoCurry.png',
       ingredients: {
         snoozyTomato: 10,
         fieryHerb: 5
@@ -983,9 +1053,9 @@ export class PokemonService {
     },
     {
       id: 5,
-      name: 'Recipes.DreamEaterButterCurry',
+      name: 'Dream Eater Butter Curry',
       basePower: 9010,
-      image: '/assets/images/DreamEaterButterCurry.png',
+      image: '/sleep-visualizer/assets/images/DreamEaterButterCurry.png',
       ingredients: {
         softPotato: 18,
         snoozyTomato: 15,
@@ -996,9 +1066,9 @@ export class PokemonService {
     },
     {
       id: 6,
-      name: 'Recipes.SpicyLeekCurry',
+      name: 'Spicy Leek Curry',
       basePower: 5900,
-      image: '/assets/images/SpicyLeekCurry.png',
+      image: '/sleep-visualizer/assets/images/SpicyLeekCurry.png',
       ingredients: {
         largeLeek: 14,
         warmingGinger: 10,
@@ -1008,9 +1078,9 @@ export class PokemonService {
     },
     {
       id: 7,
-      name: 'Recipes.SporeMushroomCurry',
+      name: 'Spore Mushroom Curry',
       basePower: 4041,
-      image: '/assets/images/SporeMushroomCurry.png',
+      image: '/sleep-visualizer/assets/images/SporeMushroomCurry.png',
       ingredients: {
         tastyMushroom: 14,
         softPotato: 9
@@ -1019,9 +1089,9 @@ export class PokemonService {
     },
     {
       id: 8,
-      name: 'Recipes.EggBombCurry',
+      name: 'Egg Bomb Curry',
       basePower: 4523,
-      image: '/assets/images/EggBombCurry.png',
+      image: '/sleep-visualizer/assets/images/EggBombCurry.png',
       ingredients: {
         honey: 12,
         fancyApple: 11,
@@ -1032,9 +1102,9 @@ export class PokemonService {
     },
     {
       id: 9,
-      name: 'Recipes.HeartyCheeseburgerCurry',
+      name: 'Hearty Cheeseburger Curry',
       basePower: 1785,
-      image: '/assets/images/HeartyCheeseburgerCurry.png',
+      image: '/sleep-visualizer/assets/images/HeartyCheeseburgerCurry.png',
       ingredients: {
         moomooMilk: 8,
         beanSausage: 8
@@ -1043,9 +1113,9 @@ export class PokemonService {
     },
     {
       id: 10,
-      name: 'Recipes.SoftPotatoChowder',
+      name: 'Soft Potato Chowder',
       basePower: 3089,
-      image: '/assets/images/SoftPotatoChowder.png',
+      image: '/sleep-visualizer/assets/images/SoftPotatoChowder.png',
       ingredients: {
         moomooMilk: 10,
         softPotato: 8,
@@ -1055,9 +1125,9 @@ export class PokemonService {
     },
     {
       id: 11,
-      name: 'Recipes.SimpleChowder',
+      name: 'Simple Chowder',
       basePower: 727,
-      image: '/assets/images/SimpleChowder.png',
+      image: '/sleep-visualizer/assets/images/SimpleChowder.png',
       ingredients: {
         moomooMilk: 7
       },
@@ -1065,9 +1135,9 @@ export class PokemonService {
     },
     {
       id: 12,
-      name: 'Recipes.BeanburgerCurry',
+      name: 'Beanburger Curry',
       basePower: 764,
-      image: '/assets/images/BeanburgerCurry.png',
+      image: '/sleep-visualizer/assets/images/BeanburgerCurry.png',
       ingredients: {
         beanSausage: 7
       },
@@ -1075,9 +1145,9 @@ export class PokemonService {
     },
     {
       id: 13,
-      name: 'Recipes.MildHoneyCurry',
+      name: 'Mild Honey Curry',
       basePower: 749,
-      image: '/assets/images/MildHoneyCurry.png',
+      image: '/sleep-visualizer/assets/images/MildHoneyCurry.png',
       ingredients: {
         honey: 7
       },
@@ -1085,9 +1155,9 @@ export class PokemonService {
     },
     {
       id: 14,
-      name: 'Recipes.NinjaCurry',
+      name: 'Ninja Curry',
       basePower: 9445,
-      image: '/assets/images/NinjaCurry.png',
+      image: '/sleep-visualizer/assets/images/NinjaCurry.png',
       ingredients: {
         greengrassSoybeans: 24,
         beanSausage: 9,
@@ -1098,9 +1168,9 @@ export class PokemonService {
     },
     {
       id: 15,
-      name: 'Recipes.DroughtKatsuCurry',
+      name: 'Drought Katsu Curry',
       basePower: 1815,
-      image: '/assets/images/DroughtKatsuCurry.png',
+      image: '/sleep-visualizer/assets/images/DroughtKatsuCurry.png',
       ingredients: {
         beanSausage: 10,
         pureOil: 5
@@ -1109,9 +1179,9 @@ export class PokemonService {
     },
     {
       id: 16,
-      name: 'Recipes.MeltyOmeletteCurry',
+      name: 'Melty Omelette Curry',
       basePower: 2009,
-      image: '/assets/images/MeltyOmeletteCurry.png',
+      image: '/sleep-visualizer/assets/images/MeltyOmeletteCurry.png',
       ingredients: {
         fancyEgg: 10,
         snoozyTomato: 6
@@ -1120,9 +1190,9 @@ export class PokemonService {
     },
     {
       id: 17,
-      name: 'Recipes.BulkUpBeanCurry',
+      name: 'Bulk Up Bean Curry',
       basePower: 3274,
-      image: '/assets/images/BulkUpBeanCurry.png',
+      image: '/sleep-visualizer/assets/images/BulkUpBeanCurry.png',
       ingredients: {
         greengrassSoybeans: 12,
         beanSausage: 6,
@@ -1133,9 +1203,9 @@ export class PokemonService {
     },
     {
       id: 18,
-      name: 'Recipes.LimberCornStew',
+      name: 'Limber Corn Stew',
       basePower: 4670,
-      image: '/assets/images/LimberCornStew.png',
+      image: '/sleep-visualizer/assets/images/LimberCornStew.png',
       ingredients: {
         greengrassCorn: 14,
         moomooMilk: 8,
@@ -1145,9 +1215,9 @@ export class PokemonService {
     },
     {
       id: 19,
-      name: 'Recipes.InfernoCornKeemaCurry',
+      name: 'Inferno Corn Keema Curry',
       basePower: 13690,
-      image: '/assets/images/InfernoCornKeemaCurry.png',
+      image: '/sleep-visualizer/assets/images/InfernoCornKeemaCurry.png',
       ingredients: {
         fieryHerb: 27,
         beanSausage: 24,
@@ -1158,17 +1228,17 @@ export class PokemonService {
     },
     {
       id: 20,
-      name: 'Recipes.MixedSalad',
+      name: 'Mixed Salad',
       basePower: 0,
-      image: '/assets/images/MixedSalad.png',
+      image: '/sleep-visualizer/assets/images/MixedSalad.png',
       ingredients: {},
       totalIngredients: 0
     },
     {
       id: 21,
-      name: 'Recipes.SlowpokeTailPepperSalad',
+      name: 'Slowpoke Tail Pepper Salad',
       basePower: 8169,
-      image: '/assets/images/SlowpokeTailPepperSalad.png',
+      image: '/sleep-visualizer/assets/images/SlowpokeTailPepperSalad.png',
       ingredients: {
         slowpokeTail: 10,
         fieryHerb: 10,
@@ -1178,9 +1248,9 @@ export class PokemonService {
     },
     {
       id: 22,
-      name: 'Recipes.SporeMushroomSalad',
+      name: 'Spore Mushroom Salad',
       basePower: 5859,
-      image: '/assets/images/SporeMushroomSalad.png',
+      image: '/sleep-visualizer/assets/images/SporeMushroomSalad.png',
       ingredients: {
         tastyMushroom: 17,
         snoozyTomato: 8,
@@ -1190,9 +1260,9 @@ export class PokemonService {
     },
     {
       id: 23,
-      name: 'Recipes.SnowCloakCaesarSalad',
+      name: 'Snow Cloak Caesar Salad',
       basePower: 1774,
-      image: '/assets/images/SnowCloakCaesarSalad.png',
+      image: '/sleep-visualizer/assets/images/SnowCloakCaesarSalad.png',
       ingredients: {
         moomooMilk: 10,
         beanSausage: 6
@@ -1201,9 +1271,9 @@ export class PokemonService {
     },
     {
       id: 24,
-      name: 'Recipes.GluttonyPotatoSalad',
+      name: 'Gluttony Potato Salad',
       basePower: 5040,
-      image: '/assets/images/GluttonyPotatoSalad.png',
+      image: '/sleep-visualizer/assets/images/GluttonyPotatoSalad.png',
       ingredients: {
         softPotato: 14,
         fancyEgg: 9,
@@ -1214,9 +1284,9 @@ export class PokemonService {
     },
     {
       id: 25,
-      name: 'Recipes.WaterVeilTofuSalad',
+      name: 'Water Veil Tofu Salad',
       basePower: 3113,
-      image: '/assets/images/WaterVeilTofuSalad.png',
+      image: '/sleep-visualizer/assets/images/WaterVeilTofuSalad.png',
       ingredients: {
         greengrassSoybeans: 15,
         snoozyTomato: 6
@@ -1225,9 +1295,9 @@ export class PokemonService {
     },
     {
       id: 26,
-      name: 'Recipes.SuperpowerExtremeSalad',
+      name: 'Superpower Extreme Salad',
       basePower: 2958,
-      image: '/assets/images/SuperpowerExtremeSalad.png',
+      image: '/sleep-visualizer/assets/images/SuperpowerExtremeSalad.png',
       ingredients: {
         beanSausage: 9,
         warmingGinger: 6,
@@ -1238,9 +1308,9 @@ export class PokemonService {
     },
     {
       id: 27,
-      name: 'Recipes.BeanHamSalad',
+      name: 'Bean Ham Salad',
       basePower: 873,
-      image: '/assets/images/BeanHamSalad.png',
+      image: '/sleep-visualizer/assets/images/BeanHamSalad.png',
       ingredients: {
         beanSausage: 8
       },
@@ -1248,9 +1318,9 @@ export class PokemonService {
     },
     {
       id: 28,
-      name: 'Recipes.SnoozyTomatoSalad',
+      name: 'Snoozy Tomato Salad',
       basePower: 933,
-      image: '/assets/images/SnoozyTomatoSalad.png',
+      image: '/sleep-visualizer/assets/images/SnoozyTomatoSalad.png',
       ingredients: {
         snoozyTomato: 8
       },
@@ -1258,9 +1328,9 @@ export class PokemonService {
     },
     {
       id: 29,
-      name: 'Recipes.MoomooCapreseSalad',
+      name: 'Moomoo Caprese Salad',
       basePower: 2856,
-      image: '/assets/images/MoomooCapreseSalad.png',
+      image: '/sleep-visualizer/assets/images/MoomooCapreseSalad.png',
       ingredients: {
         moomooMilk: 12,
         snoozyTomato: 6,
@@ -1270,9 +1340,9 @@ export class PokemonService {
     },
     {
       id: 30,
-      name: 'Recipes.ContraryChocolateMeatSalad',
+      name: 'Contrary Chocolate Meat Salad',
       basePower: 3558,
-      image: '/assets/images/ContraryChocolateMeatSalad.png',
+      image: '/sleep-visualizer/assets/images/ContraryChocolateMeatSalad.png',
       ingredients: {
         soothingCacao: 14,
         beanSausage: 9
@@ -1281,9 +1351,9 @@ export class PokemonService {
     },
     {
       id: 31,
-      name: 'Recipes.OverheatGingerSalad',
+      name: 'Overheat Ginger Salad',
       basePower: 5225,
-      image: '/assets/images/OverheatGingerSalad.png',
+      image: '/sleep-visualizer/assets/images/OverheatGingerSalad.png',
       ingredients: {
         fieryHerb: 17,
         warmingGinger: 10,
@@ -1293,9 +1363,9 @@ export class PokemonService {
     },
     {
       id: 32,
-      name: 'Recipes.FancyAppleSalad',
+      name: 'Fancy Apple Salad',
       basePower: 763,
-      image: '/assets/images/FancyAppleSalad.png',
+      image: '/sleep-visualizer/assets/images/FancyAppleSalad.png',
       ingredients: {
         fancyApple: 8
       },
@@ -1303,9 +1373,9 @@ export class PokemonService {
     },
     {
       id: 33,
-      name: 'Recipes.ImmunityLeekSalad',
+      name: 'Immunity Leek Salad',
       basePower: 2658,
-      image: '/assets/images/ImmunityLeekSalad.png',
+      image: '/sleep-visualizer/assets/images/ImmunityLeekSalad.png',
       ingredients: {
         largeLeek: 10,
         warmingGinger: 5
@@ -1314,9 +1384,9 @@ export class PokemonService {
     },
     {
       id: 34,
-      name: 'Recipes.DazzlingAppleCheeseSalad',
+      name: 'Dazzling Apple Cheese Salad',
       basePower: 2578,
-      image: '/assets/images/DazzlingAppleCheeseSalad.png',
+      image: '/sleep-visualizer/assets/images/DazzlingAppleCheeseSalad.png',
       ingredients: {
         fancyApple: 15,
         moomooMilk: 5,
@@ -1326,9 +1396,9 @@ export class PokemonService {
     },
     {
       id: 35,
-      name: 'Recipes.NinjaSalad',
+      name: 'Ninja Salad',
       basePower: 11659,
-      image: '/assets/images/NinjaSalad.png',
+      image: '/sleep-visualizer/assets/images/NinjaSalad.png',
       ingredients: {
         largeLeek: 15,
         greengrassSoybeans: 19,
@@ -1339,9 +1409,9 @@ export class PokemonService {
     },
     {
       id: 36,
-      name: 'Recipes.HeatWaveTofuSalad',
+      name: 'Heat Wave Tofu Salad',
       basePower: 1976,
-      image: '/assets/images/HeatWaveTofuSalad.png',
+      image: '/sleep-visualizer/assets/images/HeatWaveTofuSalad.png',
       ingredients: {
         greengrassSoybeans: 10,
         fieryHerb: 6
@@ -1350,9 +1420,9 @@ export class PokemonService {
     },
     {
       id: 37,
-      name: 'Recipes.GreengrassSalad',
+      name: 'Greengrass Salad',
       basePower: 11393,
-      image: '/assets/images/GreengrassSalad.png',
+      image: '/sleep-visualizer/assets/images/GreengrassSalad.png',
       ingredients: {
         pureOil: 22,
         greengrassCorn: 17,
@@ -1363,9 +1433,9 @@ export class PokemonService {
     },
     {
       id: 38,
-      name: 'Recipes.CalmMindFruitSalad',
+      name: 'Calm Mind Fruit Salad',
       basePower: 7675,
-      image: '/assets/images/CalmMindFruitSalad.png',
+      image: '/sleep-visualizer/assets/images/CalmMindFruitSalad.png',
       ingredients: {
         fancyApple: 21,
         honey: 16,
@@ -1375,9 +1445,9 @@ export class PokemonService {
     },
     {
       id: 39,
-      name: 'Recipes.FuryAttackCornSalad',
+      name: 'Fury Attack Corn Salad',
       basePower: 2785,
-      image: '/assets/images/FuryAttackCornSalad.png',
+      image: '/sleep-visualizer/assets/images/FuryAttackCornSalad.png',
       ingredients: {
         greengrasscorn: 9,
         pureOil: 3
@@ -1386,17 +1456,17 @@ export class PokemonService {
     },
     {
       id: 40,
-      name: 'Recipes.MixedJuice',
+      name: 'Mixed Juice',
       basePower: 0,
-      image: '/assets/images/MixedJuice.png',
+      image: '/sleep-visualizer/assets/images/MixedJuice.png',
       ingredients: {},
       totalIngredients: 0
     },
     {
       id: 41,
-      name: 'Recipes.FluffySweetPotatoes',
+      name: 'Fluffy Sweet Potatoes',
       basePower: 1783,
-      image: '/assets/images/FluffySweetPotatoes.png',
+      image: '/sleep-visualizer/assets/images/FluffySweetPotatoes.png',
       ingredients: {
         softPotato: 9,
         moomooMilk: 5
@@ -1405,9 +1475,9 @@ export class PokemonService {
     },
     {
       id: 42,
-      name: 'Recipes.SteadfastGingerCookies',
+      name: 'Steadfast Ginger Cookies',
       basePower: 4921,
-      image: '/assets/images/SteadfastGingerCookies.png',
+      image: '/sleep-visualizer/assets/images/SteadfastGingerCookies.png',
       ingredients: {
         honey: 14,
         warmingGinger: 12,
@@ -1418,9 +1488,9 @@ export class PokemonService {
     },
     {
       id: 43,
-      name: 'Recipes.FancyAppleJuice',
+      name: 'Fancy Apple Juice',
       basePower: 763,
-      image: '/assets/images/FancyAppleJuice.png',
+      image: '/sleep-visualizer/assets/images/FancyAppleJuice.png',
       ingredients: {
         fancyApple: 8
       },
@@ -1428,9 +1498,9 @@ export class PokemonService {
     },
     {
       id: 44,
-      name: 'Recipes.CraftSodaPop',
+      name: 'Craft Soda Pop',
       basePower: 964,
-      image: '/assets/images/CraftSodaPop.png',
+      image: '/sleep-visualizer/assets/images/CraftSodaPop.png',
       ingredients: {
         honey: 9
       },
@@ -1438,9 +1508,9 @@ export class PokemonService {
     },
     {
       id: 45,
-      name: 'Recipes.EmberGingerTea',
+      name: 'Ember Ginger Tea',
       basePower: 1788,
-      image: '/assets/images/EmberGingerTea.png',
+      image: '/sleep-visualizer/assets/images/EmberGingerTea.png',
       ingredients: {
         warmingGinger: 9,
         fancyApple: 7
@@ -1449,9 +1519,9 @@ export class PokemonService {
     },
     {
       id: 46,
-      name: 'Recipes.JigglypuffsFruityFlan',
+      name: 'Jigglypuff\'s Fruity Flan',
       basePower: 7594,
-      image: '/assets/images/JigglypuffsFruityFlan.png',
+      image: '/sleep-visualizer/assets/images/JigglypuffsFruityFlan.png',
       ingredients: {
         honey: 20,
         fancyEgg: 15,
@@ -1462,9 +1532,9 @@ export class PokemonService {
     },
     {
       id: 47,
-      name: 'Recipes.LovelyKissSmoothie',
+      name: 'Lovely Kiss Smoothie',
       basePower: 4734,
-      image: '/assets/images/LovelyKissSmoothie.png',
+      image: '/sleep-visualizer/assets/images/LovelyKissSmoothie.png',
       ingredients: {
         fancyApple: 11,
         moomooMilk: 9,
@@ -1475,9 +1545,9 @@ export class PokemonService {
     },
     {
       id: 48,
-      name: 'Recipes.LuckyChantApplePie',
+      name: 'Lucky Chant Apple Pie',
       basePower: 1634,
-      image: '/assets/images/LuckyChantApplePie.png',
+      image: '/sleep-visualizer/assets/images/LuckyChantApplePie.png',
       ingredients: {
         fancyApple: 12,
         moomooMilk: 4
@@ -1486,9 +1556,9 @@ export class PokemonService {
     },
     {
       id: 49,
-      name: 'Recipes.NerolisRestorativeTea',
+      name: 'Neroli\'s Restorative Tea',
       basePower: 5065,
-      image: '/assets/images/NerolisRestorativeTea.png',
+      image: '/sleep-visualizer/assets/images/NerolisRestorativeTea.png',
       ingredients: {
         warmingGinger: 11,
         fancyApple: 15,
@@ -1498,9 +1568,9 @@ export class PokemonService {
     },
     {
       id: 50,
-      name: 'Recipes.SweetScentChocolateCake',
+      name: 'Sweet Scent Chocolate Cake',
       basePower: 3280,
-      image: '/assets/images/SweetScentChocolateCake.png',
+      image: '/sleep-visualizer/assets/images/SweetScentChocolateCake.png',
       ingredients: {
         honey: 9,
         soothingCacao: 8,
@@ -1510,9 +1580,9 @@ export class PokemonService {
     },
     {
       id: 51,
-      name: 'Recipes.WarmMoomooMilk',
+      name: 'Warm Moomoo Milk',
       basePower: 727,
-      image: '/assets/images/WarmMoomooMilk.png',
+      image: '/sleep-visualizer/assets/images/WarmMoomooMilk.png',
       ingredients: {
         moomooMilk: 7
       },
@@ -1520,9 +1590,9 @@ export class PokemonService {
     },
     {
       id: 52,
-      name: 'Recipes.CloudNineSoyCake',
+      name: 'Cloud Nine Soy Cake',
       basePower: 1798,
-      image: '/assets/images/CloudNineSoyCake.png',
+      image: '/sleep-visualizer/assets/images/CloudNineSoyCake.png',
       ingredients: {
         fancyEgg: 8,
         greengrassSoybeans: 7
@@ -1531,9 +1601,9 @@ export class PokemonService {
     },
     {
       id: 53,
-      name: 'Recipes.HustleProteinSmoothie',
+      name: 'Hustle Protein Smoothie',
       basePower: 3168,
-      image: '/assets/images/HustleProteinSmoothie.png',
+      image: '/sleep-visualizer/assets/images/HustleProteinSmoothie.png',
       ingredients: {
         greengrassSoybeans: 15,
         soothingCacao: 8
@@ -1542,9 +1612,9 @@ export class PokemonService {
     },
     {
       id: 54,
-      name: 'Recipes.StalwartVegetableJuice',
+      name: 'Stalwart Vegetable Juice',
       basePower: 1798,
-      image: '/assets/images/StalwartVegetableJuice.png',
+      image: '/sleep-visualizer/assets/images/StalwartVegetableJuice.png',
       ingredients: {
         snoozyTomato: 9,
         fancyApple: 7
@@ -1553,9 +1623,9 @@ export class PokemonService {
     },
     {
       id: 55,
-      name: 'Recipes.BigMalasada',
+      name: 'Big Malasada',
       basePower: 2927,
-      image: '/assets/images/BigMalasada.png',
+      image: '/sleep-visualizer/assets/images/BigMalasada.png',
       ingredients: {
         pureOil: 10,
         moomooMilk: 7,
@@ -1565,9 +1635,9 @@ export class PokemonService {
     },
     {
       id: 56,
-      name: 'Recipes.HugePowerSoyDonuts',
+      name: 'Huge Power Soy Donuts',
       basePower: 5547,
-      image: '/assets/images/HugePowerSoyDonuts.png',
+      image: '/sleep-visualizer/assets/images/HugePowerSoyDonuts.png',
       ingredients: {
         pureOil: 12,
         greengrassSoybeans: 16,
@@ -1577,9 +1647,9 @@ export class PokemonService {
     },
     {
       id: 57,
-      name: 'Recipes.ExplosionPopcorn',
+      name: 'Explosion Popcorn',
       basePower: 6048,
-      image: '/assets/images/ExplosionPopcorn.png',
+      image: '/sleep-visualizer/assets/images/ExplosionPopcorn.png',
       ingredients: {
         greengrassCorn: 15,
         pureOil: 14,
@@ -1589,9 +1659,9 @@ export class PokemonService {
     },
     {
       id: 58,
-      name: 'Recipes.TeatimeCornScones',
+      name: 'Teatime Corn Scones',
       basePower: 10925,
-      image: '/assets/images/TeatimeCornScones.png',
+      image: '/sleep-visualizer/assets/images/TeatimeCornScones.png',
       ingredients: {
         fancyApple: 20,
         warmingGinger: 20,
@@ -1602,9 +1672,9 @@ export class PokemonService {
     },
     {
       id: 59,
-      name: 'Recipes.PetalDanceChocolateTarts',
+      name: 'Petal Dance Chocolate Tarts',
       basePower: 3314,
-      image: '/assets/images/PetalDanceChocolateTarts.png',
+      image: '/sleep-visualizer/assets/images/PetalDanceChocolateTarts.png',
       ingredients: {
         fancyApple: 11,
         soothingCacao: 11
@@ -1613,9 +1683,9 @@ export class PokemonService {
     },
     {
       id: 60,
-      name: 'Recipes.FlowerGiftMacarons',
+      name: 'Flower Gift Macarons',
       basePower: 13834,
-      image: '/assets/images/FlowerGiftMacarons.png',
+      image: '/sleep-visualizer/assets/images/FlowerGiftMacarons.png',
       ingredients: {
         soothingCacao: 25,
         fancyEgg: 25,
@@ -1628,114 +1698,114 @@ export class PokemonService {
   ingredientCountsList = [
     {
       id: 1,
-      name: 'Ingredients.FancyApple',
+      name: 'Fancy Apple',
       basePower: 90,
-      image: '/assets/images/fancyapple.png',
+      image: '/sleep-visualizer/assets/images/fancyapple.png',
       count: 0
     },
     {
       id: 2,
-      name: 'Ingredients.MoomooMilk',
+      name: 'Moomoo Milk',
       basePower: 98,
-      image: '/assets/images/moomoomilk.png',
+      image: '/sleep-visualizer/assets/images/moomoomilk.png',
       count: 0
     },
     {
       id: 3,
-      name: 'Ingredients.GreengrassSoybeans',
+      name: 'Greengrass Soybeans',
       basePower: 100,
-      image: '/assets/images/greengrasssoybeans.png',
+      image: '/sleep-visualizer/assets/images/greengrasssoybeans.png',
       count: 0
     },
     {
       id: 4,
-      name: 'Ingredients.Honey',
+      name: 'Honey',
       basePower: 101,
-      image: '/assets/images/honey.png',
+      image: '/sleep-visualizer/assets/images/honey.png',
       count: 0
     },
     {
       id: 5,
-      name: 'Ingredients.BeanSausage',
+      name: 'Bean Sausage',
       basePower: 103,
-      image: '/assets/images/beansausage.png',
+      image: '/sleep-visualizer/assets/images/beansausage.png',
       count: 0
     },
     {
       id: 6,
-      name: 'Ingredients.WarmingGinger',
+      name: 'Warming Ginger',
       basePower: 109,
-      image: '/assets/images/warmingginger.png',
+      image: '/sleep-visualizer/assets/images/warmingginger.png',
       count: 0
     },
     {
       id: 7,
-      name: 'Ingredients.SnoozyTomato',
+      name: 'Snoozy Tomato',
       basePower: 110,
-      image: '/assets/images/snoozytomato.png',
+      image: '/sleep-visualizer/assets/images/snoozytomato.png',
       count: 0
     },
     {
       id: 8,
-      name: 'Ingredients.FancyEgg',
+      name: 'Fancy Egg',
       basePower: 115,
-      image: '/assets/images/fancyegg.png',
+      image: '/sleep-visualizer/assets/images/fancyegg.png',
       count: 0
     },
     {
       id: 9,
-      name: 'Ingredients.PureOil',
+      name: 'Pure Oil',
       basePower: 121,
-      image: '/assets/images/pureoil.png',
+      image: '/sleep-visualizer/assets/images/pureoil.png',
       count: 0
     },
     {
       id: 10,
-      name: 'Ingredients.SoftPotato',
+      name: 'Soft Potato',
       basePower: 124,
-      image: '/assets/images/softpotato.png',
+      image: '/sleep-visualizer/assets/images/softpotato.png',
       count: 0
     },
     {
       id: 11,
-      name: 'Ingredients.FieryHerb',
+      name: 'Fiery Herb',
       basePower: 130,
-      image: '/assets/images/fieryherb.png',
+      image: '/sleep-visualizer/assets/images/fieryherb.png',
       count: 0
     },
     {
       id: 12,
-      name: 'Ingredients.GreengrassCorn',
+      name: 'Greengrass Corn',
       basePower: 140,
-      image: '/assets/images/greengrasscorn.png',
+      image: '/sleep-visualizer/assets/images/greengrasscorn.png',
       count: 0
     },
     {
       id: 13,
-      name: 'Ingredients.SoothingCacao',
+      name: 'Soothing Cacao',
       basePower: 151,
-      image: '/assets/images/soothingcacao.png',
+      image: '/sleep-visualizer/assets/images/soothingcacao.png',
       count: 0
     },
     {
       id: 14,
-      name: 'Ingredients.TastyMushroom',
+      name: 'TastyMushroom',
       basePower: 167,
-      image: '/assets/images/tastymushroom.png',
+      image: '/sleep-visualizer/assets/images/tastymushroom.png',
       count: 0
     },
     {
       id: 15,
-      name: 'Ingredients.LargeLeek',
+      name: 'Large Leek',
       basePower: 185,
-      image: '/assets/images/largeleek.png',
+      image: '/sleep-visualizer/assets/images/largeleek.png',
       count: 0
     },
     {
       id: 16,
-      name: 'Ingredients.SlowpokeTail',
+      name: 'Slowpoke Tail',
       basePower: 342,
-      image: '/assets/images/slowpoketail.png',
+      image: '/sleep-visualizer/assets/images/slowpoketail.png',
       count: 0
     }
   ];

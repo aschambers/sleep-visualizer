@@ -1,7 +1,7 @@
 <ul class="skillslist" *ngFor="let skill of allSkills; index as i">
   <li class="skills">
     <div class="accordion-header" (click)="toggle(i)">
-      <span class="skills-name">{{ skill | translate }}</span>
+      <span class="skills-name">{{ skill }}</span>
     </div>
     <div class="accordion-content" [ngClass]="{'open': isOpen && expandedIndex === i}">
       <div *ngFor="let pokemon of pokemonList" [ngClass]="{'open': isOpen}">
