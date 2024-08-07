@@ -17,7 +17,6 @@ export class LanguageSwitcherService {
 
   setLang(selectedLang: string) {
     this.translate.use(selectedLang);
-    console.log('here??');
     localStorage.setItem('selectedLang', selectedLang);
   };
 

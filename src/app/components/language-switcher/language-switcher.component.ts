@@ -16,7 +16,6 @@ export class LanguageSwitcherComponent implements OnInit {
   ngOnInit() {
     this.langs = this.languageSwitcherService.getLangs();
     this.selectedLang = this.languageSwitcherService.getLang();
-    console.log(this.selectedLang);
   }
 
   setLang(event: Event) {

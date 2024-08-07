@@ -938,6 +938,69 @@ export class PokemonService {
       ingredients: ['pureoil', 'softpotato', 'fancyegg'],
       mainSkill: 'Skills.TastyChanceS',
       specialty: 'Ingredients'
+    },
+    {
+      name: 'Sprigatito',
+      berry: 'Berries.Durin',
+      ingredients: ['softpotato', 'moomoomilk', 'warmingginger'],
+      mainSkill: 'Skills.CookingPowerUpS',
+      specialty: 'Ingredients'
+    },
+    {
+      name: 'Floragato',
+      berry: 'Berries.Durin',
+      ingredients: ['softpotato', 'moomoomilk', 'warmingginger'],
+      mainSkill: 'Skills.CookingPowerUpS',
+      specialty: 'Ingredients'
+    },
+    {
+      name: 'Meowscarada',
+      berry: 'Berries.Wiki',
+      ingredients: ['softpotato', 'moomoomilk', 'warmingginger'],
+      mainSkill: 'Skills.CookingPowerUpS',
+      specialty: 'Ingredients'
+    },
+    {
+      name: 'Fuecoco',
+      berry: 'Berries.Leppa',
+      ingredients: ['fancyapple', 'beansausage', 'fieryherb'],
+      mainSkill: 'Skills.ChargeEnergyS',
+      specialty: 'Ingredients'
+    },
+    {
+      name: 'Crocalor',
+      berry: 'Berries.Leppa',
+      ingredients: ['fancyapple', 'beansausage', 'fieryherb'],
+      mainSkill: 'Skills.ChargeEnergyS',
+      specialty: 'Ingredients'
+    },
+    {
+      name: 'Skeledirge',
+      berry: 'Berries.Bluk',
+      ingredients: ['fancyapple', 'beansausage', 'fieryherb'],
+      mainSkill: 'Skills.ChargeEnergyS',
+      specialty: 'Ingredients'
+    },
+    {
+      name: 'Quaxly',
+      berry: 'Berries.Oran',
+      ingredients: ['greengrasssoybeans', 'largeleek', 'pureoil'],
+      mainSkill: 'Skills.ChargeStrengthM',
+      specialty: 'Ingredients'
+    },
+    {
+      name: 'Quaxwell',
+      berry: 'Berries.Oran',
+      ingredients: ['greengrasssoybeans', 'largeleek', 'pureoil'],
+      mainSkill: 'Skills.ChargeStrengthM',
+      specialty: 'Ingredients'
+    },
+    {
+      name: 'Quaquaval',
+      berry: 'Berries.Cheri',
+      ingredients: ['greengrasssoybeans', 'largeleek', 'pureoil'],
+      mainSkill: 'Skills.ChargeStrengthM',
+      specialty: 'Ingredients'
     }
   ];
   recipesList = [
