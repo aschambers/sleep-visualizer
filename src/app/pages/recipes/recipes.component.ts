@@ -36,8 +36,8 @@ export class RecipesComponent {
 
   updateDishLevel(event: Event) {
     const value = (event.target as HTMLInputElement).valueAsNumber;
-    if (value > 55) {
-      this.dishLevel = 55;
+    if (value > 60) {
+      this.dishLevel = 60;
     } else if (value < 1) {
       this.dishLevel = 1;
     } else {
