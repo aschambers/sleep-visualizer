@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "baseHref": "/sleep-visualizer",
             "outputPath": "dist/sleep-visualizer",
             "index": "src/index.html",
             "main": "src/main.ts",
