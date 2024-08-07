@@ -31,11 +31,11 @@ export class PokemonService {
   'Ditto', 'Eevee', 'Vaporeon', 'Jolteon', 'Flareon', 'Dratini', 'Dragonair', 'Dragonite', 'Espeon', 'Umbreon', 'Chikorita',
   'Bayleef', 'Meganium', 'Cyndaquil', 'Quilava', 'Typhlosion', 'Totodile', 'Croconaw', 'Feraligatr', 'Pichu', 'Cleffa',
   'Igglybuff',  'Togepi', 'Togetic', 'Mareep', 'Flaaffy', 'Ampharos', 'Bonsley', 'Sudowoodo', 'Wynaut', 'Wobbuffet',
-  'Steelix', 'Heracross', 'Houndour', 'Houndoom', 'Raikou', 'Larvitar', 'Pupitar', 'Tyranitar', 'Ralts', 'Kirlia',
+  'Steelix', 'Heracross', 'Houndour', 'Houndoom', 'Raikou', 'Entei', 'Larvitar', 'Pupitar', 'Tyranitar', 'Ralts', 'Kirlia',
   'Gardevoir', 'Slakoth', 'Vigoroth', 'Slaking', 'Sableye', 'Gulpin', 'Swalot', 'Swablu', 'Altaria', 'Shuppet', 'Banette',
   'Absol', 'Wynaut', 'Spheal', 'Sealeo', 'Walrein', 'Bonsly', 'Mime Jr.', 'Riolu', 'Lucario', 'Croagunk', 'Toxicroak',
   'Snover', 'Abomasnow', 'Magnezone', 'Togekiss', 'Leafeon', 'Glaceon', 'Gallade', 'Sylveon', 'Dedenne', 'Stufful', 'Bewear',
-  'Comfey'];
+  'Comfey', 'Cramorant', 'Sprigatito', 'Floragato', 'Meowscarada', 'Fuecoco', 'Crocalor', 'Skeledirge', 'Quaxly', 'Quaxwell', 'Quaqaval'];
   pokemonList: Array<Pokemon> = [
     {
       name: 'Bulbasaur',
@@ -670,6 +670,13 @@ export class PokemonService {
       name: 'Raikou',
       berry: 'Berries.Grepa',
       ingredients: ['beansausage', 'fieryherb', 'largeleek'],
+      mainSkill: 'Skills.HelperBoost',
+      specialty: 'Skills'
+    },
+    {
+      name: 'Entei',
+      berry: 'Berries.Leppa',
+      ingredients: ['pureoil', 'snoozytomato', 'tastymushroom'],
       mainSkill: 'Skills.HelperBoost',
       specialty: 'Skills'
     },
