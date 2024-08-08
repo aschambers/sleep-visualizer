@@ -62,11 +62,8 @@ export class RecipesComponent {
     this.totalIngredients = this.getTotalIngredients();
   }
 
-  changeSelectedRecipe(event: Event) {
-    const recipeIndex = Number((event.target as HTMLInputElement).value);
-    if (recipeIndex > -1 && typeof this.recipesList[recipeIndex] === 'object') {
-      this.selectedRecipe = this.recipesList[recipeIndex];
-    }
+  changeSelectedRecipe(recipe: Recipe) {
+    this.selectedRecipe = recipe;
     this.estimatedTotalStrength = this.getEstimatedTotalStrength();
     this.totalIngredients = this.getTotalIngredients();
   }
