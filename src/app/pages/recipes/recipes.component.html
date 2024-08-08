@@ -1,12 +1,12 @@
 <div class="recipes">
   <p class="recipes-title">{{ 'Cooking.RecipeStrengthCalculator' | translate }}</p>
   <div class="recipes-selection">
-    <span class="recipes-selection-title">{{ 'Cooking.Recipe' | translate }}:</span>
-    <select class="recipes-selection-list" (change)="changeSelectedRecipe($event)">
-      <option *ngFor="let recipe of recipesList; index as i" value="{{ i }}">
-        <span>{{ recipe.name | translate }}</span>
-      </option>
-    </select>
+    <app-input-search
+      [list]="recipesList"
+      [inputValue]="selectedRecipe.name"
+      [placeholderText]="'Search for a recipe..'"
+      (handleSelectItem)="changeSelectedRecipe($event)"
+    ></app-input-search>
   </div>
   <div class="recipes-base">
     <div class="recipes-base-details">

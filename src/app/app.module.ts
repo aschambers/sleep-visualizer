@@ -3,8 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-
+import { DataAccessModule } from './components/data-access';
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { BerriesComponent } from './pages/berries/berries.component';
 import { IngredientsComponent } from './pages/ingredients/ingredients.component';
@@ -12,6 +13,8 @@ import { SkillsComponent } from './pages/skills/skills.component';
 import { HeaderComponent } from './components/header/header.component';
 import { RecipesComponent } from './pages/recipes/recipes.component';
 import { LanguageSwitcherComponent } from './components/language-switcher/language-switcher.component';
+import { InputSearchComponent } from './components/input-search/input-search.component';
+import { SvgHelperComponent } from './components/svg-helper/svg-helper.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,9 @@ import { LanguageSwitcherComponent } from './components/language-switcher/langua
     SkillsComponent,
     HeaderComponent,
     RecipesComponent,
-    LanguageSwitcherComponent
+    LanguageSwitcherComponent,
+    InputSearchComponent,
+    SvgHelperComponent
   ],
   exports: [
     LanguageSwitcherComponent,
@@ -31,6 +36,7 @@ import { LanguageSwitcherComponent } from './components/language-switcher/langua
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    DataAccessModule,
     TranslateModule.forRoot({
       loader: {
           provide: TranslateLoader,

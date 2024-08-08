@@ -1,0 +1,37 @@
+<div class="input-search-container">
+  <div class="search">
+    <app-svg-helper
+      *ngIf="inputValue"
+      class="icon"
+      [icon]="IconTypes.ClearSearch"
+      (click)="clearSearch()"
+    ></app-svg-helper>
+    <input
+      id="input-search"
+      class="input-search"
+      type="text"
+      (keyup)="search($event)"
+      (click)="clearSearch()"
+      (blur)="closeDropdownAndResetValue()"
+      [value]="inputValue"
+      [placeholder]="placeholderText | translate"
+    >
+  </div>
+
+  <div
+    *ngIf="isDropdownActive"
+    [ngClass]="{
+      'active-dropdown': isDropdownActive && filteredList.length > 0
+    }"
+  >
+    <div
+      *ngFor="let item of filteredList"
+      class="list-item"
+      (mousedown)="selectItem(item)"
+      (touchend)="selectItem(item)"
+    >
+      {{ item.name }}
+    </div>
+  </div>
+</div>
+

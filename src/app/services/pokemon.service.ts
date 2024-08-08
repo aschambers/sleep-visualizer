@@ -1013,7 +1013,7 @@ export class PokemonService {
   recipesList = [
     {
       id: 1,
-      name: 'Recipes.MixedCurry',
+      name: 'Mixed Curry',
       basePower: 0,
       image: '/assets/images/MixedCurry.png',
       ingredients: {},
@@ -1021,7 +1021,7 @@ export class PokemonService {
     },
     {
       id: 2,
-      name: 'Recipes.FancyAppleCurry',
+      name: 'Fancy Apple Curry',
       basePower: 668,
       image: '/assets/images/FancyAppleCurry.png',
       ingredients: {
@@ -1031,7 +1031,7 @@ export class PokemonService {
     },
     {
       id: 3,
-      name: 'Recipes.GrilledTailCurry',
+      name: 'Grilled Tail Curry',
       basePower: 7483,
       image: '/assets/images/GrilledTailCurry.png',
       ingredients: {
@@ -1042,7 +1042,7 @@ export class PokemonService {
     },
     {
       id: 4,
-      name: 'Recipes.SolarPowerTomatoCurry',
+      name: 'Solar Power Tomato Curry',
       basePower: 1943,
       image: '/assets/images/SolarPowerTomatoCurry.png',
       ingredients: {
@@ -1053,7 +1053,7 @@ export class PokemonService {
     },
     {
       id: 5,
-      name: 'Recipes.DreamEaterButterCurry',
+      name: 'Dream Eater Butter Curry',
       basePower: 9010,
       image: '/assets/images/DreamEaterButterCurry.png',
       ingredients: {
@@ -1066,7 +1066,7 @@ export class PokemonService {
     },
     {
       id: 6,
-      name: 'Recipes.SpicyLeekCurry',
+      name: 'Spicy Leek Curry',
       basePower: 5900,
       image: '/assets/images/SpicyLeekCurry.png',
       ingredients: {
@@ -1078,7 +1078,7 @@ export class PokemonService {
     },
     {
       id: 7,
-      name: 'Recipes.SporeMushroomCurry',
+      name: 'Spore Mushroom Curry',
       basePower: 4041,
       image: '/assets/images/SporeMushroomCurry.png',
       ingredients: {
@@ -1089,7 +1089,7 @@ export class PokemonService {
     },
     {
       id: 8,
-      name: 'Recipes.EggBombCurry',
+      name: 'Egg Bomb Curry',
       basePower: 4523,
       image: '/assets/images/EggBombCurry.png',
       ingredients: {
@@ -1102,7 +1102,7 @@ export class PokemonService {
     },
     {
       id: 9,
-      name: 'Recipes.HeartyCheeseburgerCurry',
+      name: 'Hearty Cheeseburger Curry',
       basePower: 1785,
       image: '/assets/images/HeartyCheeseburgerCurry.png',
       ingredients: {
@@ -1113,7 +1113,7 @@ export class PokemonService {
     },
     {
       id: 10,
-      name: 'Recipes.SoftPotatoChowder',
+      name: 'Soft Potato Chowder',
       basePower: 3089,
       image: '/assets/images/SoftPotatoChowder.png',
       ingredients: {
@@ -1125,7 +1125,7 @@ export class PokemonService {
     },
     {
       id: 11,
-      name: 'Recipes.SimpleChowder',
+      name: 'Simple Chowder',
       basePower: 727,
       image: '/assets/images/SimpleChowder.png',
       ingredients: {
@@ -1135,7 +1135,7 @@ export class PokemonService {
     },
     {
       id: 12,
-      name: 'Recipes.BeanburgerCurry',
+      name: 'Beanburger Curry',
       basePower: 764,
       image: '/assets/images/BeanburgerCurry.png',
       ingredients: {
@@ -1145,7 +1145,7 @@ export class PokemonService {
     },
     {
       id: 13,
-      name: 'Recipes.MildHoneyCurry',
+      name: 'Mild Honey Curry',
       basePower: 749,
       image: '/assets/images/MildHoneyCurry.png',
       ingredients: {
@@ -1155,7 +1155,7 @@ export class PokemonService {
     },
     {
       id: 14,
-      name: 'Recipes.NinjaCurry',
+      name: 'Ninja Curry',
       basePower: 9445,
       image: '/assets/images/NinjaCurry.png',
       ingredients: {
@@ -1168,7 +1168,7 @@ export class PokemonService {
     },
     {
       id: 15,
-      name: 'Recipes.DroughtKatsuCurry',
+      name: 'Drought Katsu Curry',
       basePower: 1815,
       image: '/assets/images/DroughtKatsuCurry.png',
       ingredients: {
@@ -1179,7 +1179,7 @@ export class PokemonService {
     },
     {
       id: 16,
-      name: 'Recipes.MeltyOmeletteCurry',
+      name: 'Melty Omelette Curry',
       basePower: 2009,
       image: '/assets/images/MeltyOmeletteCurry.png',
       ingredients: {
@@ -1190,7 +1190,7 @@ export class PokemonService {
     },
     {
       id: 17,
-      name: 'Recipes.BulkUpBeanCurry',
+      name: 'Bulk Up Bean Curry',
       basePower: 3274,
       image: '/assets/images/BulkUpBeanCurry.png',
       ingredients: {
@@ -1203,7 +1203,7 @@ export class PokemonService {
     },
     {
       id: 18,
-      name: 'Recipes.LimberCornStew',
+      name: 'Limber Corn Stew',
       basePower: 4670,
       image: '/assets/images/LimberCornStew.png',
       ingredients: {
@@ -1215,7 +1215,7 @@ export class PokemonService {
     },
     {
       id: 19,
-      name: 'Recipes.InfernoCornKeemaCurry',
+      name: 'Inferno Corn Keema Curry',
       basePower: 13690,
       image: '/assets/images/InfernoCornKeemaCurry.png',
       ingredients: {
@@ -1228,7 +1228,7 @@ export class PokemonService {
     },
     {
       id: 20,
-      name: 'Recipes.MixedSalad',
+      name: 'Mixed Salad',
       basePower: 0,
       image: '/assets/images/MixedSalad.png',
       ingredients: {},
@@ -1236,7 +1236,7 @@ export class PokemonService {
     },
     {
       id: 21,
-      name: 'Recipes.SlowpokeTailPepperSalad',
+      name: 'Slowpoke Tail Pepper Salad',
       basePower: 8169,
       image: '/assets/images/SlowpokeTailPepperSalad.png',
       ingredients: {
@@ -1248,7 +1248,7 @@ export class PokemonService {
     },
     {
       id: 22,
-      name: 'Recipes.SporeMushroomSalad',
+      name: 'Spore Mushroom Salad',
       basePower: 5859,
       image: '/assets/images/SporeMushroomSalad.png',
       ingredients: {
@@ -1260,7 +1260,7 @@ export class PokemonService {
     },
     {
       id: 23,
-      name: 'Recipes.SnowCloakCaesarSalad',
+      name: 'Snow Cloak Caesar Salad',
       basePower: 1774,
       image: '/assets/images/SnowCloakCaesarSalad.png',
       ingredients: {
@@ -1271,7 +1271,7 @@ export class PokemonService {
     },
     {
       id: 24,
-      name: 'Recipes.GluttonyPotatoSalad',
+      name: 'Gluttony Potato Salad',
       basePower: 5040,
       image: '/assets/images/GluttonyPotatoSalad.png',
       ingredients: {
@@ -1284,7 +1284,7 @@ export class PokemonService {
     },
     {
       id: 25,
-      name: 'Recipes.WaterVeilTofuSalad',
+      name: 'Water Veil Tofu Salad',
       basePower: 3113,
       image: '/assets/images/WaterVeilTofuSalad.png',
       ingredients: {
@@ -1295,7 +1295,7 @@ export class PokemonService {
     },
     {
       id: 26,
-      name: 'Recipes.SuperpowerExtremeSalad',
+      name: 'Superpower Extreme Salad',
       basePower: 2958,
       image: '/assets/images/SuperpowerExtremeSalad.png',
       ingredients: {
@@ -1308,7 +1308,7 @@ export class PokemonService {
     },
     {
       id: 27,
-      name: 'Recipes.BeanHamSalad',
+      name: 'Bean Ham Salad',
       basePower: 873,
       image: '/assets/images/BeanHamSalad.png',
       ingredients: {
@@ -1318,7 +1318,7 @@ export class PokemonService {
     },
     {
       id: 28,
-      name: 'Recipes.SnoozyTomatoSalad',
+      name: 'Snoozy Tomato Salad',
       basePower: 933,
       image: '/assets/images/SnoozyTomatoSalad.png',
       ingredients: {
@@ -1328,7 +1328,7 @@ export class PokemonService {
     },
     {
       id: 29,
-      name: 'Recipes.MoomooCapreseSalad',
+      name: 'Moomoo Caprese Salad',
       basePower: 2856,
       image: '/assets/images/MoomooCapreseSalad.png',
       ingredients: {
@@ -1340,7 +1340,7 @@ export class PokemonService {
     },
     {
       id: 30,
-      name: 'Recipes.ContraryChocolateMeatSalad',
+      name: 'Contrary Chocolate Meat Salad',
       basePower: 3558,
       image: '/assets/images/ContraryChocolateMeatSalad.png',
       ingredients: {
@@ -1351,7 +1351,7 @@ export class PokemonService {
     },
     {
       id: 31,
-      name: 'Recipes.OverheatGingerSalad',
+      name: 'Overheat Ginger Salad',
       basePower: 5225,
       image: '/assets/images/OverheatGingerSalad.png',
       ingredients: {
@@ -1363,7 +1363,7 @@ export class PokemonService {
     },
     {
       id: 32,
-      name: 'Recipes.FancyAppleSalad',
+      name: 'Fancy Apple Salad',
       basePower: 763,
       image: '/assets/images/FancyAppleSalad.png',
       ingredients: {
@@ -1373,7 +1373,7 @@ export class PokemonService {
     },
     {
       id: 33,
-      name: 'Recipes.ImmunityLeekSalad',
+      name: 'Immunity Leek Salad',
       basePower: 2658,
       image: '/assets/images/ImmunityLeekSalad.png',
       ingredients: {
@@ -1384,7 +1384,7 @@ export class PokemonService {
     },
     {
       id: 34,
-      name: 'Recipes.DazzlingAppleCheeseSalad',
+      name: 'Dazzling Apple Cheese Salad',
       basePower: 2578,
       image: '/assets/images/DazzlingAppleCheeseSalad.png',
       ingredients: {
@@ -1396,7 +1396,7 @@ export class PokemonService {
     },
     {
       id: 35,
-      name: 'Recipes.NinjaSalad',
+      name: 'Ninja Salad',
       basePower: 11659,
       image: '/assets/images/NinjaSalad.png',
       ingredients: {
@@ -1409,7 +1409,7 @@ export class PokemonService {
     },
     {
       id: 36,
-      name: 'Recipes.HeatWaveTofuSalad',
+      name: 'Heat Wave Tofu Salad',
       basePower: 1976,
       image: '/assets/images/HeatWaveTofuSalad.png',
       ingredients: {
@@ -1420,7 +1420,7 @@ export class PokemonService {
     },
     {
       id: 37,
-      name: 'Recipes.GreengrassSalad',
+      name: 'Greengrass Salad',
       basePower: 11393,
       image: '/assets/images/GreengrassSalad.png',
       ingredients: {
@@ -1433,7 +1433,7 @@ export class PokemonService {
     },
     {
       id: 38,
-      name: 'Recipes.CalmMindFruitSalad',
+      name: 'Calm Mind Fruit Salad',
       basePower: 7675,
       image: '/assets/images/CalmMindFruitSalad.png',
       ingredients: {
@@ -1445,7 +1445,7 @@ export class PokemonService {
     },
     {
       id: 39,
-      name: 'Recipes.FuryAttackCornSalad',
+      name: 'Fury Attack Corn Salad',
       basePower: 2785,
       image: '/assets/images/FuryAttackCornSalad.png',
       ingredients: {
@@ -1456,7 +1456,7 @@ export class PokemonService {
     },
     {
       id: 40,
-      name: 'Recipes.MixedJuice',
+      name: 'Mixed Juice',
       basePower: 0,
       image: '/assets/images/MixedJuice.png',
       ingredients: {},
@@ -1464,7 +1464,7 @@ export class PokemonService {
     },
     {
       id: 41,
-      name: 'Recipes.FluffySweetPotatoes',
+      name: 'Fluffy Sweet Potatoes',
       basePower: 1783,
       image: '/assets/images/FluffySweetPotatoes.png',
       ingredients: {
@@ -1475,7 +1475,7 @@ export class PokemonService {
     },
     {
       id: 42,
-      name: 'Recipes.SteadfastGingerCookies',
+      name: 'Steadfast Ginger Cookies',
       basePower: 4921,
       image: '/assets/images/SteadfastGingerCookies.png',
       ingredients: {
@@ -1488,7 +1488,7 @@ export class PokemonService {
     },
     {
       id: 43,
-      name: 'Recipes.FancyAppleJuice',
+      name: 'Fancy Apple Juice',
       basePower: 763,
       image: '/assets/images/FancyAppleJuice.png',
       ingredients: {
@@ -1498,7 +1498,7 @@ export class PokemonService {
     },
     {
       id: 44,
-      name: 'Recipes.CraftSodaPop',
+      name: 'Craft Soda Pop',
       basePower: 964,
       image: '/assets/images/CraftSodaPop.png',
       ingredients: {
@@ -1508,7 +1508,7 @@ export class PokemonService {
     },
     {
       id: 45,
-      name: 'Recipes.EmberGingerTea',
+      name: 'Ember Ginger Tea',
       basePower: 1788,
       image: '/assets/images/EmberGingerTea.png',
       ingredients: {
@@ -1519,7 +1519,7 @@ export class PokemonService {
     },
     {
       id: 46,
-      name: 'Recipes.JigglypuffsFruityFlan',
+      name: 'Jigglypuff\'s Fruity Flan',
       basePower: 7594,
       image: '/assets/images/JigglypuffsFruityFlan.png',
       ingredients: {
@@ -1532,7 +1532,7 @@ export class PokemonService {
     },
     {
       id: 47,
-      name: 'Recipes.LovelyKissSmoothie',
+      name: 'Lovely Kiss Smoothie',
       basePower: 4734,
       image: '/assets/images/LovelyKissSmoothie.png',
       ingredients: {
@@ -1545,7 +1545,7 @@ export class PokemonService {
     },
     {
       id: 48,
-      name: 'Recipes.LuckyChantApplePie',
+      name: 'Lucky Chant Apple Pie',
       basePower: 1634,
       image: '/assets/images/LuckyChantApplePie.png',
       ingredients: {
@@ -1556,7 +1556,7 @@ export class PokemonService {
     },
     {
       id: 49,
-      name: 'Recipes.NerolisRestorativeTea',
+      name: 'Neroli\'s Restorative Tea',
       basePower: 5065,
       image: '/assets/images/NerolisRestorativeTea.png',
       ingredients: {
@@ -1568,7 +1568,7 @@ export class PokemonService {
     },
     {
       id: 50,
-      name: 'Recipes.SweetScentChocolateCake',
+      name: 'Sweet Scent Chocolate Cake',
       basePower: 3280,
       image: '/assets/images/SweetScentChocolateCake.png',
       ingredients: {
@@ -1580,7 +1580,7 @@ export class PokemonService {
     },
     {
       id: 51,
-      name: 'Recipes.WarmMoomooMilk',
+      name: 'Warm Moomoo Milk',
       basePower: 727,
       image: '/assets/images/WarmMoomooMilk.png',
       ingredients: {
@@ -1590,7 +1590,7 @@ export class PokemonService {
     },
     {
       id: 52,
-      name: 'Recipes.CloudNineSoyCake',
+      name: 'Cloud Nine Soy Cake',
       basePower: 1798,
       image: '/assets/images/CloudNineSoyCake.png',
       ingredients: {
@@ -1601,7 +1601,7 @@ export class PokemonService {
     },
     {
       id: 53,
-      name: 'Recipes.HustleProteinSmoothie',
+      name: 'Hustle Protein Smoothie',
       basePower: 3168,
       image: '/assets/images/HustleProteinSmoothie.png',
       ingredients: {
@@ -1612,7 +1612,7 @@ export class PokemonService {
     },
     {
       id: 54,
-      name: 'Recipes.StalwartVegetableJuice',
+      name: 'Stalwart Vegetable Juice',
       basePower: 1798,
       image: '/assets/images/StalwartVegetableJuice.png',
       ingredients: {
@@ -1623,7 +1623,7 @@ export class PokemonService {
     },
     {
       id: 55,
-      name: 'Recipes.BigMalasada',
+      name: 'Big Malasada',
       basePower: 2927,
       image: '/assets/images/BigMalasada.png',
       ingredients: {
@@ -1635,7 +1635,7 @@ export class PokemonService {
     },
     {
       id: 56,
-      name: 'Recipes.HugePowerSoyDonuts',
+      name: 'Huge Power Soy Donuts',
       basePower: 5547,
       image: '/assets/images/HugePowerSoyDonuts.png',
       ingredients: {
@@ -1647,7 +1647,7 @@ export class PokemonService {
     },
     {
       id: 57,
-      name: 'Recipes.ExplosionPopcorn',
+      name: 'Explosion Popcorn',
       basePower: 6048,
       image: '/assets/images/ExplosionPopcorn.png',
       ingredients: {
@@ -1659,7 +1659,7 @@ export class PokemonService {
     },
     {
       id: 58,
-      name: 'Recipes.TeatimeCornScones',
+      name: 'Teatime Corn Scones',
       basePower: 10925,
       image: '/assets/images/TeatimeCornScones.png',
       ingredients: {
@@ -1672,7 +1672,7 @@ export class PokemonService {
     },
     {
       id: 59,
-      name: 'Recipes.PetalDanceChocolateTarts',
+      name: 'Petal Dance Chocolate Tarts',
       basePower: 3314,
       image: '/assets/images/PetalDanceChocolateTarts.png',
       ingredients: {
@@ -1683,7 +1683,7 @@ export class PokemonService {
     },
     {
       id: 60,
-      name: 'Recipes.FlowerGiftMacarons',
+      name: 'Flower Gift Macarons',
       basePower: 13834,
       image: '/assets/images/FlowerGiftMacarons.png',
       ingredients: {
