@@ -15,6 +15,7 @@ import { RecipesComponent } from './pages/recipes/recipes.component';
 import { LanguageSwitcherComponent } from './components/language-switcher/language-switcher.component';
 import { InputSearchComponent } from './components/input-search/input-search.component';
 import { SvgHelperComponent } from './components/svg-helper/svg-helper.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SvgHelperComponent } from './components/svg-helper/svg-helper.component
     RecipesComponent,
     LanguageSwitcherComponent,
     InputSearchComponent,
-    SvgHelperComponent
+    SvgHelperComponent,
+    MenuComponent
   ],
   exports: [
     LanguageSwitcherComponent,
