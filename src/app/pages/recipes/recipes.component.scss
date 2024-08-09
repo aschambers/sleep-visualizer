@@ -122,6 +122,28 @@
     font-family: sans-serif;
     margin-bottom: 1rem;
   }
+
+  &-category {
+    width: 28rem;
+    & > span {
+      width: 14rem;
+    }
+  }
+
+  &-selection {
+    width: 28rem;
+    & > span {
+      width: 4.5rem;
+    }
+  }
+
+  &-ingredients {
+    width: 94vw;
+    flex-wrap: wrap;
+  }
+  &-base {
+    margin-left: 0.5rem;
+  }
 }
 
 .ingredient {
@@ -218,40 +240,15 @@
   background-color: #202023;
 }
 
-@media (max-width: 1156px) {
+@media (max-width: 800px) {
   .recipes {
-    &-ingredients {
-      width: 90vw;
-      flex-wrap: wrap;
+    &-title {
+      margin-top: 6rem;
     }
   }
 }
 
-@media (max-width: 768px) {
-  .recipes {
-    &-category {
-      width: 28rem;
-      & > span {
-        width: 14rem;
-      }
-    }
-    &-selection {
-      width: 28rem;
-      & > span {
-        width: 4.5rem;
-      }
-    }
-    &-ingredients {
-      width: 94vw;
-      flex-wrap: wrap;
-    }
-    &-base {
-      margin-left: 0.5rem;
-    }
-  }
-}
-
-@media (max-width: 380px) {
+@media (max-width: 400px) {
   .ingredient {
     display: flex;
     color: white;

@@ -59,7 +59,11 @@ ul {
   min-width: 25rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+  ul:first-child {
+    margin-top: 6rem;
+  }
+
   .berry {
     width: 32rem;
     max-width: 80vw;

@@ -1,0 +1,16 @@
+<div id="container" class="three col">
+  <div class="menu" id="menu" (click)="toggleMenu()">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </div>
+</div>
+
+<div *ngIf="isMenuOpen" class="menu-list">
+  <ul>
+    <li (click)="toggleMenu()" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/cooking"><span>Cooking</span></a></li>
+    <li (click)="toggleMenu()" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/berries"><span>Berries</span></a></li>
+    <li (click)="toggleMenu()" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/ingredients"><span>Ingredients</span></a></li>
+    <li (click)="toggleMenu()" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/skills"><span>Skills</span></a></li>
+  </ul>
+</div>

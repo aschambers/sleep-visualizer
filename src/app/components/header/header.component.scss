@@ -3,6 +3,10 @@
   flex-direction: row;
 }
 
+.pokemonsleep-mobile {
+  display: none;
+}
+
 .nav {
   border-bottom: 1px solid #ccc;
   border-width: 1px 0;
@@ -51,41 +55,17 @@
 }
 
 @media (max-width: 800px) {
+  .pokemonsleep-mobile {
+    display: flex;
+    width: 4rem;
+    height: 2.5rem;
+    position: absolute;
+    z-index: 0;
+    right: 1.75rem;
+    top: 2rem;
+  }
+
   .header {
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid white;
-    min-width: 100vw;
-  }
-  
-  .nav {
-    border-bottom: none;
-    flex-direction: column;
-    border-width: none;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: none;
-    display: flex;
-    height: auto;
-    margin-top: 4rem;
-  }
-  
-  .nav li {
-    padding: 0.75rem 3rem 0.75rem 3rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    & > a {
-      font-size: 1.4rem;
-    }
-  }
-
-  .nav li:first-child {
-    margin-left: 0rem;
-    margin-right: 0rem;
-  }
-
-  .nav li:last-child {
-    padding-bottom: 2rem;
+    display: none;
   }
 }
