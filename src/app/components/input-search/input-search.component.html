@@ -28,7 +28,6 @@
       *ngFor="let item of filteredList"
       class="list-item"
       (mousedown)="selectItem(item)"
-      (touchend)="selectItem(item)"
     >
       {{ item.name }}
     </div>
