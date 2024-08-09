@@ -74,6 +74,10 @@ ul {
 }
 
 @media (max-width: 768px) {
+  ul:first-child {
+    margin-top: 6rem;
+  }
+
   .ingredient {
     width: 32rem;
     max-width: 80vw;

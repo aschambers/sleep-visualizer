@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { DataAccessModule } from './components/data-access';
 
 import { AppComponent } from './app.component';
 import { BerriesComponent } from './pages/berries/berries.component';
@@ -11,7 +12,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { RecipesComponent } from './pages/recipes/recipes.component';
 import { InputSearchComponent } from './components/input-search/input-search.component';
 import { SvgHelperComponent } from './components/svg-helper/svg-helper.component';
-import { DataAccessModule } from './components/data-access';
+import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { DataAccessModule } from './components/data-access';
     HeaderComponent,
     RecipesComponent,
     InputSearchComponent,
-    SvgHelperComponent
+    SvgHelperComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
