@@ -103,7 +103,7 @@
     </div>
   </div>
   <div class="recipes-category">
-    <span>{{ 'Cooking.DishLevel' | translate }}:</span> <input id="dish-level" type="number" [min]="1" [max]="55" [value]="dishLevel" (change)="updateDishLevel($event)" />
+    <span>{{ 'Cooking.DishLevel' | translate }}:</span> <input id="dish-level" type="number" [min]="1" [max]="60" [value]="dishLevel" (change)="updateDishLevel($event)" />
   </div>
   <div class="recipes-category">
     <span>{{ 'Cooking.Multiplier' | translate }}:</span>
@@ -122,7 +122,7 @@
     <span>{{ 'Cooking.IslandBonus' | translate }}:</span>
     <select (change)="updateIslandBonus($event)">
       <option *ngFor="let islandBonus of islandBonusLookup">
-        {{ islandBonus }}
+        {{ islandBonus + '%' }}
       </option>
     </select>
   </div>
