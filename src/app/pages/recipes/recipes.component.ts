@@ -12,7 +12,7 @@ export class RecipesComponent {
   @Input() dishLevel = 1;
   dishLevelMultiplier = 1;
   allDishLevelMultipliers: Array<number> = new Array<number>();
-  islandBonusLookup: Array<string> = new Array<string>();
+  islandBonusLookup: Array<number> = Array.from(Array(101).keys());
   islandBonusMultiplier = 1;
   recipesList: Array<Recipe> = new Array<Recipe>;
   ingredientsList: Array<Ingredient> = new Array<Ingredient>;
@@ -30,7 +30,6 @@ export class RecipesComponent {
     this.selectedRecipe = recipesList[0];
     this.ingredientsList = this.pokemonService.retrieveIngredientCountsList();
     this.allDishLevelMultipliers = this.pokemonService.retrieveDishLevelMultipliers();
-    this.islandBonusLookup = this.pokemonService.retrieveIslandBonuses();
     this.totalIngredients = this.getTotalIngredients();
   }
 
